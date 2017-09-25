@@ -1,0 +1,32 @@
+# first install
+
+- xorg, xorg-xinit
+- i3: window manager
+- ntpd: time and date
+- htop: process monitor
+- moreutils
+- mtr: ping + traceroute
+- lm_sensors: temp monitor
+- tmux
+- zprezto: zsh config
+- base16-shell
+- ttf-google-fonts-git: fonts
+- alsa-utils, alsa-plugins: sound
+- pulseaudio, paprefs, pavucontrol
+- xbindkeys
+- mpd, ncmpcpp: audio
+- transmission: torrents
+- maim, slop: screenshots
+- redshift: dim screen
+- to reset keyboard: setxkbmap -layout us
+- xclip
+- pandoc
+- ranger
+- bc
+- speedcrunch
+- ufw
+- imagemagick
+- graphicsmagick
+- feh
+- rxvt-unicode
+- lxappearance
