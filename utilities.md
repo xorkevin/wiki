@@ -13,3 +13,7 @@
 
 ## Go
 - davecheney/httpstat
+
+## Easter Eggs
+- sl
+- cool-retro-term
