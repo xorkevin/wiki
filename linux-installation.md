@@ -22,3 +22,4 @@
 - feh
 - rxvt-unicode
 - lxappearance
+- cronie
