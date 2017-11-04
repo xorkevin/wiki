@@ -12,7 +12,9 @@
 - redshift: dim screen
 
 ## Go
+- golang/dep
 - davecheney/httpstat
+- asciimoo/wuzz
 
 ## Easter Eggs
 - sl
