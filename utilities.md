@@ -14,6 +14,7 @@
 
 ## Go
 - golang/dep
+- direnv/direnv
 - davecheney/httpstat
 - asciimoo/wuzz
 
