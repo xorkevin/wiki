@@ -2,6 +2,7 @@
 
 ## Arch package
 - pandoc
+- pdfpc
 - ranger
 - bc
 - speedcrunch
