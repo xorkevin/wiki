@@ -6,3 +6,4 @@ Kevin
 [programs](programs)
 [utilities](utilities)
 [pacman list](pacman-list)
+[techstack](techstack)
