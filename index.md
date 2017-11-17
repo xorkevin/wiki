@@ -7,3 +7,4 @@ Kevin
 [utilities](utilities)
 [pacman list](pacman-list)
 [techstack](techstack)
+[neuralnet](neuralnet)
