@@ -11,6 +11,7 @@
 - mpd, ncmpcpp: audio
 - transmission: torrents
 - redshift: dim screen
+- httpie: http client
 
 ## Go
 - golang/dep
