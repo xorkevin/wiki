@@ -8,3 +8,4 @@ Kevin
 [pacman list](pacman-list)
 [techstack](techstack)
 [neuralnet](neuralnet)
+[potential build](potential-build)
