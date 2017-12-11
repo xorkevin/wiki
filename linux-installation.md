@@ -2,6 +2,8 @@
 
 - xorg, xorg-xinit
 - i3: window manager
+- stow
+- LUKS
 - ntpd: time and date
 - htop: process monitor
 - moreutils
