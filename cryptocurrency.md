@@ -2,7 +2,7 @@
 
 ## Blockchain
 
-#### proof of work
+### proof of work
 
 - hash of a block includes:
   - transaction data
@@ -15,7 +15,7 @@
 - the longest chain will be chosen by the network since it has the most "work" invested in it
   - this drives the network to consensus
 
-#### implications
+### implications
 
 - the puzzle in a proof of work based blockchain must be difficult
   - a high hash rate is necessary to make it difficult to cheat the system
@@ -28,14 +28,14 @@
 
 ## Layer 2
 
-#### lightning network
+### lightning network
 
 - smart contract payment channel between two accounts on the blockchain
   - payment channels allow both participants to agree on the new distribution of funds within the channel via pub/priv crypto
 - a network of these payment channels could be overlaid on top of the existing blockchain
 - payment channels can be settled back onto the blockchain
 
-##### example
+#### example
 - suppose two accounts Alice and Bob each commit 500 to a payment channel, AB
 - suppose two accounts Bob and Carol each commit 500 to a payment channel, BC
 - suppose Alice wants to give Carol 50
@@ -43,7 +43,7 @@
 - Once Bob and Carol sign, does the transaction become committed
 - Bob still has 1000 total, Alice is short 50, and Carol has gained 50
 
-#### implications
+### implications
 
 - supports a much higher rate of transactions of several magnitudes since they are not reliant on mining
 - settlement rate of payment channels must have a certain minimum to prevent the mining rate from dropping too low
