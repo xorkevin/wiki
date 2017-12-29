@@ -7,5 +7,6 @@ Kevin
 [utilities](utilities)
 [pacman list](pacman-list)
 [techstack](techstack)
+[cryptocurrency](cryptocurrency)
 [neuralnet](neuralnet)
 [potential build](potential-build)
