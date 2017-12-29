@@ -49,3 +49,33 @@
 - settlement rate of payment channels must have a certain minimum to prevent the mining rate from dropping too low
   - a 51% attack could potentially occur otherwise
 - centralization is another concern where a couple hub nodes could broker many channels and create single points of failure
+
+## Privacy
+
+### Monero
+
+- unlinkable transactions
+- preserve fungibility of currency
+
+#### receiver privacy
+
+- currency is not sent to public address as in bitcoinesque currency
+  - instead output is sent to a "stealth address": a one time address computed by receiver's public key and random data
+  - receiver can identify which stealth addresses belong to him by scanning the network using a view key
+- a transaction private key can be computed from the random data of the transaction and private key of the receiver
+  - thus used to transfer funds from the stealth address to the input of a new transaction
+
+#### sender privacy
+
+- ring signature bundles multiple stealth addresses together as inputs to the transaction
+- transaction amounts are hidden via "Ring Confidential Transaction"
+- a key image is provided to assure that one of the stealth addresses is providing the amount specified
+  - duplicate key images on the blockchain indicate a double spend and should be rejected
+  - it is impossible to determine which of the stealth addresses the currency is being transferred from
+  - it is impossible to determine which stealth addresses have been spent or not
+  - the key image only assures that one is currently being spent
+
+#### network privacy
+
+- new transactions are broadcast using kovri on i2p, a tor like network
+- prevents nodes from logging origin ip addresses
