@@ -79,3 +79,15 @@
 
 - new transactions are broadcast using kovri on i2p, a tor like network
 - prevents nodes from logging origin ip addresses
+
+## Consensus
+
+### Ripple
+
+- blockchain based platform targeting sub-minute transaction times
+- uses a consensus algorithm based on trusted nodes unlike proof of work
+- each node keeps a ledger and a trusted "unique node list"
+- current transactions are broadcasted to the network to be voted upon
+- each node in the network votes on incoming transactions in multiple rounds
+- if more than 80% yes votes on a transaction from a node's UNL in the final round, then it is committed
+- though not all nodes have the same UNL, a transaction will propogate through a network as each group of UNL's agrees on the state of a transaction
