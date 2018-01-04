@@ -91,3 +91,4 @@
 - each node in the network votes on incoming transactions in multiple rounds
 - if more than 80% yes votes on a transaction from a node's UNL in the final round, then it is committed
 - though not all nodes have the same UNL, a transaction will propogate through a network as each group of UNL's agrees on the state of a transaction
+  - as such a minimum connectivity between two UNLs is required for transactions to propagate
