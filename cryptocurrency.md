@@ -92,3 +92,18 @@
 - if more than 80% yes votes on a transaction from a node's UNL in the final round, then it is committed
 - though not all nodes have the same UNL, a transaction will propogate through a network as each group of UNL's agrees on the state of a transaction
   - as such a minimum connectivity between two UNLs is required for transactions to propagate
+
+## Proof of Stake
+
+### Cardano / Ouroboros
+
+- uses a segment of the chain to bootstrap randomness for the next epoch
+- each time slot in an epoch has a leader elected by follow the satoshi where a random coin is chosen
+- time slot leader has full control of the chain for that segment of execution
+  - if leader is adversarial, amount of transactions needed to close margin of next highest tine is too high
+  - guard against nothing at stake
+  - if < 50% of stake is held by adversarial nodes, then network is driven towards consensus
+
+#### Scalability
+  - block leaders can run multiple blockchains
+  - multiple epochs can run on multiple chains concurrently and communicate via sidechains
