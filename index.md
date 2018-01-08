@@ -10,3 +10,4 @@ Kevin
 [cryptocurrency](cryptocurrency)
 [neuralnet](neuralnet)
 [potential build](potential-build)
+[scripts](scripts)
