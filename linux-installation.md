@@ -2,6 +2,7 @@
 
 - xorg, xorg-xinit
 - i3: window manager
+- trizen
 - stow
 - LUKS
 - ntpd: time and date
