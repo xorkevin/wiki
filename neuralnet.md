@@ -2,7 +2,6 @@
 
 ## Gradients
 
-:::math
 \begin{align}
 y &= W \cdot x \\
 \frac{\partial z}{\partial W} &= \frac{\partial z}{\partial y} \frac{\partial y}{\partial W} \\
@@ -10,4 +9,3 @@ y &= W \cdot x \\
 \frac{\partial z}{\partial x} &= \frac{\partial z}{\partial y} \frac{\partial y}{\partial x} \\
 &= W^{T} \cdot \frac{\partial z}{\partial y}
 \end{align}
-:::
