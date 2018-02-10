@@ -4,6 +4,7 @@
 - open broadcaster
 - mumble
 - murmur
+- weechat
 
 ## Media
 - mpd with ncmpcpp
