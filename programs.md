@@ -8,6 +8,7 @@
 ## Media
 - mpd with ncmpcpp
 - vlc
+- streamlink
 - mixxx
 
 ## Image
@@ -19,6 +20,7 @@
 ## Video
 - kdenlive
 - natron
+- handbrake
 
 ## 3D modeling
 - blender
