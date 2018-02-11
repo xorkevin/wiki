@@ -12,6 +12,7 @@
 - tmux
 - zprezto: zsh config
 - base16-shell
+- powerline-fonts
 - ttf-google-fonts-git: fonts
 - alsa-utils, alsa-plugins: sound
 - pulseaudio, paprefs, pavucontrol
