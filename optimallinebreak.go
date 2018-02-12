@@ -7,17 +7,26 @@ import (
 )
 
 const (
-	paragraphInput = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit diam fringilla tortor tempor bibendum. Fusce tellus libero, congue non elementum et, tristique a ante. Donec vel lectus pulvinar, vulputate ligula quis, venenatis leo. Nunc blandit a lacus id consectetur. Duis vitae elementum urna. Fusce hendrerit diam vitae feugiat aliquam. Nulla convallis id felis a pretium. Vestibulum at convallis magna. Donec ut odio mi. Curabitur malesuada purus mauris, vel ornare quam vulputate eget. Quisque vel nisi tristique, iaculis ante nec, volutpat neque. Fusce ligula diam, luctus id odio nec, ultricies mollis nunc. Ut bibendum lorem nulla, at mollis tortor semper a. Sed tempus nisl eu fringilla molestie. Praesent suscipit risus enim, ac ornare augue mollis semper.`
+	paragraphInput  = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit diam fringilla tortor tempor bibendum. Fusce tellus libero, congue non elementum et, tristique a ante. Donec vel lectus pulvinar, vulputate ligula quis, venenatis leo. Nunc blandit a lacus id consectetur. Duis vitae elementum urna. Fusce hendrerit diam vitae feugiat aliquam. Nulla convallis id felis a pretium. Vestibulum at convallis magna. Donec ut odio mi. Curabitur malesuada purus mauris, vel ornare quam vulputate eget. Quisque vel nisi tristique, iaculis ante nec, volutpat neque. Fusce ligula diam, luctus id odio nec, ultricies mollis nunc. Ut bibendum lorem nulla, at mollis tortor semper a. Sed tempus nisl eu fringilla molestie. Praesent suscipit risus enim, ac ornare augue mollis semper.`
+	paragraphInput2 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
 
-	lineWrap = 32
+	lineWrap = 80
 )
 
 func main() {
 	words := strings.Split(paragraphInput, " ")
-	cost, formated := linebreak(words, lineWrap)
-	fmt.Println("cost:", cost)
-	fmt.Println(charRuler(lineWrap))
-	fmt.Println(formated)
+	{
+		cost, formated := linebreak(words, lineWrap)
+		fmt.Println("cost:", cost)
+		fmt.Println(charRuler(lineWrap))
+		fmt.Println(formated)
+	}
+	{
+		cost, formated := dplinebreak(words, lineWrap)
+		fmt.Println("cost:", cost)
+		fmt.Println(charRuler(lineWrap))
+		fmt.Println(formated)
+	}
 }
 
 type (
@@ -52,7 +61,7 @@ func calcPartition(part map[int]partition, wordLengths []int, width int, end int
 
 	k := end - 1
 	runningLength := wordLengths[k]
-	for runningLength < width {
+	for runningLength <= width {
 		partCost, partBreaks := calcPartition(part, wordLengths, width, k)
 		c := width - runningLength
 		c = c*c + partCost
@@ -78,6 +87,68 @@ func calcPartition(part map[int]partition, wordLengths []int, width int, end int
 	}
 
 	return minCost, finalBreaks
+}
+
+func dplinebreak(words []string, width int) (int, string) {
+	wordLengths := make([]int, 0, len(words))
+	for _, i := range words {
+		wordLengths = append(wordLengths, len(i))
+	}
+	cost, parts := dpCalcPartition(wordLengths, width)
+	return cost, formatWords(words, parts)
+}
+
+type (
+	dpPart struct {
+		cost int
+		prev int
+	}
+)
+
+func dpCalcPartition(wordLengths []int, width int) (int, []int) {
+	l := len(wordLengths)
+	cache := make([]dpPart, 0, l+1)
+	cache = append(cache, dpPart{
+		cost: 0,
+		prev: 0,
+	})
+	for i := 1; i < l+1; i++ {
+		minCost := -1
+		minPrev := 0
+		for j := 0; j < i; j++ {
+			c := width - sumWordSlice(wordLengths[j:i])
+			if c < 0 {
+				continue
+			}
+			c = c*c + cache[j].cost
+			if minCost < 0 || c <= minCost {
+				minCost = c
+				minPrev = j
+			}
+		}
+		cache = append(cache, dpPart{
+			cost: minCost,
+			prev: minPrev,
+		})
+	}
+	parts := []int{}
+	for i := l; i > 0; i = cache[i].prev {
+		parts = append(parts, i)
+	}
+	for i := 0; i < len(parts)/2; i++ {
+		k := parts[i]
+		parts[i] = parts[len(parts)-i-1]
+		parts[len(parts)-i-1] = k
+	}
+	return cache[l].cost, parts
+}
+
+func sumWordSlice(s []int) int {
+	k := 0
+	for _, i := range s {
+		k += i
+	}
+	return k + len(s) - 1
 }
 
 func formatWords(words []string, breaks []int) string {
