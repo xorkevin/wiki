@@ -88,14 +88,6 @@ func dpCalcPartition(wordLengths []int, width int) (int, []int) {
 	return cache[l].cost, parts
 }
 
-func sumWordSlice(s []int) int {
-	k := 0
-	for _, i := range s {
-		k += i
-	}
-	return k + len(s) - 1
-}
-
 func formatWords(words []string, breaks []int) string {
 	lines := []string{}
 	prev := 0
