@@ -1,6 +1,9 @@
 revealjsversion=3.6.0
 revealjsurl=https://github.com/hakimel/reveal.js/archive/$(revealjsversion).tar.gz
 
+pdfopts=-t beamer -s --slide-level=2 --listings
+htmlopts=-t revealjs -s --slide-level=2 --listings
+
 presentations:=$(wildcard *.md)
 
 .PHONY=all serve pdf revealjs clean
@@ -24,10 +27,10 @@ revealjs: $(presentations:.md=.html)
 $(presentations:.md=.all): %.all: %.pdf %.html
 
 $(presentations:.md=.pdf): %.pdf: %.md
-	pandoc -t beamer -s $^ -o $@
+	pandoc $(pdfopts) $^ -o $@
 
 $(presentations:.md=.html): %.html: %.md
-	pandoc -t revealjs -s $^ -o $@
+	pandoc $(htmlopts) $^ -o $@
 
 clean:
 	rm -f $(presentations:.md=.pdf) $(presentations:.md=.html)
