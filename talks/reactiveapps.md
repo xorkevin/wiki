@@ -65,6 +65,7 @@ Client side apps
 
 - Traditional MVC does not scale on the client side
 - State management is complex
+  - the model and view may be desynchronized
 
 ::: notes
 - MVC client side apps are difficult to maintain
@@ -72,6 +73,7 @@ Client side apps
   - cannot use the same approach as with completely server rendered apps
   - not just a single output of html to the browser
 - in particular state management becomes overly complex
+  - need to ensure that the view reflects the model
 :::
 
 ## Generation 2 - Problems
@@ -91,15 +93,31 @@ Client side apps
 - Kickstarted the componentization craze
   - Focused on reusability
 - View should be a function of app state
+  - Virtual DOM
 
 ::: notes
 - no longer thinking in terms of templating or pages
   - breaking down an app into reusable components
 - key principle is view is a pure function of the application state
+  - implemented using a virtual dom
+  - solves the issue that the view always needs to reflect the current model
+:::
+
+## React - Virtual DOM
+
+![virtual dom](assets/reactiveapps/virtualdom.png)
+
+::: notes
+- virtual dom is a representation of the current dom in js
+  - when a change is made, the vdom is updated
+  - the vdom is diffed against its previous version
+  - all the changed nodes get updated in the dom
+- gives react a performance advantage
+  - expensive dom manipulations are minimized
 :::
 
 ## Redux
 
 ![redux data flow](assets/reactiveapps/reduxdataflow.png)
 
-## Generation 4
+# Generation 4
