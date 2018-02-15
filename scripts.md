@@ -28,3 +28,8 @@ valgrind memcheck:
 ```bash
 valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes ./test --arg1 --arg2
 ```
+
+cutting video:
+```bash
+ffmpeg -i video.mp4 -ss 00:11:00 -t 00:01:00 -vcodec copy -acodec copy cutvid.mp4
+```
