@@ -9,6 +9,7 @@ date: 2018-02-21
 ::: notes
 - motivation is to give a bit of context for client side web apps
 - why has the industry settled on this methodology
+- while writing this, young age of the modern web was put into perspective
 :::
 
 ## Generation 1
@@ -87,7 +88,15 @@ Client side apps
 
 ## React
 
-Kickstarted the componentization craze
+- Kickstarted the componentization craze
+  - Focused on reusability
+- View should be a function of app state
+
+::: notes
+- no longer thinking in terms of templating or pages
+  - breaking down an app into reusable components
+- key principle is view is a pure function of the application state
+:::
 
 ## Redux
 
