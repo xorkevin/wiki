@@ -66,6 +66,7 @@ Client side apps
 - Traditional MVC does not scale on the client side
 - State management is complex
   - the model and view may be desynchronized
+  - user actions may have a significantly greater amount of effects
 
 ::: notes
 - MVC client side apps are difficult to maintain
@@ -74,6 +75,11 @@ Client side apps
   - not just a single output of html to the browser
 - in particular state management becomes overly complex
   - need to ensure that the view reflects the model
+  - effects of a user action may be numerous
+    - e.g. entering a comment on a post of a hypothetical website
+    - add a comment to the list of comments
+    - update the comment count of the post
+    - show that you are now following the post
 :::
 
 ## Generation 2 - Problems
@@ -96,6 +102,7 @@ Client side apps
   - Virtual DOM
 
 ::: notes
+- FB 2013
 - no longer thinking in terms of templating or pages
   - breaking down an app into reusable components
 - key principle is view is a pure function of the application state
@@ -118,6 +125,29 @@ Client side apps
 
 ## Redux
 
+- De facto state management framework for React
+- "One way data flow"
+
+::: notes
+- one way data flow architecture
+  - mvc done right
+  - solves the issue of a spiderweb of dependencies
+:::
+
+## Redux
+
 ![redux data flow](assets/reactiveapps/reduxdataflow.png)
+
+::: notes
+- since react is a function of state, redux just focuses on state
+- any change of the state must be defined as an ACTION
+- action is dispatched to the STORE
+- in the store, a pure function, the REDUCER, produces a new state from the old
+  state and the action
+:::
+
+## Overview
+
+![react redux flow](assets/reactiveapps/reactredux.png)
 
 # Generation 4
