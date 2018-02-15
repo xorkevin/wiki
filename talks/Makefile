@@ -3,6 +3,7 @@ revealjsurl=https://github.com/hakimel/reveal.js/archive/$(revealjsversion).tar.
 
 pdfopts=-t beamer -s --slide-level=2 --listings
 htmlopts=-t revealjs -s --slide-level=2 --listings
+notesopts=-H notesheader.tex
 
 presentations:=$(wildcard *.md)
 
@@ -24,13 +25,16 @@ pdf: $(presentations:.md=.pdf)
 
 revealjs: $(presentations:.md=.html)
 
-$(presentations:.md=.all): %.all: %.pdf %.html
+$(presentations:.md=.all): %.all: %.pdf %.html %.notes.pdf
 
 $(presentations:.md=.pdf): %.pdf: %.md
 	pandoc $(pdfopts) $^ -o $@
 
 $(presentations:.md=.html): %.html: %.md
 	pandoc $(htmlopts) $^ -o $@
+
+$(presentations:.md=.notes.pdf): %.notes.pdf: %.md
+	pandoc $(pdfopts) $(notesopts) $^ -o $@
 
 clean:
 	rm -f $(presentations:.md=.pdf) $(presentations:.md=.html)
