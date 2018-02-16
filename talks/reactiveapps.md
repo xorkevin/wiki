@@ -128,9 +128,12 @@ Client side apps
 - FB 2013
 - no longer thinking in terms of templating or pages
   - breaking down an app into reusable components
+  - it is easy to make a change to a component and see it reflected across the
+    entire application
 - key principle is view is a pure function of the application state
   - implemented using a virtual dom
-  - solves the issue that the view always needs to reflect the current model
+  - solves the previous issue that the view needs to be synchronized with the
+    model
 :::
 
 ## React - Virtual DOM
@@ -146,12 +149,43 @@ Client side apps
   - expensive dom manipulations are minimized
 :::
 
+## React - Code Example
+
+```js
+class ShoppingList extends React.Component {
+  render() {
+    return <div className="shopping-list">
+      <h1>Shopping List for {this.props.name}</h1>
+      <ul>
+        <li>Instagram</li>
+        <li>WhatsApp</li>
+        <li>Oculus</li>
+      </ul>
+    </div>;
+  }
+}
+
+// Example usage: <ShoppingList name="Mark" />
+```
+
+::: notes
+- react code
+- just a function
+  - takes in a prop name
+  - declarative code
+  - no mutations
+  - generates vdom
+- syntax is jsx, which gets transpiled to es5
+:::
+
 ## Redux
 
 - De facto state management framework for React
 - "One way data flow"
 
 ::: notes
+- react is just a function
+  - needs a solution to manage data
 - one way data flow architecture
   - mvc done right
   - solves the issue of a spiderweb of dependencies
@@ -169,14 +203,82 @@ Client side apps
   state and the action
 :::
 
+## Redux - Code Example
+
+```js
+// action types
+export const ADD_TODO = 'ADD_TODO'
+export const TOGGLE_TODO = 'TOGGLE_TODO'
+
+// action creators
+export function addTodo(text) {
+  return { type: ADD_TODO, text }
+}
+
+export function toggleTodo(index) {
+  return { type: TOGGLE_TODO, index }
+}
+```
+
+::: notes
+- just a plain object
+- description of the change to the state
+:::
+
+## Redux - Code Example
+
+```js
+import {
+  ADD_TODO,
+  TOGGLE_TODO,
+} from './actions'
+
+export default function todos(state = [], action) {
+  switch (action.type) {
+    case ADD_TODO:
+      return [...state,
+        {
+          text: action.text,
+          completed: false
+        }
+      ];
+    case TOGGLE_TODO:
+      return state.map((todo, index) => {
+        if (index === action.index) {
+          return Object.assign({}, todo, {
+            completed: !todo.completed
+          });
+        }
+        return todo;
+      })
+    default:
+      return state;
+  }
+}
+```
+
+::: notes
+- just a simple function
+- takes an action which is a description of state change
+- returns a new state with the action's change
+:::
+
 ## Overview
 
 ![react redux flow](assets/reactiveapps/reactredux.png)
 
 ::: notes
 - entire data flow through a react redux app
-- connect maps the redux state onto props
-- dispatch communicates an action to the store
+- recap:
+  - React is just a function that turns state into a vdom
+  - Actions are dispatched by the user to specify what change to make
+  - Dispatch communicates an action to the store
+  - Reducer generates a new state from the current and the action
+  - Connect maps the redux state onto props
+- benefits:
+  - react keeps view in sync with state
+  - easy to communicate between different components
+  - just need to update a single authoritative state
 :::
 
 # Generation 4
