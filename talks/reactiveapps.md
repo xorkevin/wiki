@@ -94,6 +94,7 @@ Client side apps
   - not just a single output of html to the browser
 - in particular state management becomes overly complex
   - need to ensure that the view reflects the model
+  - easy to forget or lose track of what should be updated
   - effects of a user action may be numerous
     - e.g. entering a comment on a post of a hypothetical website
     - add a comment to the list of comments
@@ -131,7 +132,12 @@ Client side apps
   - it is easy to make a change to a component and see it reflected across the
     entire application
 - key principle is view is a pure function of the application state
+  - traditional MVC saw changes to app state as mutations which are hard to
+    keep track of
+  - react just rerenders the entire view
   - implemented using a virtual dom
+    - key benefit is that you do not have to perform a manual diff
+    - react does one for you
   - solves the previous issue that the view needs to be synchronized with the
     model
 :::
@@ -175,6 +181,7 @@ class ShoppingList extends React.Component {
   - declarative code
   - no mutations
   - generates vdom
+  - if it does change, react will take care of updating the actual dom
 - syntax is jsx, which gets transpiled to es5
 :::
 
@@ -185,6 +192,7 @@ class ShoppingList extends React.Component {
 
 ::: notes
 - react is just a function
+  - facebook did not provide a framework to manage that data
   - needs a solution to manage data
 - one way data flow architecture
   - mvc done right
@@ -197,10 +205,13 @@ class ShoppingList extends React.Component {
 
 ::: notes
 - since react is a function of state, redux just focuses on state
+- the single source of truth for data is in the STORE
+- react takes that data and renders a view
 - any change of the state must be defined as an ACTION
 - action is dispatched to the STORE
 - in the store, a pure function, the REDUCER, produces a new state from the old
   state and the action
+- the changes are reflected in the view when react rerenders
 :::
 
 ## Redux - Code Example
@@ -278,10 +289,11 @@ export default function todos(state = [], action) {
 - benefits:
   - react keeps view in sync with state
   - easy to communicate between different components
+    - say a button opens up a chat window
   - just need to update a single authoritative state
 :::
 
-# Generation 4
+# Generation 3.5
 
 ## React Native
 
@@ -307,3 +319,5 @@ export default function todos(state = [], action) {
   - currently being used by youtube
 - polymer, built by google, polyfills for the web component api
 :::
+
+## Any Questions?
