@@ -29,6 +29,17 @@ MVC becomes the de facto architecture
 - MVC becomes the de facto architecture
 :::
 
+## Generation 1
+
+![server side mvc flow](assets/reactiveapps/mvcserversideflow.png)
+
+::: notes
+- relatively simple data flow
+- request is routed through the controller
+- model is queried
+- view is sent in response
+:::
+
 ## Generation 2
 
 Client side apps
@@ -59,6 +70,14 @@ Client side apps
   page
   - MVC architecture on the front end
   - client side routing
+:::
+
+## Generation 2
+
+![client side mvc flow](assets/reactiveapps/mvcclientsideflow.png)
+
+::: notes
+- unlike server side mvc, model is backed by a server over the network
 :::
 
 ## Generation 2 - Problems
@@ -93,6 +112,10 @@ Client side apps
 :::
 
 # Generation 3
+
+::: notes
+- due to the fast pace of the web, solutions were quickly created
+:::
 
 ## React
 
@@ -149,5 +172,11 @@ Client side apps
 ## Overview
 
 ![react redux flow](assets/reactiveapps/reactredux.png)
+
+::: notes
+- entire data flow through a react redux app
+- connect maps the redux state onto props
+- dispatch communicates an action to the store
+:::
 
 # Generation 4

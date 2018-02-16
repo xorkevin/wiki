@@ -2,7 +2,7 @@ revealjsversion=3.6.0
 revealjsurl=https://github.com/hakimel/reveal.js/archive/$(revealjsversion).tar.gz
 
 pdfopts=-t beamer -s --slide-level=2 --listings
-htmlopts=-t revealjs -s --slide-level=2 --listings
+htmlopts=-t revealjs -s --slide-level=2 --listings -V theme=white
 notesopts=-H notesheader.tex
 
 presentations:=$(wildcard *.md)
