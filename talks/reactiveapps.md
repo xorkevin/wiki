@@ -282,3 +282,28 @@ export default function todos(state = [], action) {
 :::
 
 # Generation 4
+
+## React Native
+
+- React for mobile apps
+- Compile React to native ui
+
+::: notes
+- building universal apps
+- many different target platforms with a single code base
+:::
+
+## Web components
+
+- Custom component api
+- Unopinionated
+  - Can be used in conjunction with a framework such as React
+- Polymer
+
+::: notes
+- custom components implemented using a shadow dom
+- unopinionated
+  - just a way to build reusable components
+  - currently being used by youtube
+- polymer, built by google, polyfills for the web component api
+:::
