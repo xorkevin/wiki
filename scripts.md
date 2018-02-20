@@ -33,3 +33,8 @@ cutting video:
 ```bash
 ffmpeg -i video.mp4 -ss 00:11:00 -t 00:01:00 -vcodec copy -acodec copy cutvid.mp4
 ```
+
+rsync:
+```bash
+rsync -azvP from_dir/ to_dir/
+```
