@@ -11,6 +11,7 @@
 - vlc
 - mpv
 - mediainfo
+- kodi
 - streamlink
 - mixxx
 
