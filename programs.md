@@ -9,6 +9,8 @@
 ## Media
 - mpd with ncmpcpp
 - vlc
+- mpv
+- mediainfo
 - streamlink
 - mixxx
 
