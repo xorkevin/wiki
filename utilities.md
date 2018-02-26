@@ -12,6 +12,8 @@
 - transmission: torrents
 - redshift: dim screen
 - httpie: http client
+- scp
+- ftpd
 
 ## Go
 - golang/dep
