@@ -17,6 +17,10 @@
 - ftpd - ftp server
 - ftp/sftp - ftp client
 
+- htop
+- iftop
+- iotop
+
 ## Go
 - golang/dep
 - direnv/direnv
