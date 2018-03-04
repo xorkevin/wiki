@@ -5,6 +5,7 @@
 - mumble
 - murmur
 - weechat
+- qtox
 
 ## Media
 - mpd with ncmpcpp
