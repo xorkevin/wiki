@@ -4,6 +4,7 @@
 - pandoc
 - ranger
 - bc
+- jq: commandline json processor
 - speedcrunch
 - siege
 - mtr: ping + traceroute
