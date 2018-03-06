@@ -12,7 +12,7 @@
 - transmission: torrents
 - redshift: dim screen
 - httpie: http client
-- sshd - ssh server, scp
+- sshd - ssh server, scp, sshfs
 - ftpd - ftp server, ftp/sftp - ftp client
 - tor, arm
 
