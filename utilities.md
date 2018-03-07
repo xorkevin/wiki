@@ -30,3 +30,8 @@
 ## Easter Eggs
 - sl
 - cool-retro-term
+- cowsay
+- figlet
+- cmatrix
+- pipes
+- rogue
