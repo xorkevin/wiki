@@ -12,6 +12,7 @@
 - vlc
 - mpv
 - mediainfo
+- emby-server
 - kodi
 - streamlink
 - mixxx

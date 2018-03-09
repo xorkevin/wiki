@@ -16,6 +16,7 @@
 - sshd - ssh server, scp
 - ftpd - ftp server, ftp/sftp - ftp client
 - tor, arm
+- dnsmasq
 
 - htop
 - iftop
