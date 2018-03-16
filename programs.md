@@ -6,6 +6,7 @@
 - murmur
 - weechat
 - qtox
+- neomutt
 
 ## Media
 - mpd with ncmpcpp
