@@ -17,6 +17,7 @@
 - ftpd - ftp server, ftp/sftp - ftp client
 - tor, arm
 - dnsmasq
+- postfix
 
 - htop
 - iftop
