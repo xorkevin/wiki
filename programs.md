@@ -33,7 +33,6 @@
 - blender
 
 ## Audio
-- ardour
 - qtractor
 - linux multimedia studio
 - sonic visualiser
