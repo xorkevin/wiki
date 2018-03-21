@@ -5,7 +5,7 @@
 - mumble
 - murmur
 - weechat
-- signal
+- matrix
 - qtox
 - neomutt
 
