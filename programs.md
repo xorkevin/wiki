@@ -5,6 +5,7 @@
 - mumble
 - murmur
 - weechat
+- signal
 - qtox
 - neomutt
 
