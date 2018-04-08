@@ -14,7 +14,7 @@
 - vlc
 - mpv
 - mediainfo
-- minidlna
+- emby-server
 - kodi
 - streamlink
 - mixxx
