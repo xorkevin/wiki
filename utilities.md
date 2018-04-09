@@ -18,6 +18,8 @@
 - tor, arm
 - dnsmasq
 - postfix
+- rsync
+- borg
 
 - htop
 - iftop
