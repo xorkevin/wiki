@@ -2,6 +2,7 @@
 
 ## Arch package
 - pandoc
+- graphviz
 - ranger
 - bc
 - jq: commandline json processor
