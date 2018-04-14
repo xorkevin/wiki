@@ -1,1 +1,1 @@
-Vimwiki
+Wiki
