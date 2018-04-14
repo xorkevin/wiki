@@ -21,6 +21,7 @@
 - postfix
 - rsync
 - borg
+- dbeaver
 
 - htop
 - iftop
