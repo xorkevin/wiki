@@ -27,6 +27,8 @@
 - iftop
 - iotop
 
+- aircrack-ng
+
 ## Go
 - golang/dep
 - direnv/direnv
