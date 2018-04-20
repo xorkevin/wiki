@@ -6,6 +6,7 @@
 - murmur
 - weechat
 - matrix
+- inspircd
 - qtox
 - neomutt
 
