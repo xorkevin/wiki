@@ -27,3 +27,12 @@
 - rxvt-unicode
 - lxappearance
 - cronie
+
+## tweaks
+
+`/etc/makepkg.conf`:
+
+```conf
+MAKEFLAGS="-j$(nproc)" # parallel jobs
+COMPRESSXZ=(xz -c -z - --threads=0) # multithreaded compression
+```
