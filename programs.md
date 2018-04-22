@@ -31,6 +31,9 @@
 - natron
 - handbrake
 
+## Documents
+- zathura
+
 ## 3D modeling
 - blender
 
