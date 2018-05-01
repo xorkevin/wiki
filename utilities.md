@@ -22,6 +22,7 @@
 - rsync
 - borg
 - dbeaver
+- inotify-tools
 
 - htop
 - iftop
