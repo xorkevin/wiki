@@ -19,6 +19,8 @@ encode in h265:
 ffmpeg -i input.mp4 -c:v libx265 -preset veryslow -crf 28 output.mp4
 ```
 
+quality setting 18 is high
+
 encode in h264:
 ```bash
 ffmpeg -i input.mp4 -c:v libx264 -preset veryslow -crf 23 output.mp4
