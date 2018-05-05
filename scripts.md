@@ -39,3 +39,8 @@ rsync:
 ```bash
 rsync -azvP from_dir/ to_dir/
 ```
+
+pacman remove group:
+```bash
+pacman -Qgq package_group | pacman -Rs -
+```
