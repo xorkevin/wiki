@@ -44,3 +44,8 @@ pacman remove group:
 ```bash
 pacman -Qgq package_group | pacman -Rs -
 ```
+
+pacman verify files:
+```bash
+sudo pacman -Qk | grep -vE '0 missing files$'
+```
