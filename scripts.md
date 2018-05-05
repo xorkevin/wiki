@@ -49,3 +49,8 @@ pacman verify files:
 ```bash
 sudo pacman -Qk | grep -vE '0 missing files$'
 ```
+
+pacman list explicitly installed:
+```bash
+pacman -Qe
+```
