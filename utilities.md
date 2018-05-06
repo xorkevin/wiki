@@ -23,6 +23,7 @@
 - borg
 - dbeaver
 - inotify-tools
+- taskwarrior
 
 - htop
 - iftop
