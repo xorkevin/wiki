@@ -25,6 +25,9 @@
 - inotify-tools
 - taskwarrior
 
+- nmap
+- gnu-netcat
+
 - htop
 - iftop
 - iotop
