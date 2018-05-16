@@ -1,339 +1,339 @@
-acbuild 0.4.0-2
-aircrack-ng 1.2rc4-4
-alsa-plugins 1.1.6-1
-alsa-utils 1.1.6-1
-arc-gtk-theme 20180114-1
-arc-icon-theme 20161122-1
-arm 1.4.5.0-4
-asoundconf 1:1.2-1
-autoconf 2.69-4
-automake 1.15.1-1
-bash 4.4.019-1
-bash-pipes 1.2-2
-bc 1.07.1-1
-bind-tools 9.12.1-1
-binutils 2.30-3
-bison 3.0.4-3
-blender 17:2.79.b-7
-bluez 5.49-3
-bluez-plugins 5.49-3
-bluez-utils 5.49-3
-borg 1.1.5-2
-brother-hll2340dw 3.2.0_1-1
-bzip2 1.0.6-7
-cassandra 3.11.1-1
-cgdb 0.7.0-1
-clang 6.0.0-1
-cmake 3.11.1-1
-cmatrix 1.2a-12
-cool-retro-term 1.0.1-1
-coreutils 8.29-1
-cowsay 3.03-9
-cronie 1.5.1-1
-cryptsetup 2.0.2-1
-ctags 5.8-5
-darktable 2:2.4.3-1
-dbeaver 5.0.1-1
-dep 0.4.1-3
-device-mapper 2.02.177-5
-dhcpcd 7.0.4-1
-dhex 0.68-3
-dialog 1:1.3_20171209-1
-diffutils 3.6-1
-dmenu 4.8-1
-dnsmasq 2.79-1
-docker 1:18.04.0-1
-docker-compose 1.21.2-1
-dolphin-emu 1:5.0.r6362.c08f6f0c53-2
-e2fsprogs 1.44.1-1
-efibootmgr 15-1
-emby-server 3.4.0.0-1
-expac 8-1
-fakeroot 1.22-1
-feh 2.26-1
-festival 2.4-2
-festival-english 2.4-1
-ffmpeg2.8 2.8.14-1
-figlet 2.2.5-2
-file 5.33-1
-filesystem 2018.1-2
-findutils 4.6.0-2
-firefox 59.0.2-2
-flashplugin 29.0.0.140-1
-flex 2.6.4-1
-fortune-mod 1.99.5-1
-freeglut 3.0.0-2
-freesweep 1.0.1-1
-gawk 4.2.1-1
-gcc 7.3.1+20180406-1
-gdb 8.1-1
-gettext 0.19.8.1-2
-gimp 2.8.22-1
-git 2.17.0-1
-glibc 2.27-2
-go 2:1.10.2-1
-google-chrome 65.0.3325.181-1
-graphviz 2.40.1-11
-grep 3.1-1
-groff 1.22.3-7
-grub 2:2.02-5
-gst-libav 1.14.0-1
-gst-plugins-bad 1.14.0-2
-gst-plugins-good 1.14.0-1
-gst-plugins-ugly 1.14.0-1
-gtop 0.1.5-1
-gzip 1.9-1
-hal 0.5.15-2
-hal-info 0.20091130-3
-handbrake 1.1.0-1
-handbrake-cli 1.1.0-1
-htop 2.2.0-2
-httpie 0.9.9-1
-httpstat-go 1.0.0-1
-hugo 0.40.2-1
-i3-wm 4.15-1
-i3lock 2.10-1
-i3status 2.11-3
-iftop 1.0pre4-2
-inetutils 1.9.4-5
-inkscape 0.92.3-3
-inotify-tools 3.20.1-1
-intel-ucode 20180312-1
-iotop 0.6-5
-iproute2 4.16.0-1
-iputils 20161105.1f2bb12-2
-jdk10-openjdk 10.0.1.u10-1
-jdownloader2 latest-13
-jfsutils 1.1.15-4
-jq 1.5-6
-jre8-openjdk 8.u172-2
-jre8-openjdk-headless 8.u172-2
-kcachegrind 18.04.0-1
-kdenlive 18.04.0-1
-kodi 17.6-5
-less 530-1
-lib32-libldap 2.4.46-1
-libreoffice-extension-texmaths 0.45-1
-libreoffice-extension-writer2latex 1.4-1
-libreoffice-fresh 6.0.3-2
-libtool 2.4.6+40+g6ca5e224-5
-licenses 20171006-1
-links 2.15-1
-linux 4.16.6-1
-linux-headers 4.16.6-1
-lm_sensors 3.4.0-2
-logrotate 3.14.0-1
-lua-cjson 2.1.0-3
-lvm2 2.02.177-5
-lxappearance-gtk3 0.6.3-1
-lynx 2.8.8-5
-m4 1.4.18-1
-maim 5.4.68-3
-make 4.2.1-2
-man-db 2.8.3-1
-man-pages 4.16-1
-mdadm 4.0-1
-mediainfo 18.03.1-1
-mkvtoolnix-gui 22.0.0-1
-mongodb 3.6.3-1
-mongodb-tools 3.6.3-1
-moreutils 0.62-1
-mosh 1.3.2-3
-mpd 0.20.18-3
-mpv 1:0.27.2-1
-mtr 0.92-1
-mumble 1.2.19-9
-murmur 1.2.19-9
-musescore 2.2.1-1
-nano 2.9.6-1
-ncmpcpp 0.8.2-1
-neofetch 3.4.0-2
-neomutt 20180323-2
-neovim 0.2.2-5
-netctl 1.16-1
-nfs-utils 2.3.1-1
-nmap 7.70-2
-npm 6.0.0-1
-ntfs-3g 2017.3.23-1
-ntp 4.2.8.p11-1
-opencl-headers 2:2.2.20170516-1
-openssh 7.7p1-1
-os-prober 1.76-1
-p7zip 16.02-4
-pacman 5.0.2-3
-pandoc 2.1.3-21
-paprefs 0.9.10-6
-pass 1.7.1-1
-patch 2.7.6-1
-pavucontrol 1:3.0+23+g335c26c-1
-pciutils 3.5.6-1
-pcmciautils 018-7
-pdfmod 0.9.1-8
-pdfpc 4.1-2
-pepper-flash 29.0.0.140-1
-perf 4.16-1
-perl 5.26.2-1
-pgadmin3 1.22.2-6
-pgadmin4 3.0-2
-pkg-config 0.29.2-1
-ponysay 3.0.3-1
-postfix 3.3.0-3
-powerline-fonts 2.6-1
-procps-ng 3.3.14-1
-psmisc 23.1-1
-pulseaudio 11.1-1
-pulseaudio-alsa 2-3
-pulseaudio-bluetooth 11.1-1
-python-neovim 0.2.6-1
-python-pip 9.0.1-3
-python-pmw 2.0.1-3
-python-pyqt4 4.12.1-1
-python-pyqt5 5.10.1-2
-python2-pip 9.0.1-3
-qt4 4.8.7-24
-qt5-webengine 5.10.1-1
-qtox 1.13.0-2
-qtpass 1.2.1-2
-qtractor 0.9.0-1
-qutebrowser 1.2.1-1
-radeontop 1.1-1
-ranger 1.9.1-1
-redshift 1.11-5
-reiserfsprogs 3.6.27-1
-ruby 2.5.1-1
-rust-racer 2.0.13-1
-rustup 1.11.0-2
-rxvt-unicode 9.22-6
-s-nail 14.9.10-1
-screenfetch 3.8.0-2
-scrot 0.8.17-2
-sed 4.5-1
-shadow 4.5-4
-siege 4.0.4-1
-sl 5.02-4
-slack-desktop 3.1.1-1
-slop 7.3.48-3
-speed-test 1.8.0-1
-speedcrunch 0.12.0-1
-sshfs 3.3.2-1
-steam 1.0.0.54-3
-stow 2.2.2-5
-streamlink 0.11.0-1
-sudo 1.8.22-1
-swi-prolog 7.6.4-1
-sysfsutils 2.1.0-9
-systemd-sysvcompat 238.76-1
-tar 1.30-1
-tcpdump 4.9.2-1
-texinfo 6.5-1
-texlive-bibtexextra 2017.46775-1
-texlive-core 2017.46770-1
-texlive-fontsextra 2017.46787-1
-texlive-formatsextra 2017.45845-1
-texlive-games 2017.46791-1
-texlive-humanities 2017.46767-1
-texlive-latexextra 2017.46778-1
-texlive-music 2017.46141-1
-texlive-pictures 2017.46740-1
-texlive-pstricks 2017.46667-1
-texlive-publishers 2017.46790-1
-texlive-science 2017.46789-1
-thunar 1.6.15-1
-time 1.8-1
-tmux 2.7-1
-tor 0.3.2.10-1
-traceroute 2.1.0-1
-transmission-cli 2.94-1
-transmission-qt 2.94-1
-tree 1.7.0-2
-trizen 1:1.48-1
-ttf-google-fonts-git 1:r1221.5f860df5-1
-ttf-hack 3.003-1
-ttf-linux-libertine 5.3.0-4
-ufw 0.35-3
-usbutils 009-1
-util-linux 2.32-3
-valgrind 3.13.0-7
-vi 1:070224-2
-vim 8.0.1542-2
-virtualbox 5.2.10-1
-vlc 3.0.1-2
-weechat 2.1-1
-which 2.21-2
-wine 3.7-1
-winetricks 20180217-1
-wireshark-qt 2.6.0-1
-wkhtmltopdf 0.12.4-1
-words 2.1-5
-wpa_supplicant 1:2.6-11
-wrk 4.1.0-2
-wuzz 0.4.0-1
-xbindkeys 1.8.6-2
-xboxdrv 0.8.8-4
-xclip 0.13-1
-xf86-input-evdev 2.10.5-1
-xf86-input-keyboard 1.9.0-2
-xf86-input-mouse 1.9.2-3
-xf86-input-synaptics 1.9.0-1
-xf86-input-vmmouse 13.1.0-3
-xf86-input-void 1.4.1-3
-xf86-video-amdgpu 18.0.1-1
-xf86-video-ati 1:18.0.1-1
-xf86-video-dummy 0.3.8-2
-xf86-video-fbdev 0.4.4+12+ge0bce0d-1
-xf86-video-intel 1:2.99.917+829+gd7dfab62-1
-xf86-video-nouveau 1.0.15-2
-xf86-video-openchrome 0.6.0-2
-xf86-video-vesa 2.4.0-1
-xf86-video-vmware 13.2.1-3
-xf86-video-voodoo 1.2.5-9
-xfsprogs 4.15.1-1
-xorg-docs 1.7.1-1
-xorg-fonts-100dpi 1.0.3-3
-xorg-fonts-75dpi 1.0.3-3
-xorg-iceauth 1.0.8-1
-xorg-luit 1.1.1-2
-xorg-server 1.19.6+13+gd0d1a694f-2
-xorg-server-devel 1.19.6+13+gd0d1a694f-2
-xorg-server-xdmx 1.19.6+13+gd0d1a694f-2
-xorg-server-xephyr 1.19.6+13+gd0d1a694f-2
-xorg-server-xnest 1.19.6+13+gd0d1a694f-2
-xorg-server-xvfb 1.19.6+13+gd0d1a694f-2
-xorg-server-xwayland 1.19.6+13+gd0d1a694f-2
-xorg-sessreg 1.1.1-1
-xorg-smproxy 1.0.6-1
-xorg-x11perf 1.6.0-1
-xorg-xbacklight 1.2.2-1
-xorg-xcalc 1.0.6-1
-xorg-xclock 1.0.7-1
-xorg-xcmsdb 1.0.5-1
-xorg-xcursorgen 1.0.6-1
-xorg-xdpyinfo 1.3.2-1
-xorg-xdriinfo 1.0.6-1
-xorg-xev 1.2.2-1
-xorg-xgamma 1.0.6-1
-xorg-xhost 1.0.7-1
-xorg-xinit 1.4.0-3
-xorg-xinput 1.6.2-1
-xorg-xkbevd 1.1.4-1
-xorg-xkbutils 1.0.4-2
-xorg-xkill 1.0.5-1
-xorg-xlsatoms 1.1.2-1
-xorg-xlsclients 1.1.4-1
-xorg-xpr 1.0.5-1
-xorg-xprop 1.2.3-1
-xorg-xrandr 1.5.0-1
-xorg-xrefresh 1.0.6-1
-xorg-xset 1.2.4-1
-xorg-xsetroot 1.1.2-1
-xorg-xvinfo 1.1.3-1
-xorg-xwd 1.0.7-1
-xorg-xwininfo 1.1.4-1
-xorg-xwud 1.0.5-1
-yapf 0.21.0-1
-yarn 1.6.0-1
-youtube-dl 2018.05.01-1
-zathura 0.3.9-2
-zathura-pdf-mupdf 0.3.3-2
-zip 3.0-7
-zsh 5.5.1-1
+acbuild
+aircrack-ng
+alsa-plugins
+alsa-utils
+arc-gtk-theme
+arc-icon-theme
+arm
+asoundconf
+autoconf
+automake
+bash
+bash-pipes
+bc
+bind-tools
+binutils
+bison
+blender
+bluez
+bluez-plugins
+bluez-utils
+borg
+brother-hll2340dw
+bzip2
+cassandra
+cgdb
+clang
+cmake
+cmatrix
+cool-retro-term
+coreutils
+cowsay
+cronie
+cryptsetup
+ctags
+darktable
+dbeaver
+dep
+device-mapper
+dhcpcd
+dhex
+dialog
+diffutils
+dmenu
+dnsmasq
+docker
+docker-compose
+dolphin-emu
+e2fsprogs
+efibootmgr
+emby-server
+expac
+fakeroot
+feh
+festival
+festival-english
+ffmpeg2.8
+figlet
+file
+filesystem
+findutils
+firefox
+flashplugin
+flex
+fortune-mod
+freeglut
+freesweep
+gawk
+gcc
+gdb
+gettext
+gimp
+git
+glibc
+go
+google-chrome
+graphviz
+grep
+groff
+grub
+gst-libav
+gst-plugins-bad
+gst-plugins-good
+gst-plugins-ugly
+gtop
+gzip
+hal
+hal-info
+handbrake
+handbrake-cli
+htop
+httpie
+httpstat-go
+hugo
+i3-wm
+i3lock
+i3status
+iftop
+inetutils
+inkscape
+inotify-tools
+intel-ucode
+iotop
+iproute2
+iputils
+jdk10-openjdk
+jdownloader2
+jfsutils
+jq
+jre8-openjdk
+jre8-openjdk-headless
+kcachegrind
+kdenlive
+kodi
+less
+lib32-libldap
+libreoffice-extension-texmaths
+libreoffice-extension-writer2latex
+libreoffice-fresh
+libtool
+licenses
+links
+linux
+linux-headers
+lm_sensors
+logrotate
+lua-cjson
+lvm2
+lxappearance-gtk3
+lynx
+m4
+maim
+make
+man-db
+man-pages
+mdadm
+mediainfo
+mkvtoolnix-gui
+mongodb
+mongodb-tools
+moreutils
+mosh
+mpd
+mpv
+mtr
+mumble
+murmur
+musescore
+nano
+ncmpcpp
+neofetch
+neomutt
+neovim
+netctl
+nfs-utils
+nmap
+npm
+ntfs-3g
+ntp
+opencl-headers
+openssh
+os-prober
+p7zip
+pacman
+pandoc
+paprefs
+pass
+patch
+pavucontrol
+pciutils
+pcmciautils
+pdfmod
+pdfpc
+pepper-flash
+perf
+perl
+pgadmin3
+pgadmin4
+pkg-config
+ponysay
+postfix
+powerline-fonts
+procps-ng
+psmisc
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
+python-neovim
+python-pip
+python-pmw
+python-pyqt4
+python-pyqt5
+python2-pip
+qt4
+qt5-webengine
+qtox
+qtpass
+qtractor
+qutebrowser
+radeontop
+ranger
+redshift
+reiserfsprogs
+ruby
+rust-racer
+rustup
+rxvt-unicode
+s-nail
+screenfetch
+scrot
+sed
+shadow
+siege
+sl
+slack-desktop
+slop
+speed-test
+speedcrunch
+sshfs
+steam
+stow
+streamlink
+sudo
+swi-prolog
+sysfsutils
+systemd-sysvcompat
+tar
+tcpdump
+texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
+thunar
+time
+tmux
+tor
+traceroute
+transmission-cli
+transmission-qt
+tree
+trizen
+ttf-google-fonts-git
+ttf-hack
+ttf-linux-libertine
+ufw
+usbutils
+util-linux
+valgrind
+vi
+vim
+virtualbox
+vlc
+weechat
+which
+wine
+winetricks
+wireshark-qt
+wkhtmltopdf
+words
+wpa_supplicant
+wrk
+wuzz
+xbindkeys
+xboxdrv
+xclip
+xf86-input-evdev
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-vmmouse
+xf86-input-void
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
+xfsprogs
+xorg-docs
+xorg-fonts-100dpi
+xorg-fonts-75dpi
+xorg-iceauth
+xorg-luit
+xorg-server
+xorg-server-devel
+xorg-server-xdmx
+xorg-server-xephyr
+xorg-server-xnest
+xorg-server-xvfb
+xorg-server-xwayland
+xorg-sessreg
+xorg-smproxy
+xorg-x11perf
+xorg-xbacklight
+xorg-xcalc
+xorg-xclock
+xorg-xcmsdb
+xorg-xcursorgen
+xorg-xdpyinfo
+xorg-xdriinfo
+xorg-xev
+xorg-xgamma
+xorg-xhost
+xorg-xinit
+xorg-xinput
+xorg-xkbevd
+xorg-xkbutils
+xorg-xkill
+xorg-xlsatoms
+xorg-xlsclients
+xorg-xpr
+xorg-xprop
+xorg-xrandr
+xorg-xrefresh
+xorg-xset
+xorg-xsetroot
+xorg-xvinfo
+xorg-xwd
+xorg-xwininfo
+xorg-xwud
+yapf
+yarn
+youtube-dl
+zathura
+zathura-pdf-mupdf
+zip
+zsh
