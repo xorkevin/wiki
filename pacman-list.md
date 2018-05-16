@@ -21,8 +21,8 @@ bluez-utils
 borg
 brother-hll2340dw
 bzip2
-cassandra
 cgdb
+chromium
 clang
 cmake
 cmatrix
@@ -47,6 +47,7 @@ docker-compose
 dolphin-emu
 e2fsprogs
 efibootmgr
+emacs
 emby-server
 expac
 fakeroot
@@ -71,8 +72,8 @@ gettext
 gimp
 git
 glibc
+gnu-netcat
 go
-google-chrome
 graphviz
 grep
 groff
@@ -108,7 +109,6 @@ jfsutils
 jq
 jre8-openjdk
 jre8-openjdk-headless
-kcachegrind
 kdenlive
 kodi
 less
@@ -200,6 +200,7 @@ radeontop
 ranger
 redshift
 reiserfsprogs
+rsync
 ruby
 rust-racer
 rustup
@@ -213,7 +214,6 @@ siege
 sl
 slack-desktop
 slop
-speed-test
 speedcrunch
 sshfs
 steam
