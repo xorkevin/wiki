@@ -54,3 +54,8 @@ pacman list explicitly installed:
 ```bash
 pacman -Qe
 ```
+
+pacman remove orphans:
+```bash
+pacman -Rns $(pacman -Qtdq)
+```
