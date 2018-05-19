@@ -9,6 +9,10 @@ header-includes: |
   \usepackage{algpseudocode}
 ---
 
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
 \begin{algorithm}
 \caption{My algorithm}\label{euclid}
 \begin{algorithmic}[1]
