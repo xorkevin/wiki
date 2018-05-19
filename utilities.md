@@ -27,6 +27,7 @@
 
 - nmap
 - gnu-netcat
+- iperf3
 
 - htop
 - iftop
