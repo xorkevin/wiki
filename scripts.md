@@ -7,6 +7,8 @@ find . -type f -exec chmod 0644 {} \;
 
 reset xrandr:
 
+**Note**: currently broken
+
 ```bash
 xrandr --output DisplayPort-2 --off && xrandr --auto
 ```
