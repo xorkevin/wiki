@@ -13,6 +13,12 @@ reset xrandr:
 xrandr --output DisplayPort-2 --off && xrandr --auto
 ```
 
+reset alsa:
+
+```bash
+alsactl restore
+```
+
 optimize mp4:
 
 ```bash
