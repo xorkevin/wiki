@@ -45,6 +45,7 @@ dnsmasq
 docker
 docker-compose
 dolphin-emu
+dos2unix
 e2fsprogs
 efibootmgr
 emacs
@@ -73,6 +74,7 @@ git
 glibc
 gnu-netcat
 go
+graphicsmagick
 graphviz
 grep
 groff
@@ -95,6 +97,7 @@ i3-wm
 i3lock
 i3status
 iftop
+imagemagick
 inetutils
 inkscape
 inotify-tools
@@ -176,7 +179,6 @@ perl
 pgadmin3
 pgadmin4
 pkg-config
-ponysay
 postfix
 powerline-fonts
 procps-ng
@@ -184,7 +186,7 @@ psmisc
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
-pulseaudio-equalizer
+python
 python-neovim
 python-pip
 python-pmw
@@ -259,6 +261,7 @@ vim
 virtualbox
 vlc
 weechat
+wget
 which
 wine
 winetricks
@@ -288,12 +291,18 @@ xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
 xfsprogs
+xorg-bdftopcf
 xorg-docs
+xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
+xorg-fonts-encodings
 xorg-iceauth
 xorg-luit
+xorg-mkfontdir
+xorg-mkfontscale
 xorg-server
+xorg-server-common
 xorg-server-devel
 xorg-server-xdmx
 xorg-server-xephyr
@@ -301,8 +310,10 @@ xorg-server-xnest
 xorg-server-xvfb
 xorg-server-xwayland
 xorg-sessreg
+xorg-setxkbmap
 xorg-smproxy
 xorg-x11perf
+xorg-xauth
 xorg-xbacklight
 xorg-xcalc
 xorg-xclock
@@ -315,14 +326,17 @@ xorg-xgamma
 xorg-xhost
 xorg-xinit
 xorg-xinput
+xorg-xkbcomp
 xorg-xkbevd
 xorg-xkbutils
 xorg-xkill
 xorg-xlsatoms
 xorg-xlsclients
+xorg-xmodmap
 xorg-xpr
 xorg-xprop
 xorg-xrandr
+xorg-xrdb
 xorg-xrefresh
 xorg-xset
 xorg-xsetroot
