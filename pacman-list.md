@@ -54,7 +54,6 @@ fakeroot
 feh
 festival
 festival-english
-ffmpeg2.8
 figlet
 file
 filesystem
@@ -101,6 +100,7 @@ inkscape
 inotify-tools
 intel-ucode
 iotop
+iperf3
 iproute2
 iputils
 jdk10-openjdk
@@ -184,6 +184,7 @@ psmisc
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
+pulseaudio-equalizer
 python-neovim
 python-pip
 python-pmw
@@ -246,7 +247,6 @@ traceroute
 transmission-cli
 transmission-qt
 tree
-trizen
 ttf-google-fonts-git
 ttf-hack
 ttf-linux-libertine
@@ -332,6 +332,7 @@ xorg-xwininfo
 xorg-xwud
 yapf
 yarn
+yay
 youtube-dl
 zathura
 zathura-pdf-mupdf
