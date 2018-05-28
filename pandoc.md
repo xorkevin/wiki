@@ -7,6 +7,8 @@ header-includes: |
   \usepackage{mathtools}
   \usepackage{algorithm}
   \usepackage{algpseudocode}
+  \usepackage{float}
+  \floatplacement{figure}{H}
 ---
 
 \makeatletter
