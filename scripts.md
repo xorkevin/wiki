@@ -80,7 +80,7 @@ pacman remove orphans:
 pacman -Rns $(pacman -Qtdq)
 ```
 
-fix corrupt zsh history
+fix corrupt zsh history:
 
 ```bash
 #!/usr/bin/env sh
@@ -89,4 +89,10 @@ mv ~/.zhistory ~/.zsh_history_bad
 strings ~/.zsh_history_bad > ~/.zhistory
 fc -R ~/.zhistory
 rm ~/.zsh_history_bad
+```
+
+generate a file with random contents:
+
+```bash
+dd if=/dev/urandom of=file.txt bs=1048576 count=100
 ```
