@@ -2,8 +2,7 @@ acbuild
 aircrack-ng
 alsa-plugins
 alsa-utils
-arc-gtk-theme
-arc-icon-theme
+arc-solid-gtk-theme
 arm
 asoundconf
 autoconf
@@ -138,7 +137,6 @@ man-pages
 mdadm
 mediainfo
 mkvtoolnix-gui
-mongodb
 mongodb-tools
 moreutils
 mosh
@@ -176,9 +174,7 @@ pdfpc
 pepper-flash
 perf
 perl
-pgadmin3
-pgadmin4
-pkg-config
+pkgconf
 postfix
 powerline-fonts
 procps-ng
@@ -192,6 +188,7 @@ python-pip
 python-pmw
 python-pyqt4
 python-pyqt5
+python2
 python2-pip
 qt4
 qt5-webengine
@@ -204,7 +201,6 @@ ranger
 redshift
 reiserfsprogs
 rsync
-ruby
 rust-racer
 rustup
 rxvt-unicode
