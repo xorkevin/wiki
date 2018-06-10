@@ -2,6 +2,7 @@ acbuild
 aircrack-ng
 alsa-plugins
 alsa-utils
+arc-icon-theme
 arc-solid-gtk-theme
 arm
 asoundconf
