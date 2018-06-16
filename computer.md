@@ -32,39 +32,40 @@
 
 
 ## Ryzen+ Build
-[PCPartPicker part list](https://pcpartpicker.com/list/Zz9gnH) / [Price breakdown by merchant](https://pcpartpicker.com/list/Zz9gnH/by_merchant/)
+[PCPartPicker part list](https://pcpartpicker.com/list/fTQt3b) / [Price breakdown by merchant](https://pcpartpicker.com/list/fTQt3b/by_merchant/)
 
 | Type             | Item                                                                                                                                                             | Price            |
-|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| :----            | :----                                                                                                                                                            | :----            |
 | **CPU**          | [AMD - Ryzen 7 2700X 3.7GHz 8-Core Processor](https://pcpartpicker.com/product/bddxFT/amd-ryzen-7-2700x-37ghz-8-core-processor-yd270xbgafbox)                    | $319.99 @ Amazon |
 | **CPU Cooler**   | [Noctua - NH-U12S SE-AM4 CPU Cooler](https://pcpartpicker.com/product/7dTrxr/noctua-nh-u12s-se-am4-cpu-cooler-nh-u12s-se-am4)                                    | $59.90 @ Amazon  |
-| **Motherboard**  | [Asus - Prime X470-Pro ATX AM4 Motherboard](https://pcpartpicker.com/product/6hF48d/asus-prime-x470-pro-atx-am4-motherboard-prime-x470-pro)                      | $169.99 @ Amazon |
-| **Memory**       | [G.Skill - Ripjaws V Series 16GB (2 x 8GB) DDR4-3000 Memory](https://pcpartpicker.com/product/zRkwrH/gskill-memory-f43000c15d16gvr)                              | $170.98 @ Newegg |
+| **Motherboard**  | [Asus - Prime X470-Pro ATX AM4 Motherboard](https://pcpartpicker.com/product/6hF48d/asus-prime-x470-pro-atx-am4-motherboard-prime-x470-pro)                      | $166.98 @ Newegg |
+| **Memory**       | [Corsair - Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory](https://pcpartpicker.com/product/MYH48d/corsair-memory-cmk16gx4m2b3000c15)                             | $187.99 @ Amazon |
 | **Storage**      | [ADATA - Ultimate SU800 256GB 2.5" Solid State Drive](https://pcpartpicker.com/product/7YQRsY/a-data-ultimate-su800-256gb-25-solid-state-drive-asu800ss-256gt-c) | $61.99 @ Amazon  |
-| **Storage**      | [Samsung - 860 Evo 500GB M.2-2280 Solid State Drive](https://pcpartpicker.com/product/M9rmP6/samsung-860-evo-500gb-m2-2280-solid-state-drive-mz-n6e500bw)        | $128.01 @ Amazon |
-| **Storage**      | [Hitachi - Travelstar 1TB 2.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/rTGkcf/hitachi-internal-hard-drive-0j22423)                         | $53.25 @ Newegg  |
-| **Storage**      | [Hitachi - Ultrastar 7K4000 4TB 3.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/dWkD4D/hitachi-internal-hard-drive-hus724040ale640)           | $94.50 @ Amazon  |
-| **Video Card**   | [EVGA - GeForce GTX 1080 8GB FTW Gaming ACX 3.0 Video Card](https://pcpartpicker.com/product/bNcMnQ/evga-video-card-08gp46286)                                   | $569.99 @ B&H    |
-| **Case**         | [Fractal Design - Meshify C ATX Mid Tower Case](https://pcpartpicker.com/product/fPzkcf/fractal-design-meshify-c-atx-mid-tower-case-fd-ca-mesh-c-bko)            | $80.98 @ Newegg  |
-| **Power Supply** | [EVGA - SuperNOVA NEX 650W 80+ Gold Certified Fully-Modular ATX Power Supply](https://pcpartpicker.com/product/g63RsY/evga-power-supply-120g10650xr)             | $69.99 @ B&H     |
+| **Storage**      | [Samsung - 860 Evo 500GB M.2-2280 Solid State Drive](https://pcpartpicker.com/product/M9rmP6/samsung-860-evo-500gb-m2-2280-solid-state-drive-mz-n6e500bw)        | $129.99 @ Amazon |
+| **Storage**      | [Hitachi - Travelstar 1TB 2.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/rTGkcf/hitachi-internal-hard-drive-0j22423)                         | $53.70 @ Newegg  |
+| **Storage**      | [Hitachi - Ultrastar 7K4000 4TB 3.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/dWkD4D/hitachi-internal-hard-drive-hus724040ale640)           | $89.99 @ Amazon  |
+| **Video Card**   | [EVGA - GeForce GTX 1080 8GB Superclocked Gaming ACX 3.0 Video Card](https://pcpartpicker.com/product/63yxFT/evga-video-card-08gp46183)                          | $549.99 @ B&H    |
+| **Case**         | [Fractal Design - Meshify C ATX Mid Tower Case](https://pcpartpicker.com/product/fPzkcf/fractal-design-meshify-c-atx-mid-tower-case-fd-ca-mesh-c-bko)            | $76.76 @ Newegg  |
+| **Power Supply** | [EVGA - SuperNOVA G2 650W 80+ Gold Certified Fully-Modular ATX Power Supply](https://pcpartpicker.com/product/9q4NnQ/evga-power-supply-220g20650y1)              | $84.98 @ Amazon  |
+| **Case Fan**     | [Noctua - NF-P14s redux-1500 PWM 78.7 CFM  140mm Fan](https://pcpartpicker.com/product/8r9KHx/noctua-case-fan-nfp14sredux1500pwm)                                | $14.95 @ Amazon  |
+| **Case Fan**     | [Noctua - NF-P14s redux-1500 PWM 78.7 CFM  140mm Fan](https://pcpartpicker.com/product/8r9KHx/noctua-case-fan-nfp14sredux1500pwm)                                | $14.95 @ Amazon  |
 |                  | *Prices include shipping, taxes, rebates, and discounts*                                                                                                         |                  |
-|                  | **Total**                                                                                                                                                        | **$1779.57**     |
-|                  | Generated by [PCPartPicker](http://pcpartpicker.com) 2018-06-14 12:56 EDT-0400                                                                                   |                  |
+|                  | **Total**                                                                                                                                                        | **$1812.16**     |
+|                  | Generated by [PCPartPicker](http://pcpartpicker.com) 2018-06-16 02:58 EDT-0400                                                                                   |                  |
 
 
 ## NAS Build
 
-[PCPartPicker part list](https://pcpartpicker.com/list/TQ72mq) / [Price breakdown by merchant](https://pcpartpicker.com/list/TQ72mq/by_merchant/)
+[PCPartPicker part list](https://pcpartpicker.com/list/JsDBq4) / [Price breakdown by merchant](https://pcpartpicker.com/list/JsDBq4/by_merchant/)
 
-| Type             | Item                                                                                                                                                                                                      | Price            |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| **CPU**          | [AMD - Ryzen 5 2400G 3.6GHz Quad-Core Processor](https://pcpartpicker.com/product/FGPKHx/amd-ryzen-5-2400g-36ghz-quad-core-processor-yd2400c5fbbox)                                                       | $158.00 @ Amazon |
-| **Motherboard**  | [ASRock - Fatal1ty X470 Gaming-ITX/ac Mini ITX AM4 Motherboard](https://pcpartpicker.com/product/f7GxFT/asrock-fatal1ty-x470-gaming-itxac-mini-itx-am4-motherboard-x470-gaming-itxac)                     | $182.22 @ Newegg |
-| **Memory**       | [Patriot - Signature Line 8GB (1 x 8GB) DDR4-2133 Memory](https://pcpartpicker.com/product/RKhKHx/patriot-signature-line-8gb-1-x-8gb-ddr4-2133-memory-psd48g213382)                                       | $78.99 @ Amazon  |
-| **Storage**      | [Seagate - IronWolf 8TB 3.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/zKnG3C/seagate-ironwolf-8tb-35-7200rpm-internal-hard-drive-st8000vn0022)                                       | $233.76 @ Amazon |
-| **Storage**      | [Seagate - IronWolf 8TB 3.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/zKnG3C/seagate-ironwolf-8tb-35-7200rpm-internal-hard-drive-st8000vn0022)                                       | $233.76 @ Amazon |
-| **Case**         | [Fractal Design - Node 304 Mini ITX Tower Case](https://pcpartpicker.com/product/BWFPxr/fractal-design-case-fdcanode304bl)                                                                                | $85.59 @ Newegg  |
-| **Power Supply** | [EVGA - SuperNOVA G3 550W 80+ Gold Certified Fully-Modular ATX Power Supply](https://pcpartpicker.com/product/sMM323/evga-supernova-g3-550w-80-gold-certified-fully-modular-atx-power-supply-220-g3-0550) | $69.99 @ Amazon  |
-|                  | *Prices include shipping, taxes, rebates, and discounts*                                                                                                                                                  |                  |
-|                  | **Total**                                                                                                                                                                                                 | **$1042.31**     |
-|                  | Generated by [PCPartPicker](http://pcpartpicker.com) 2018-05-20 18:31 EDT-0400                                                                                                                            |                  |
+| Type             | Item                                                                                                                                                                | Price             |
+| :----            | :----                                                                                                                                                               | :----             |
+| **CPU**          | [AMD - Ryzen 5 2400G 3.6GHz Quad-Core Processor](https://pcpartpicker.com/product/FGPKHx/amd-ryzen-5-2400g-36ghz-quad-core-processor-yd2400c5fbbox)                 | $159.00 @ Amazon  |
+| **Memory**       | [Corsair - Vengeance LPX 8GB (1 x 8GB) DDR4-2400 Memory](https://pcpartpicker.com/product/sMbkcf/corsair-memory-cmk8gx4m1a2400c16)                                  | $83.75 @ Amazon   |
+| **Storage**      | [Seagate - IronWolf 8TB 3.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/zKnG3C/seagate-ironwolf-8tb-35-7200rpm-internal-hard-drive-st8000vn0022) | $242.99 @ Adorama |
+| **Storage**      | [Seagate - IronWolf 8TB 3.5" 7200RPM Internal Hard Drive](https://pcpartpicker.com/product/zKnG3C/seagate-ironwolf-8tb-35-7200rpm-internal-hard-drive-st8000vn0022) | $242.99 @ Adorama |
+| **Case**         | [Cooler Master - Elite 130 Mini ITX Tower Case](https://pcpartpicker.com/product/6wR48d/cooler-master-case-rc130kkn1)                                               | $39.99 @ Amazon   |
+| **Power Supply** | [EVGA - SuperNOVA G2 550W 80+ Gold Certified Fully-Modular ATX Power Supply](https://pcpartpicker.com/product/qYTrxr/evga-power-supply-220g20550y1)                 | $79.95 @ Amazon   |
+|                  | *Prices include shipping, taxes, rebates, and discounts*                                                                                                            |                   |
+|                  | **Total**                                                                                                                                                           | **$848.67**       |
+|                  | Generated by [PCPartPicker](http://pcpartpicker.com) 2018-06-16 02:59 EDT-0400                                                                                      |                   |
