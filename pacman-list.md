@@ -241,6 +241,7 @@ texlive-science
 thunar
 time
 tmux
+tokei
 tor
 traceroute
 transmission-cli
@@ -255,7 +256,6 @@ util-linux
 valgrind
 vi
 vim
-virtualbox
 vlc
 weechat
 wget
