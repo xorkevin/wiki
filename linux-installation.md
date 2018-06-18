@@ -27,7 +27,6 @@
 - rxvt-unicode
 - lxappearance
 - cronie
-- tokei
 
 ## tweaks
 

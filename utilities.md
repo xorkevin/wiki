@@ -24,6 +24,8 @@
 - dbeaver
 - inotify-tools
 - taskwarrior
+- tokei
+- bcachefs
 
 - nmap
 - gnu-netcat
