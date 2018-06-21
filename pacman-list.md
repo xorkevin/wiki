@@ -37,6 +37,7 @@ findutils
 firefox
 flex
 fortune-mod
+fzf
 gawk
 gcc
 gcc-libs
@@ -168,6 +169,7 @@ wget
 which
 wireshark-qt
 words
+xautoclick
 xbindkeys
 xclip
 xf86-video-vesa
