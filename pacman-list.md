@@ -70,6 +70,7 @@ jfsutils
 jq
 kdenlive
 less
+lib32-nvidia-utils
 libreoffice-fresh
 libtool
 licenses
