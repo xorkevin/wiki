@@ -103,6 +103,7 @@ neovim
 netctl
 nmap
 npm
+ntfs-3g
 nvidia
 nvidia-settings
 openssh
@@ -128,6 +129,7 @@ python-pip
 python2
 ranger
 reiserfsprogs
+ripgrep
 rsync
 rust-racer
 rustup
@@ -167,6 +169,7 @@ vlc
 weechat
 wget
 which
+wine
 wireshark-qt
 words
 xautoclick
