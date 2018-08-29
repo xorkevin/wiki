@@ -110,6 +110,7 @@ openssh
 os-prober
 p7zip
 pacman
+pacman-contrib
 pandoc
 paprefs
 patch
