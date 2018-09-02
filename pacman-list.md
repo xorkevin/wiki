@@ -47,6 +47,7 @@ git
 glibc
 gnu-netcat
 go
+go-tools
 graphicsmagick
 graphviz
 grep
