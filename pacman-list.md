@@ -1,5 +1,6 @@
 alsa-plugins
 alsa-utils
+amd-ucode
 arc-icon-theme
 arc-solid-gtk-theme
 autoconf
@@ -68,6 +69,7 @@ iperf3
 iproute2
 iputils
 jdk10-openjdk
+jdownloader2
 jfsutils
 jq
 kdenlive
@@ -88,7 +90,6 @@ man-db
 man-pages
 mdadm
 mediainfo
-mkvtoolnix-gui
 moreutils
 mosh
 mpd
@@ -153,6 +154,18 @@ systemd
 systemd-sysvcompat
 tar
 texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
 thunar
 time
 tmux
