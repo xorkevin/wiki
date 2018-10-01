@@ -90,6 +90,7 @@ man-db
 man-pages
 mdadm
 mediainfo
+megatools
 moreutils
 mosh
 mpd
@@ -108,6 +109,8 @@ npm
 ntfs-3g
 nvidia
 nvidia-settings
+ocaml
+opam
 openssh
 os-prober
 p7zip
