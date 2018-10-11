@@ -2,7 +2,7 @@ pdfopts=-t beamer -s --slide-level=2 --listings
 htmlopts=-t slidy -s --slide-level=2 --listings -V theme=white
 notesopts=-H notesheader.tex
 
-presentations:=$(wildcard *.md)
+presentations:=$(shell find . -name '*.md')
 
 .PHONY=all serve pdf clean
 
@@ -27,4 +27,4 @@ $(presentations:.md=.notes.pdf): %.notes.pdf: %.md
 	pandoc $(pdfopts) $(notesopts) $^ -o $@
 
 clean:
-	rm -f $(presentations:.md=.pdf) $(presentations:.md=.html)
+	rm -f $(presentations:.md=.pdf) $(presentations:.md=.notes.pdf) $(presentations:.md=.html)

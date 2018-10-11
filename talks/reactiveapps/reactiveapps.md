@@ -31,7 +31,7 @@ MVC becomes the de facto architecture
 
 ## Generation 1
 
-![server side mvc flow](assets/reactiveapps/mvcserversideflow.png)
+![server side mvc flow](assets/mvcserversideflow.png)
 
 ::: notes
 - relatively simple data flow
@@ -74,7 +74,7 @@ Client side apps
 
 ## Generation 2
 
-![client side mvc flow](assets/reactiveapps/mvcclientsideflow.png)
+![client side mvc flow](assets/mvcclientsideflow.png)
 
 ::: notes
 - unlike server side mvc, model is backed by a server over the network
@@ -104,7 +104,7 @@ Client side apps
 
 ## Generation 2 - Problems
 
-![mvc data flow](assets/reactiveapps/mvcdataflow.png)
+![mvc data flow](assets/mvcdataflow.png)
 
 ::: notes
 - a certain change in the model could have many side effects
@@ -144,7 +144,7 @@ Client side apps
 
 ## React - Virtual DOM
 
-![virtual dom](assets/reactiveapps/virtualdom.png)
+![virtual dom](assets/virtualdom.png)
 
 ::: notes
 - virtual dom is a representation of the current dom in js
@@ -201,7 +201,7 @@ class ShoppingList extends React.Component {
 
 ## Redux
 
-![redux data flow](assets/reactiveapps/reduxdataflow.png)
+![redux data flow](assets/reduxdataflow.png)
 
 ::: notes
 - since react is a function of state, redux just focuses on state
@@ -276,7 +276,7 @@ export default function todos(state = [], action) {
 
 ## Overview
 
-![react redux flow](assets/reactiveapps/reactredux.png)
+![react redux flow](assets/reactredux.png)
 
 ::: notes
 - entire data flow through a react redux app
