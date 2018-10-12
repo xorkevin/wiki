@@ -1,6 +1,6 @@
 ---
 title: Development Environment
-author: Kevin Wang
+author: Bibek, Terence, Chai, Kevin
 date: 2018-10-12
 ---
 
@@ -25,7 +25,7 @@ date: 2018-10-12
 
 ## Installed dependencies
 
-1. Get a terminal emulator
+1. Get access to a command line / terminal emulator
 2. Get a package manager (if you can)
 3. Install Git
 4. Install Docker + Docker Compose
@@ -40,16 +40,46 @@ date: 2018-10-12
 
 # Development Tools
 
+# Command line
+
 ## Command line
 
 - Make sure that you have access to a command line.
-- The command line is *the* way to interact with your computer as
-  a developer. The suite of tools available to you on the command line is
-  unparalleled.
+- The command line is *the* way to interact with your computer as a developer.
+  The suite of tools available to you on the command line is unparalleled.
 - This is how you can interact with your environment over the network
   - ssh into production servers to debug issues
 - bash is one shell that is extremely common
 - zsh is another with more powerful features and a plugin system
+
+## How to get help
+
+- `man` pages
+- TODO: include a line of history
+- `--help` flag exists for most tools informing how they should be used
+
+## Git
+
+- The defacto version control system
+- TODO: Link to linus torvalds talk
+- do not use SVN or CVS
+
+## SSH
+
+- access remote machines
+- necessary to setup production environments
+- useful as a general point to point communication protocol
+  - proxy local port from/to a remote machine
+- TODO: include screenshot of an ssh session
+
+## Learn how to use a text editor
+
+- vim
+  - if you need a gui: vscode/atom
+- normally all you need in web development
+- plugins make the development experience really powerful
+  - code completion, windowing, etc.
+  - plus everything can work when ssh'd
 
 ## Package manager
 
@@ -58,14 +88,20 @@ date: 2018-10-12
 - use the Linux subsystem for windows
 - allows you to install/uninstall/update the programs on your computer
 
-## Learn how to use a text editor
+## Node
 
-- vim/emacs
-  - vscode/atom
-- normally all you need in web development
-- plugins make the development experience really powerful
-  - code completion, windowing, etc.
-  - plus everything can work when ssh'd
+- Chrome's V8 Javascript engine ported onto the server
+- Comes with `npm`, node package manager, to install and manage dependencies
+  for node projects
+
+## Browser Developer Tools
+
+- Chrome / Firefox Dev Tools
+- `Inspector`: interactive view of the DOM
+- `Network`: shows all network requests, into and out of the browser
+  - helpful for debugging caching
+  - debugging loading of certain resources
+- `Storage/Application`: shows cookies, local storage, service workers
 
 ## Prettier
 
