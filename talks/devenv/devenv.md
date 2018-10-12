@@ -7,6 +7,7 @@ date: 2018-10-12
 # Setting up your dev env
 
 ::: notes
+
 - Opening remarks
 - Hi! First of all, welcome to the very first DevX Bootcamp.
 - An introduction to who we are:
@@ -21,6 +22,7 @@ date: 2018-10-12
   - The motivation for this is the DevX projects that you will be joining all
     use different technologies, and later in the industry as well. So remember
     to focus on the concepts.
+
 :::
 
 ## Installed dependencies
@@ -32,10 +34,10 @@ date: 2018-10-12
 5. Install Nodejs + npm
 
 ::: notes
-- should have been installed beforehand
-- will only be using terminal, package manager, and git today
-  - please install this now if you have not
-  - if you need help installing Docker or Nodejs please seek help afterward
+
+- if you need help with installation, seek help either on the slack, or ask one
+  of us in person
+
 :::
 
 # Development Tools
@@ -62,12 +64,14 @@ date: 2018-10-12
 - `cd [directory]`: change directory
 
 ::: notes
+
 - this echos a lot of CS35L, but is important to learn, and familiarize
   yourself with
 - be careful because these commands are powerful, so understand what the
   command you are executing does before you do it
   - this is no cause to be afraid to learn, however
   - ask questions, be curious
+
 :::
 
 ## How to get help
@@ -96,13 +100,14 @@ date: 2018-10-12
 
 - access remote machines
 - necessary to setup production environments
-- useful as a general point to point communication protocol
+- also useful as a general point to point communication protocol
   - proxy local port from/to a remote machine
 
 ## Learn how to use a text editor
 
 - vim/emacs (but really vim)
-  - if you need a gui: vscode/atom
+  - if you need a gui: vscode/atom, but should still know how to use a command
+    line text editor
 - normally all you need in web development, IDE's serve little purpose with
   a command line available
 - plugins make the development experience really powerful
@@ -125,6 +130,7 @@ date: 2018-10-12
 - Chrome's V8 Javascript engine ported onto the server
 - Comes with `npm`, node package manager, to install and manage dependencies
   for node projects
+  - just as `apt`, `brew`, etc. manages dependencies for your computer
 
 ## Browser Developer Tools
 
@@ -134,15 +140,26 @@ date: 2018-10-12
   - helpful for debugging caching
   - debugging loading of certain resources
 - `Storage/Application`: shows cookies, local storage, service workers
+- `Console`: for debugging running Javascript
+  - print line debugging is extremely powerful in any programming environment
+    since it requires no actual tools or dependencies
+- `Performance/Memory`: debug memory leaks, performance problems
+  - user experience, especially low power devices is hindered
+    - phones, watches, etc.
 
 ## Prettier
 
 - `js`/`css` code formatter
 - do not dispute about how code should be formatted
 - deterministic formatter
+  - makes it easier to read other people's code, and helps other people read
+    your code
 
 > Gofmt's style is no one's favorite, yet gofmt is everyone's favorite.
 > - Rob Pike
+>
+> Prettier's style is no one's favorite, yet prettier is everyone's favorite.
+> - Javascript developers
 
 ## Docker
 
@@ -150,7 +167,9 @@ date: 2018-10-12
 - allows for multiple development environments, e.g. multiple databases
 
 ::: notes
+
 - will be covering the why and how in a later session
+
 :::
 
 # Any Questions?
