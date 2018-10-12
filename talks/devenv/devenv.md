@@ -47,22 +47,50 @@ date: 2018-10-12
 - Make sure that you have access to a command line.
 - The command line is *the* way to interact with your computer as a developer.
   The suite of tools available to you on the command line is unparalleled.
+  - CLI tooling is built by developers for developers
 - This is how you can interact with your environment over the network
-  - ssh into production servers to debug issues
-- bash is one shell that is extremely common
-- zsh is another with more powerful features and a plugin system
+  - `ssh` into production servers to debug issues
+- `bash` is one shell that is extremely common
+- `zsh` is another with more powerful features and a plugin system
+
+## Navigating your computer
+
+- everything on your computer is organized into a file system
+  - you can navigate this file system from the terminal
+- `pwd`: prints out your current location
+- `ls [directory]`: lists the contents of your current directory
+- `cd [directory]`: change directory
+
+::: notes
+- this echos a lot of CS35L, but is important to learn, and familiarize
+  yourself with
+- be careful because these commands are powerful, so understand what the
+  command you are executing does before you do it
+  - this is no cause to be afraid to learn, however
+  - ask questions, be curious
+:::
 
 ## How to get help
 
+- DevX!
+  - we are your best resource
 - `man` pages
-- TODO: include a line of history
+  - Originally published as a physical book, *Unix Programmer's Manual*, in
+    1971, by Dennis Ritchie and Ken Thompson
+  - Second edition, first interactive version, 1983
+  - e.g. `man sort`
+    - Written by Mike Haertel and Paul Eggert
+  - e.g. `man ascii`
+  - awesome blog post: (The Lineage of Man)[
+    https://twobithistory.org/2017/09/28/the-lineage-of-man.html]
 - `--help` flag exists for most tools informing how they should be used
+  - e.g. `git status --help`
 
 ## Git
 
-- The defacto version control system
-- TODO: Link to linus torvalds talk
-- do not use SVN or CVS
+- The de facto version control system
+- (Linus Torvalds on git)[https://www.youtube.com/watch?v=4XpnKHJAok8]
+  - please do not use SVN or CVS
 
 ## SSH
 
@@ -70,23 +98,27 @@ date: 2018-10-12
 - necessary to setup production environments
 - useful as a general point to point communication protocol
   - proxy local port from/to a remote machine
-- TODO: include screenshot of an ssh session
 
 ## Learn how to use a text editor
 
-- vim
+- vim/emacs (but really vim)
   - if you need a gui: vscode/atom
-- normally all you need in web development
+- normally all you need in web development, IDE's serve little purpose with
+  a command line available
 - plugins make the development experience really powerful
   - code completion, windowing, etc.
-  - plus everything can work when ssh'd
+  - plus everything just works when ssh'd into another machine
+
+# Other tools
 
 ## Package manager
 
 - comes installed by default on Linux
-- brew on mac
-- use the Linux subsystem for windows
+  - e.g.: `apt`, `yum`, `pacman`
+- `brew` on MacOS
+- use the Linux subsystem for Windows
 - allows you to install/uninstall/update the programs on your computer
+  - built by developers for developers
 
 ## Node
 
@@ -105,7 +137,7 @@ date: 2018-10-12
 
 ## Prettier
 
-- js/css code formatter
+- `js`/`css` code formatter
 - do not dispute about how code should be formatted
 - deterministic formatter
 
@@ -116,6 +148,9 @@ date: 2018-10-12
 
 - equivalent development and production environments
 - allows for multiple development environments, e.g. multiple databases
-- let me know if you want to learn more
+
+::: notes
+- will be covering the why and how in a later session
+:::
 
 # Any Questions?
