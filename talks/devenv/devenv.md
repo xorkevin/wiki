@@ -1,6 +1,6 @@
 ---
 title: Development Environment
-author: Bibek, Terence, Chai, Kevin
+author: Bibek, Terrence, Chai, Kevin
 date: 2018-10-12
 ---
 
