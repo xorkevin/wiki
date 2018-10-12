@@ -178,6 +178,7 @@ transmission-qt
 tree
 ttf-google-fonts-git
 ttf-hack
+urxvt-resize-font-git
 usbutils
 util-linux
 valgrind
