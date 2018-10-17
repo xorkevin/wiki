@@ -124,6 +124,7 @@ pciutils
 pcmciautils
 perl
 pkgconf
+postgresql
 powerline-fonts
 procps-ng
 psmisc
@@ -152,6 +153,7 @@ steam
 stow
 streamlink
 sudo
+syncthing
 sysfsutils
 systemd
 systemd-sysvcompat
