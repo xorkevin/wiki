@@ -16,15 +16,46 @@ We are running a medieval farm:
 ::: {.column width="50%"}
 
 ```
-class Animal {
-  Animal(numLegs) {
-    // initialize legs
+class Horse {
+  eat(Food f) {
+    // eat food
   }
   pull(Payload p) {
-    // use legs to pull payload
+    // pull payload
   }
-  feed(Food f) {
-    // consume food
+}
+```
+
+:::
+::: {.column width="50%"}
+
+```
+class Dog {
+  eat(Food f) {
+    // eat food
+  }
+  bark() {
+    // bork
+  }
+}
+```
+
+:::
+:::
+
+## Inheritance
+
+Abstract away common implementations
+
+\lstset{language=Java,basicstyle={\scriptsize}}
+
+::: {.columns}
+::: {.column width="50%"}
+
+```
+class Animal {
+  eat(Food f) {
+    // eat food
   }
 }
 ```
@@ -34,17 +65,14 @@ class Animal {
 
 ```
 class Horse extends Animal {
-  Horse() {
-    super(4);
+  pull(Payload p) {
+    // pull payload
   }
 }
 
-class Cow extends Animal {
-  Cow() {
-    super(4);
-  }
-  moo() {
-    // print moo
+class Dog extends Animal {
+  bark() {
+    // bork
   }
 }
 ```
@@ -56,8 +84,8 @@ class Cow extends Animal {
 
 - inheritance may appear to solve the problem
 - code deduplication
-  - initialize legs, walking, consuming food are shared implementation details
-- the issues arise when these classes are used
+  - both can eat food; abstract away implementation
+- the issues arise when these classes are used and extended
 - this example feels contrived because it is, once you think with composition,
   you can never go back
 
@@ -69,44 +97,27 @@ Our medieval world:
 
 \lstset{language=Java,basicstyle={\scriptsize}}
 
-::: {.columns}
-::: {.column width="50%"}
-
 ```
-class Cart extends Payload {
-  move(Animal a) {
-    // use animal to pull cart
-    a.pull(this);
+class Carriage extends Payload {
+  transport(Human h) {
+    // transports a human
   }
 }
 
-class AnimalCart {
-  Animal a;
-  Cart c;
+class HorseCarriage extends Horse {
   Food f;
-  AnimalCart(Animal a) {
-    this.a = a;
-    this.c = new Cart();
+  Carriage c;
+  HorseCart() {
     this.f = new Apple();
+    this.c = new Carriage();
   }
-  move() {
-    this.a.feed(this.f);
-    this.c.move(this.a);
+  move(Human h) {
+    this.eat(this.f);
+    this.c.transport(h);
+    this.pull(this.c);
   }
 }
 ```
-
-:::
-::: {.column width="50%"}
-
-```
-AnimalCart(new Horse()).move();
-
-AnimalCart(new Cow()).move();
-```
-
-:::
-:::
 
 ## Inheritance Usage
 
@@ -114,19 +125,33 @@ Some time passes, and the industrial revolution occurs:
 
 \lstset{language=Java,basicstyle={\scriptsize}}
 
+```
+class Train {
+  Carriage c;
+  Train() {
+    this.c = new Carriage();
+  }
+  move(Human h) {
+    this.c.transport(h);
+    this.pull(this.c);
+  }
+}
+```
+
+## Inheritance Usage
+
+Is it possible to build a general transportation hub?
+
+\lstset{language=Java,basicstyle={\scriptsize}}
+
 ::: {.columns}
 ::: {.column width="50%"}
 
 ```
-class Train {
-  Train() {
-    // initialize train
-  }
-  pull(Payload p) {
-    // train pulls payload
-  }
-  refuel(Coal c) {
-    // give train coal
+class TransportHub {
+  ____ transporter;
+  move(Human h) {
+    this.transporter.move(h);
   }
 }
 ```
@@ -135,8 +160,14 @@ class Train {
 ::: {.column width="50%"}
 
 ```
-// cannot do
-AnimalCart(new Train()).move();
+Human h = new Human();
+
+HorseCarriage hc =
+  new HorseCarriage();
+hc.move(h);
+
+Train t = new Train();
+t.move(h);
 ```
 
 :::
@@ -145,7 +176,8 @@ AnimalCart(new Train()).move();
 ::: notes
 
 - main issue is that our original model did not account for the fact that we
-  would need a general 'Engine' abstraction
+  would need a general 'Transporter' abstraction
+- the danger of inheritance is that it forces you to plan for the future
 
 :::
 
