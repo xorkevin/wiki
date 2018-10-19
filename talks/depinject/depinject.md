@@ -179,12 +179,12 @@ class Hub {
     c.drive(d);
   }
 
-  transportPassenger(
-    Human h, Destination d
+  transportCargo(
+    Cargo c, Destination d
   ) {
-    Car c = carfleet.pop();
-    c.carryPassenger(h);
-    c.drive(d);
+    Truck t = truckfleet.pop();
+    t.carryCargo(c);
+    t.drive(d);
   }
 }
 ```
@@ -216,7 +216,7 @@ class ElectricCar {
 ::: notes
 
 - main issue is that our original model did not account for the fact that we
-  would need a general 'PassengerTransporter' abstraction
+  would need to be able to swap out the Engine
 - the danger of inheritance is that it forces you to plan for the future
 
 :::
@@ -281,12 +281,174 @@ Car electricCar =
 
 ::: notes
 
+- do not extend to obtain functionality
+- 'compose' to obtain new functionality
+  - creating things from parts is how we think in the real world
+  - if you need to saw some material, you do not care if given a hacksaw
+    extended from a hand tool, or a table saw extended from a shop tool
 - only constraint that matters is that the interface is fulfilled
-- relaxing all the constraints about what type something inherits from
-- focused only on the capabilities of the object
+  - focusing only on the capabilities of the object
 - not explicitly written, but it can be inferred that we can rewrite Truck in
   much the same way
 
 :::
 
 # Dependency Injection
+
+## Non dependency injected
+
+Is it possible to add a train?
+
+\lstset{language=Java,basicstyle={\scriptsize}}
+
+::: {.columns}
+::: {.column width="50%"}
+
+```
+class Hub {
+  Car[] carfleet;
+  Truck[] truckfleet;
+
+  transportPassenger(...);
+  transportCargo(...);
+
+  addCar() {
+    carfleet.push(
+      new Car(
+        new ElectricEngine()
+      )
+    );
+  }
+  addTruck() {
+    truckfleet.push(
+      new Truck(
+        new ElectricEngine()
+      )
+    );
+  }
+}
+```
+
+:::
+::: {.column width="50%"}
+
+```
+class Train {
+  carryPassenger(Human h);
+  carryCargo(Cargo c);
+  move(Destination d);
+}
+```
+
+:::
+:::
+
+::: notes
+
+- limiting factor here is the Car and Truck constraint
+- what we really care about is the ability to transport passengers and cargo
+
+:::
+
+## Dependency Injection
+
+\lstset{language=Java,basicstyle={\scriptsize}}
+
+::: {.columns}
+::: {.column width="50%"}
+
+```
+interface PassengerTransporter {
+  carryPassenger(Human h);
+  move(Destination d);
+}
+interface CargoTransporter {
+  carryCargo(Cargo c);
+  move(Destination d);
+}
+```
+
+:::
+::: {.column width="50%"}
+
+```
+class Hub {
+  PassengerTransporter[] passf;
+  CargoTransporter[] cargof;
+
+  transportPassenger(pass, dest) {
+    t = passf.pop();
+    t.carryPassenger(pass);
+    t.move(dest);
+  }
+  transportCargo(cargo, dest) {
+    t = cargof.pop();
+    t.carryCargo(cargo);
+    t.move(dest);
+  }
+
+  addPassT(passT) {
+    passf.push(passT);
+  }
+  addCargoT(cargoT) {
+    cargof.push(cargoT);
+  }
+}
+```
+
+:::
+:::
+
+::: notes
+
+- remove Car and Truck dependency
+- focus on the actual capabilities of the dependencies
+- let those dependencies be provided to you
+  - injection
+
+:::
+
+## Dependency Injection
+
+\lstset{language=Java,basicstyle={\scriptsize}}
+
+::: {.columns}
+::: {.column width="50%"}
+
+```
+class Train {
+  carryPassenger(Human h);
+  carryCargo(Cargo c);
+  move(Destination d);
+}
+```
+
+:::
+::: {.column width="50%"}
+
+```
+class Horse {
+  carryPassenger(Human h);
+  move(Destination d);
+  eat(Food f);
+}
+
+class Teleporter {
+  carryPassenger(Human h);
+  move(Destination d);
+}
+```
+
+:::
+:::
+
+::: notes
+
+- dependencies can be fulfilled by anything that implements the interface
+- focus on the capabilities of the dependencies, not their implementation
+- easy to provide newer implementations without having to change code
+- note that providing an Engine to a Car in the previous example is also an
+  example of dependency injection, except that was in the context of
+  composition
+
+:::
