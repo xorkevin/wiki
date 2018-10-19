@@ -293,7 +293,7 @@ Car electricCar =
 
 :::
 
-# Dependency Injection
+# Dependency Injection and Inversion of Control
 
 ## Non dependency injected
 
@@ -433,8 +433,9 @@ class Horse {
   eat(Food f);
 }
 
-class Teleporter {
+class BFR {
   carryPassenger(Human h);
+  carryCargo(Cargo c);
   move(Destination d);
 }
 ```
