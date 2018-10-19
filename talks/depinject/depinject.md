@@ -8,7 +8,7 @@ date: 2018-10-19
 
 ## Inheritance
 
-We are running a medieval farm:
+We are running a transportation company:
 
 \lstset{language=Java,basicstyle={\scriptsize}}
 
@@ -16,13 +16,20 @@ We are running a medieval farm:
 ::: {.column width="50%"}
 
 ```
-class Horse {
-  eat(Food f) {
-    // eat food
+class Car {
+  Gasoline g;
+  GasEngine e;
+
+  Car() {
+    this.g = new Gasoline();
+    this.e = new GasEngine();
   }
-  pull(Payload p) {
-    // pull payload
+
+  refuel(Gasoline g);
+  drive(Destination d) {
+    fourStrokeCombustion(this.e);
   }
+  carryPassenger(Human h);
 }
 ```
 
@@ -30,13 +37,20 @@ class Horse {
 ::: {.column width="50%"}
 
 ```
-class Dog {
-  eat(Food f) {
-    // eat food
+class Truck {
+  Gasoline g;
+  GasEngine e;
+
+  Truck() {
+    this.g = new Gasoline();
+    this.e = new GasEngine();
   }
-  bark() {
-    // bork
+
+  refuel(Gasoline g);
+  drive(Destination d) {
+    fourStrokeCombustion(this.e);
   }
+  carryCargo(Cargo c);
 }
 ```
 
@@ -53,9 +67,18 @@ Abstract away common implementations
 ::: {.column width="50%"}
 
 ```
-class Animal {
-  eat(Food f) {
-    // eat food
+class Vehicle {
+  Gasoline g;
+  GasEngine e;
+
+  Vehicle() {
+    this.g = new Gasoline();
+    this.e = new GasEngine();
+  }
+
+  refuel(Gasoline g);
+  drive(Destination d) {
+    fourStrokeCombustion(this.e);
   }
 }
 ```
@@ -64,16 +87,12 @@ class Animal {
 ::: {.column width="50%"}
 
 ```
-class Horse extends Animal {
-  pull(Payload p) {
-    // pull payload
-  }
+class Car extends Vehicle {
+  carryPassenger(Human h);
 }
 
-class Dog extends Animal {
-  bark() {
-    // bork
-  }
+class Truck extends Vehicle {
+  carryCargo(Cargo c);
 }
 ```
 
@@ -84,63 +103,63 @@ class Dog extends Animal {
 
 - inheritance may appear to solve the problem
 - code deduplication
-  - both can eat food; abstract away implementation
+  - both are vehicles, so they both have gas engines that need to be refueled
 - the issues arise when these classes are used and extended
-- this example feels contrived because it is, once you think with composition,
-  you can never go back
 
 :::
 
 ## Inheritance Usage
 
-Our medieval world:
+Say we wanted to have a transportation hub with a fleet of vehicles:
 
 \lstset{language=Java,basicstyle={\scriptsize}}
 
 ```
-class Carriage extends Payload {
-  transport(Human h) {
-    // transports a human
-  }
-}
+class Hub {
+  Car[] carfleet;
+  Truck[] truckfleet;
 
-class HorseCarriage extends Horse {
-  Food f;
-  Carriage c;
-  HorseCart() {
-    this.f = new Apple();
-    this.c = new Carriage();
+  transportPassenger(Human h, Destination d) {
+    Car c = carfleet.pop();
+    c.carryPassenger(h);
+    c.drive(d);
   }
-  move(Human h) {
-    this.eat(this.f);
-    this.c.transport(h);
-    this.pull(this.c);
+
+  transportCargo(Cargo c, Destination d) {
+    Truck t = truckfleet.pop();
+    t.carryCargo(c);
+    t.drive(d);
   }
 }
 ```
 
 ## Inheritance Usage
 
-Some time passes, and the industrial revolution occurs:
+Some time passes, electric vehicles are now a thing:
 
 \lstset{language=Java,basicstyle={\scriptsize}}
 
 ```
-class Train {
-  Carriage c;
-  Train() {
-    this.c = new Carriage();
+class ElectricCar {
+  Battery b;
+  ElectricEngine e;
+
+  ElectricCar() {
+    this.b = new Battery();
+    this.e = new ElectricEngine();
   }
-  move(Human h) {
-    this.c.transport(h);
-    this.pull(this.c);
+
+  charge(Battery b);
+  drive(Destination d) {
+    emInduction(this.e);
   }
+  carryPassenger(Human h);
 }
 ```
 
 ## Inheritance Usage
 
-Is it possible to build a general transportation hub?
+Is it possible to include this ElectricCar in the carfleet?
 
 \lstset{language=Java,basicstyle={\scriptsize}}
 
@@ -148,10 +167,24 @@ Is it possible to build a general transportation hub?
 ::: {.column width="50%"}
 
 ```
-class TransportHub {
-  ____ transporter;
-  move(Human h) {
-    this.transporter.move(h);
+class Hub {
+  Car[] carfleet;
+  Truck[] truckfleet;
+
+  transportPassenger(
+    Human h, Destination d
+  ) {
+    Car c = carfleet.pop();
+    c.carryPassenger(h);
+    c.drive(d);
+  }
+
+  transportPassenger(
+    Human h, Destination d
+  ) {
+    Car c = carfleet.pop();
+    c.carryPassenger(h);
+    c.drive(d);
   }
 }
 ```
@@ -160,14 +193,21 @@ class TransportHub {
 ::: {.column width="50%"}
 
 ```
-Human h = new Human();
+class ElectricCar {
+  Battery b;
+  ElectricEngine e;
 
-HorseCarriage hc =
-  new HorseCarriage();
-hc.move(h);
+  ElectricCar() {
+    this.b = new Battery();
+    this.e = new ElectricEngine();
+  }
 
-Train t = new Train();
-t.move(h);
+  charge(Battery b);
+  drive(Destination d) {
+    emInduction(this.e);
+  }
+  carryPassenger(Human h);
+}
 ```
 
 :::
@@ -176,7 +216,7 @@ t.move(h);
 ::: notes
 
 - main issue is that our original model did not account for the fact that we
-  would need a general 'Transporter' abstraction
+  would need a general 'PassengerTransporter' abstraction
 - the danger of inheritance is that it forces you to plan for the future
 
 :::
@@ -190,27 +230,24 @@ t.move(h);
 
 ```
 interface Engine {
-  pull(Payload payload);
-  refuel();
+  doWork();
 }
 
-class Cart extends Payload {
-  move(Engine e) {
-    // use engine to pull cart
-    e.pull(this);
+class GasEngine
+  implements Engine {
+  Gasoline g;
+  refuel(Gasoline g);
+  doWork() {
+    fourStrokeCombustion(this);
   }
 }
 
-class DrivenCart {
-  Engine e;
-  Cart c;
-  DrivenCart(Engine e) {
-    this.e = e;
-    this.c = new Cart();
-  }
-  move() {
-    this.e.refuel();
-    this.c.move(this.e);
+class ElectricEngine
+  implements Engine {
+  Battery b;
+  charge(Battery b);
+  doWork() {
+    emInduction(this);
   }
 }
 ```
@@ -219,51 +256,36 @@ class DrivenCart {
 ::: {.column width="50%"}
 
 ```
-class Horse implements Engine {
-  Food f;
-  Horse() {
-    this.f = new Apple();
+class Car {
+  Engine e;
+
+  Car(Engine e) {
+    this.e = e;
   }
-  pull(Payload payload) {
-    // pull payload
+
+  drive(Destination d) {
+    this.e.doWork();
   }
-  refuel() {
-    // consume this.f
-  }
+  carryPassenger(Human h);
 }
 
-class Train implements Engine {
-  Fuel f;
-  Train() {
-    this.f = new Coal();
-  }
-  pull(Payload payload) {
-    // pull payload
-  }
-  refuel() {
-    // consume this.f
-  }
-}
+Car gasolineCar =
+  new Car(new GasEngine());
+
+Car electricCar =
+  new Car(new ElectricEngine());
 ```
 
 :::
 :::
-
-## Composition Usage
-
-\lstset{language=Java,basicstyle={\scriptsize}}
-
-```
-// equally valid
-DrivenCart(new Horse()).move();
-DrivenCart(new Train()).move();
-```
 
 ::: notes
 
 - only constraint that matters is that the interface is fulfilled
 - relaxing all the constraints about what type something inherits from
 - focused only on the capabilities of the object
+- not explicitly written, but it can be inferred that we can rewrite Truck in
+  much the same way
 
 :::
 
