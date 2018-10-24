@@ -40,6 +40,8 @@
 ## Audio
 - qtractor
 - linux multimedia studio
+- non-daw
+- pro-audio
 - sonic visualiser
 
 ## Robotics
