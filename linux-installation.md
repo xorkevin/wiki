@@ -36,3 +36,11 @@
 MAKEFLAGS="-j$(nproc)" # parallel jobs
 COMPRESSXZ=(xz -c -z - --threads=0) # multithreaded compression
 ```
+
+`/etc/pacman.conf`:
+
+```conf
+Color
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
