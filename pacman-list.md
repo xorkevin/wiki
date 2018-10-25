@@ -158,6 +158,7 @@ sysfsutils
 systemd
 systemd-sysvcompat
 tar
+task
 texinfo
 texlive-bibtexextra
 texlive-core
