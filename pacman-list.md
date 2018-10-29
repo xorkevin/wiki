@@ -1,6 +1,7 @@
 alsa-plugins
 alsa-utils
 amd-ucode
+apache-tools
 arc-icon-theme
 arc-solid-gtk-theme
 autoconf
@@ -30,6 +31,7 @@ e2fsprogs
 efibootmgr
 emacs
 fakeroot
+fd
 feh
 figlet
 file
