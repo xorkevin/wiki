@@ -1,6 +1,7 @@
 alsa-plugins
 alsa-utils
 amd-ucode
+antibody-bin
 apache-tools
 arc-icon-theme
 arc-solid-gtk-theme
