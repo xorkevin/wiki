@@ -52,6 +52,7 @@ glibc
 gnu-netcat
 go
 go-tools
+gprolog
 graphicsmagick
 graphviz
 grep
@@ -137,6 +138,7 @@ python
 python-neovim
 python-pip
 python2
+racket
 ranger
 reiserfsprogs
 ripgrep
