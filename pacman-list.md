@@ -3,11 +3,13 @@ alsa-utils
 amd-ucode
 antibody-bin
 apache-tools
+arandr
 arc-icon-theme
 arc-solid-gtk-theme
 autoconf
 automake
 bash
+bc
 binutils
 bison
 blender
@@ -108,6 +110,7 @@ neofetch
 neomutt
 neovim
 netctl
+nextcloud-client
 nmap
 npm
 ntfs-3g
@@ -153,6 +156,7 @@ shadow
 siege
 slop
 speedcrunch
+speedtest-cli
 sshfs
 steam
 stow
