@@ -143,6 +143,7 @@ python-pip
 python2
 racket
 ranger
+reflector
 reiserfsprogs
 ripgrep
 rsync
