@@ -1,39 +1,39 @@
 ---
-title: "Homework 3"
-author: "Kevin Wang, 304783303"
+title: "Title here"
+date: "Nov 29, 2018"
 documentclass: "article"
-geometry: "top=2cm, bottom=2cm, left=4cm, right=4cm"
-header-includes: |
-  \usepackage{mathtools}
-  \usepackage{algorithm}
-  \usepackage{algpseudocode}
-  \usepackage{float}
-  \floatplacement{figure}{H}
+papersize: "letter"
+fontsize: "10pt"
+classoption: "twocolumn"
+#geometry: "margin=2cm"
+listings: true
+header-includes:
+  - \usepackage{xcolor}
+  - \lstset{
+      basicstyle=\scriptsize,
+      breaklines=true,
+      keywordstyle=\color[HTML]{8959a8},
+      commentstyle=\color[HTML]{8e908c},
+      stringstyle=\color[HTML]{718c00},
+      numberstyle=\color[HTML]{f5871f},
+    }
+bibliography: "bibliography.bib"
+link-citations: true
+csl: "/home/kevin/wiki/acm.csl"
+abstract: |
+  Abstract here
 ---
 
-\makeatletter
-\def\BState{\State\hskip-\ALG@thistlm}
-\makeatother
+# Running
 
-\begin{algorithm}
-\caption{My algorithm}\label{euclid}
-\begin{algorithmic}[1]
-\Procedure{MyProcedure}{}
-\State $\textit{stringlen} \gets \text{length of }\textit{string}$
-\State $i \gets \textit{patlen}$
-\BState \emph{top}:
-\If {$i > \textit{stringlen}$} \Return false
-\EndIf
-\State $j \gets \textit{patlen}$
-\BState \emph{loop}:
-\If {$\textit{string}(i) = \textit{path}(j)$}
-\State $j \gets j-1$.
-\State $i \gets i-1$.
-\State \textbf{goto} \emph{loop}.
-\State \textbf{close};
-\EndIf
-\State $i \gets i+\max(\textit{delta}_1(\textit{string}(i)),\textit{delta}_2(j))$.
-\State \textbf{goto} \emph{top}.
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
+As seen in Appendix [@lst:pandocmake]
+
+# Appendix
+
+```{#lst:pandocmake .makefile caption="Pandoc Makefile"}
+MD:=$(shell find . -name '*.md')
+MDARGS=--listings --filter pandoc-crossref --filter pandoc-citeproc
+
+$(MD:.md=.pdf): %.pdf: %.md
+	pandoc $(MDARGS) $^ -o $@
+```
