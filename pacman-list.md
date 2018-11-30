@@ -124,6 +124,7 @@ p7zip
 pacman
 pacman-contrib
 pandoc
+pandoc-citeproc
 paprefs
 patch
 pavucontrol
