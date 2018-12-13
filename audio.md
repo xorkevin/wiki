@@ -1,11 +1,5 @@
-# pulse
-
-pulse config:
+# fix crackling:
 
 ```
-### Should be after module-*-restore but before module-*-detect
-#load-module module-switch-on-port-available
-
-### Automatically suspend sinks/sources that become idle for too long
-#load-module module-suspend-on-idle
+hda-verb /dev/snd/hwC0D0 0x1d SET_PIN_WIDGET_CONTROL 0x0
 ```
