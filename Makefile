@@ -7,4 +7,4 @@ paclist:
 	pacman -Qeq > $(pacman-list)
 
 reflector:
-	reflector --verbose --country 'United States' --age 12 --sort rate --save /etc/pacman.d/mirrorlist
+	reflector --verbose --country 'United States' --age 3 --sort rate --save /etc/pacman.d/mirrorlist
