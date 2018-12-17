@@ -131,6 +131,7 @@ patch
 pavucontrol
 pciutils
 pcmciautils
+perf
 perl
 pkgconf
 postgresql
