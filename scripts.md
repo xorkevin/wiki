@@ -96,3 +96,11 @@ generate a file with random contents:
 ```bash
 dd if=/dev/urandom of=file.txt bs=1048576 count=100
 ```
+
+refresh keys
+
+```
+# pacman-key --init
+# pacman-key --populate archlinux
+# pacman-key --refresh keys
+```
