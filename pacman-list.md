@@ -117,6 +117,7 @@ ntfs-3g
 nvidia
 nvidia-settings
 ocaml
+octave
 opam
 openssh
 os-prober
