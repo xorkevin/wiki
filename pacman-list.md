@@ -120,6 +120,7 @@ ocaml
 octave
 opam
 openssh
+optipng
 os-prober
 p7zip
 pacman
@@ -188,6 +189,7 @@ texlive-publishers
 texlive-science
 thunar
 time
+tk
 tmux
 tokei
 traceroute
