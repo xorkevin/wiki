@@ -115,7 +115,7 @@ OUT=$(NAME).pdf
 .PHONY: clean
 
 $(OUT): $(SRC)
-	latexmk -pdf -bibtex -pdflatex="pdflatex -interaction=nonstopmode" -use-make $^
+	latexmk -pdf -bibtex -pdflatex="pdflatex -interaction=nonstopmode" $^
 
 clean:
 	latexmk -bibtex -CA
