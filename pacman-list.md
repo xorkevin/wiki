@@ -10,6 +10,7 @@ autoconf
 automake
 bash
 bc
+biber
 binutils
 bison
 blender
