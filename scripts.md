@@ -104,3 +104,19 @@ refresh keys
 # pacman-key --populate archlinux
 # pacman-key --refresh keys
 ```
+
+Makefile latex
+
+```Makefile
+NAME=srcfile
+SRC=$(NAME).tex
+OUT=$(NAME).pdf
+
+.PHONY: clean
+
+$(OUT): $(SRC)
+	latexmk -pdf -bibtex -pdflatex="pdflatex -interaction=nonstopmode" -use-make $^
+
+clean:
+	latexmk -bibtex -CA
+```
