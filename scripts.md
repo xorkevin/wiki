@@ -125,3 +125,39 @@ clean:
 \usepackage[style=trad-abbrv]{biblatex}
 \addbibresource{bibfile.bib}
 ```
+
+```tex
+\documentclass{article}
+\usepackage[left=4cm,right=4cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\lstdefinestyle{codestyle}{
+  backgroundcolor=\color[HTML]{FAFAFA},
+  keywordstyle=\color[HTML]{8959a8},
+  commentstyle=\color[HTML]{8e908c},
+  stringstyle=\color[HTML]{718c00},
+  numberstyle=\tiny\color[HTML]{f5871f},
+  basicstyle=\footnotesize,
+  breakatwhitespace=true,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=4pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+
+\lstset{style=codestyle}
+```
