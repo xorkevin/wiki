@@ -120,3 +120,8 @@ $(OUT): $(SRC)
 clean:
 	latexmk -bibtex -CA
 ```
+
+```tex
+\usepackage[style=trad-abbrv]{biblatex}
+\addbibresource{bibfile.bib}
+```
