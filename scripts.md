@@ -138,7 +138,7 @@ clean:
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{hyperref}
+\usepackage[hypertexnames=false]{hyperref}
 
 \lstdefinestyle{codestyle}{
   backgroundcolor=\color[HTML]{FAFAFA},
