@@ -143,6 +143,7 @@ procps-ng
 psmisc
 pulseaudio
 pulseaudio-alsa
+pulseeffects
 python
 python-neovim
 python-pip
