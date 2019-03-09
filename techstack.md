@@ -2,11 +2,11 @@
 
 - CI: concourse
 - Container Registry: VMware Harbor
-- Git host: Gitlab, Gitolite
+- Git host: Gitlab
 - Code Review: Gerrit
-- Communication: Mattermost
 
 - Istio
 - Kubernetes
 - gRPC
 - NATS
+- Rook
