@@ -9,6 +9,7 @@ arc-solid-gtk-theme
 autoconf
 automake
 bash
+bat
 bc
 biber
 binutils
@@ -98,6 +99,7 @@ man-pages
 mdadm
 mediainfo
 megatools
+minio-client
 moreutils
 mosh
 mpd
@@ -224,7 +226,6 @@ xorg-fonts-75dpi
 xorg-fonts-encodings
 xorg-iceauth
 xorg-luit
-xorg-mkfontdir
 xorg-mkfontscale
 xorg-server
 xorg-server-common
