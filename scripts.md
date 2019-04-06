@@ -173,3 +173,71 @@ clean:
 
 \lstset{style=codestyle}
 ```
+
+```Makefile
+NAME=srcfile
+SRC=$(NAME).tex
+OUT=$(NAME).pdf
+NOTESNAME=$(NAME).notes
+NOTESSRC=$(NOTESNAME).tex
+NOTES=$(NOTESNAME).pdf
+
+IMGS=$(shell find . -name '*.dot')
+
+.PHONY: all build notes
+
+all: build notes
+
+build: $(OUT)
+
+$(OUT): $(SRC) images
+	latexmk -pdfxe -pdfxelatex="xelatex -interaction=nonstopmode" $<
+
+notes: $(NOTES)
+
+$(NOTES): $(NOTESSRC) images
+	latexmk -pdfxe -pdfxelatex="xelatex -interaction=nonstopmode" $<
+
+.PHONY: clean init images clean-images
+
+clean:
+	latexmk -CA
+
+images: $(IMGS:.dot=_gen.png)
+
+$(IMGS:.dot=_gen.png): %_gen.png: %.dot
+	dot -Tpng $^ > $@
+
+clean-images:
+	rm *_gen.png
+```
+
+```tex
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{pgfpages}
+
+\ifdefined\NOTES
+  \setbeameroption{show only notes}
+\fi
+
+\title[Short title]{Longer title}
+\author{Kevin Wang}
+\date[Short org year]{Long org, year}
+\logo{\includegraphics[height=0.5cm]{assets/logo.png}}
+
+\begin{document}
+
+\maketitle
+
+\section{Section Title}
+
+\subsection{Subsection}
+
+\begin{frame}{Frame title}{subtitle}
+  Frame text
+  \note{notes text}
+\end{frame}
+
+\end{document}
+```
