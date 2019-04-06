@@ -50,6 +50,18 @@ cutting video:
 ffmpeg -i video.mp4 -ss 00:11:00 -t 00:01:00 -vcodec copy -acodec copy cutvid.mp4
 ```
 
+optimize png:
+
+```bash
+optipng -o7 -strip all input.png
+```
+
+optimize jpg:
+
+```bash
+jpegtran -optimize -progressive -copy none input.jpg
+```
+
 rsync:
 
 ```bash
