@@ -125,6 +125,9 @@ opam
 openssh
 optipng
 os-prober
+otf-fira-code
+otf-fira-mono
+otf-fira-sans
 p7zip
 pacman
 pacman-contrib
@@ -198,6 +201,7 @@ tokei
 traceroute
 transmission-qt
 tree
+ttf-fira-code
 ttf-google-fonts-git
 ttf-hack
 urxvt-resize-font-git
