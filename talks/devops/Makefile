@@ -1,16 +1,28 @@
 NAME=devops
 SRC=$(NAME).tex
 OUT=$(NAME).pdf
+NOTESNAME=$(NAME).notes
+NOTESSRC=$(NOTESNAME).tex
+NOTES=$(NOTESNAME).pdf
 
 IMGS=$(shell find . -name '*.dot')
 
+all: build notes
+
+build: $(OUT)
+
 $(OUT): $(SRC) images
-	latexmk -pdf -bibtex -pdflatex="pdflatex -interaction=nonstopmode" $<
+	latexmk -pdfxe -pdfxelatex="xelatex -interaction=nonstopmode" $<
+
+notes: $(NOTES)
+
+$(NOTES): $(NOTESSRC) images
+	latexmk -pdfxe -pdfxelatex="xelatex -interaction=nonstopmode" $<
 
 .PHONY: clean init images clean-images
 
 clean:
-	latexmk -bibtex -CA
+	latexmk -CA
 
 images: $(IMGS:.dot=_gen.png)
 

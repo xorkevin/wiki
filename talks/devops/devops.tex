@@ -1,16 +1,27 @@
 \documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{pgfpages}
+
+\ifdefined\NOTES
+  \setbeameroption{show only notes}
+\fi
 
 \title[Devops Series]{Devops in a nutshell}
 \author{Kevin Wang}
 \date[DevX 2019]{UCLA DevX, 2019}
+\logo{\includegraphics[height=0.5cm]{assets/devxlogo.png}}
 
 \begin{document}
 
-\frame{\titlepage}
+\maketitle
 
-\begin{frame}
-  \frametitle{Sample frame title}
+\section{Networking}
+
+\subsection{TCP}
+
+\begin{frame}{Frame title}{subtitle}
   This is a text in the first frame. This is a text in the first frame. This is a text in the first frame.
+  \note{these are notes for slide 1}
 \end{frame}
 
 \end{document}

@@ -9,5 +9,6 @@ __pycache__/
 *.out
 *.snm
 *.toc
+*.xdv
 *.pdf
 *_gen.png
