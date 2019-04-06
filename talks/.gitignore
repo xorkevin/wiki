@@ -1,2 +1,13 @@
-*.pdf
 *.html
+env/
+__pycache__/
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.pdf
+*_gen.png
