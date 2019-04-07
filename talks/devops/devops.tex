@@ -38,6 +38,8 @@
   Tech evangelist
 
   Tech Director Emeritus @ LA Hacks | Advisor @ DevX
+
+  \texttt{\scriptsize github: @xorkevin}
 \end{frame}
 \note[itemize]{
   \item I am not an expert
@@ -140,6 +142,44 @@ reddit.com.  16  IN  A  151.101.1.140
   \item correct domain and ip necessary for HTTPS
   \item whole host of other application layer protocols: SMTP, SSH, etc.
 }
+
+\subsection{OS network stack}
+
+\begin{frame}{Ports}
+  \begin{itemize}
+    \item OS network endpoint
+    \item 16 bit unsigned integer (0-65535)
+    \item used by TCP and UDP transport protocols
+    \item common ports \begin{itemize}
+      \small
+      \item http: 80
+      \item https: 443
+      \item dns: 53
+      \item ssh: 22
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item os network endpoint
+  \item client has ephemeral port allocation for response
+}
+
+\begin{frame}{Virtual network}
+  \includegraphics[width=\textwidth]{vpn_gen.png}
+\end{frame}
+\note[itemize]{
+  \item just as virtual machine, network can be virtualized
+  \item VLAN is a virtual link layer network; used to isolate devices on
+    same physical network and control access
+  \item VPN virtualizes ip layer network; used to extend a private network
+    through a public network; often by companies to control access
+  \item virtual network does not care how its ip packet is delivered; it looks
+    the same regardless
+}
+
+\section{Architecture}
+
+\section{Scaling}
 
 \begin{frame}{Architecture}
 \end{frame}

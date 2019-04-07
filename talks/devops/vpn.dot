@@ -1,0 +1,38 @@
+digraph vpn {
+  node[shape=rect];
+  rankdir=LR;
+  edge[dir=both];
+
+  internet[label="internet routers", shape="circle"];
+
+  {
+    rank=same;
+    client[label="client\nvirtualip 172.16.128.8"];
+    vpn1[label="VPN client\nencode private data"];
+    osnetwork1[label="OS networking\npublicip 50.4.3.2"];
+    netinterface1[label="ethernet interface"];
+
+    client -> vpn1 [label="private data packet"];
+    vpn1 -> osnetwork1;
+    osnetwork1 -> netinterface1;
+  }
+
+  {
+    rank=same;
+    server[label="server\nvirtual ip 172.16.128.16"];
+    vpn2[label="VPN server\ndecode private data"];
+    osnetwork2[label="OS networking\npublicip 23.70.8.9"];
+    netinterface2[label="ethernet interface"];
+
+    server -> vpn2 [label="private data packet"];
+    vpn2 -> osnetwork2;
+    osnetwork2 -> netinterface2;
+  }
+
+  client -> server [label="ip packet", style=dotted];
+
+  netinterface1 -> internet [label="data"];
+  internet -> netinterface2 [label="data"];
+
+  osnetwork1 -> osnetwork2 [label="public ip packet", style=dotted];
+}
