@@ -16,12 +16,30 @@
 \maketitle
 
 \section{Networking}
+\note[itemize]{
+  \item networking, much like rest of CS, is built on layers of abstraction
+  \item high level protocols built on top of lower level protocols
+  \item protocols are exchangeable, higher level protocols only care that the
+    data is delivered in the proper manner
+}
 
-\subsection{TCP}
-
-\begin{frame}{Frame title}{subtitle}
-  This is a text in the first frame. This is a text in the first frame. This is a text in the first frame.
-  \note{these are notes for slide 1}
+\begin{frame}{Internet Protocols}
+  \includegraphics[width=\textwidth]{internet_gen.png}
 \end{frame}
+\note[itemize]{
+  \item application layer (e.g. HTTP) built on transport layer, connections (e.g. TCP)
+  \item transport layer built on internet layer, packets, routing (e.g. IP, BGP, OSPF)
+  \item internet layer built on link layer, frames (e.g. ethernet)
+  \item link layer built on physical layer, bits
+}
+
+\begin{frame}{Architecture}
+\end{frame}
+\note[itemize]{
+  \item paradigm remains largely the same across architectures
+  \item load balancing
+  \item CDN
+  \item edge computing
+}
 
 \end{document}

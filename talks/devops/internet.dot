@@ -1,0 +1,43 @@
+digraph internet {
+  node[shape=rect];
+  rankdir=LR;
+  edge[dir=both];
+
+  router1[label="router"];
+  router2[label="router"];
+  internet[label="internet routers", shape="circle"];
+
+  {
+    rank=same;
+    client[label="client (e.g. browser)"];
+    tcpclient[label="tcp client"];
+    osnetwork1[label="OS networking"];
+    netinterface1[label="ethernet interface"];
+
+    client -> tcpclient;
+    tcpclient -> osnetwork1;
+    osnetwork1 -> netinterface1;
+  }
+  {
+    rank=same;
+    server[label="web server"];
+    tcpserver[label="tcp server"];
+    osnetwork2[label="OS networking"];
+    netinterface2[label="ethernet interface"];
+
+    server -> tcpserver;
+    tcpserver -> osnetwork2;
+    osnetwork2 -> netinterface2;
+  }
+
+  client -> server [label="http", style="dotted"];
+
+  tcpclient -> tcpserver [label="tcp connection", style="dotted"];
+
+  osnetwork1 -> osnetwork2 [label="ip packet", style="dotted"];
+
+  netinterface1 -> router1 [label="data"];
+  router1 -> internet [label="data"];
+  internet -> router2 [label="data"];
+  router2 -> netinterface2 [label="data"];
+}

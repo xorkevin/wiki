@@ -7,6 +7,8 @@ NOTES=$(NOTESNAME).pdf
 
 IMGS=$(shell find . -name '*.dot')
 
+.PHONY: all build notes
+
 all: build notes
 
 build: $(OUT)
