@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 \usepackage{pgfpages}
+\usepackage{listings}
 
 \ifdefined\NOTES
   \setbeameroption{show only notes}
@@ -47,20 +48,97 @@
 
 \section{Networking}
 \note[itemize]{
-  \item networking, much like rest of CS, is built on layers of abstraction
+  \item understanding networking is critical to devops
+  \item internet applications are fundamentally data transfer
+  \item much like rest of CS, is built on layers of abstraction
   \item high level protocols built on top of lower level protocols
   \item protocols are exchangeable, higher level protocols only care that the
-    data is delivered in the proper manner
+    data is delivered in the proper manner by a lower level protocol
 }
+
+\subsection{Protocols overview}
 
 \begin{frame}{Internet Protocols}
   \includegraphics[width=\textwidth]{internet_gen.png}
 \end{frame}
 \note[itemize]{
-  \item application layer (e.g. HTTP) built on transport layer, connections (e.g. TCP)
-  \item transport layer built on internet layer, packets, routing (e.g. IP, BGP, OSPF)
-  \item internet layer built on link layer, frames (e.g. ethernet)
-  \item link layer built on physical layer, bits
+  \item each layer adds increasing amounts of functionality
+  \item link layer built on physical layer, bits organized into frames (e.g.
+    ethernet)
+  \item link layer enables communication between physically connected machines
+  \item internet layer built on link layer, packets (e.g. IP)
+  \item internet layer allows networked computers to communicate by address and
+    routing
+  \item transport layer built on internet layer (e.g. TCP)
+  \item TCP provides a bidirectional communication channel with guaranteed data
+    delivery as long as the connection is open
+  \item application layer built on transport layer (e.g. HTTP)
+}
+
+\subsection{Application layer protocols}
+
+\begin{frame}[fragile]{HTTP}
+  \scriptsize
+  \begin{lstlisting}
+GET /index.html HTTP/1.1
+Host: www.example.com
+  \end{lstlisting}
+  \begin{lstlisting}
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2005 22:38:34 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 88
+Connection: close
+
+<html>
+<head>
+  <title>Hello World</title>
+</head>
+<body>
+  Hello World
+</body>
+</html>
+  \end{lstlisting}
+\end{frame}
+\note[itemize]{
+  \item http is a resource protocol
+  \item most common protocol directly used by a web developer
+  \item client can manage resources on a server
+  \item verbs: GET, POST, PUT, PATCH, DELETE
+  \item does not solely carry html data, can be images, json, etc.
+}
+
+\begin{frame}[fragile]{DNS}
+  It's always DNS. - /r/sysadmin
+  \scriptsize
+  \begin{lstlisting}
+;; ->>HEADER<<- opcode: QUERY, rcode: NOERROR, id: 14545
+;; flags: qr rd ra ; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 0
+;; QUESTION SECTION:
+;; reddit.com.  IN  A
+
+;; ANSWER SECTION:
+reddit.com.  16  IN  A  151.101.65.140
+reddit.com.  16  IN  A  151.101.129.140
+reddit.com.  16  IN  A  151.101.193.140
+reddit.com.  16  IN  A  151.101.1.140
+
+;; AUTHORITY SECTION:
+;; ADDITIONAL SECTION:
+
+;; Query time: 0 msec
+;; SERVER: 172.16.128.1
+;; WHEN: Sat Apr  6 22:49:38 2019
+;; MSG SIZE  rcvd: 92
+  \end{lstlisting}
+\end{frame}
+\note[itemize]{
+  \item domain name service
+  \item manages queries and updates for ip addresses behind domain names
+  \item hierarchical structure, root servers (.) -> tld servers (com) ->
+    nameserver (reddit)
+  \item correct domain and ip necessary for HTTPS
+  \item whole host of other application layer protocols: SMTP, SSH, etc.
 }
 
 \begin{frame}{Architecture}
@@ -68,6 +146,7 @@
 \note[itemize]{
   \item paradigm remains largely the same across architectures
   \item load balancing
+  \item service mesh
   \item CDN
   \item edge computing
 }

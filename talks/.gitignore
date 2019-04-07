@@ -9,6 +9,7 @@ __pycache__/
 *.out
 *.snm
 *.toc
+*.vrb
 *.xdv
 *.pdf
 *_gen.png
