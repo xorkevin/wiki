@@ -111,7 +111,7 @@ Connection: close
   \end{lstlisting}
 \end{frame}
 \note[itemize]{
-  \item http is a resource protocol
+  \item http is a resource protocol, essentially files
   \item most common protocol directly used by a web developer
   \item client can manage resources on a server
   \item verbs: GET, POST, PUT, PATCH, DELETE
@@ -290,6 +290,7 @@ reddit.com.  16  IN  A  151.101.1.140
     \item persistent state can be stored in volumes
     \item publicly available library of container images for services:
       PostgreSQL, Redis, Minio, etc.
+    \item can test applications locally in the same environment as production
   \end{itemize}
 \end{frame}
 
@@ -301,6 +302,34 @@ reddit.com.  16  IN  A  151.101.1.140
   \item running that image on any local port
   \item show and run docker swarm example
 }
+
+\section{Tooling}
+\note[itemize]{
+  \item important to know what tools exist to make QOL better
+}
+
+\subsection{Command line}
+
+\begin{frame}{SSH}
+  \begin{itemize}
+    \item Secure shell
+    \item remote command line
+    \item general cryptographic data transfer
+    \item ssh tunnelling
+    \item use ed25519 elliptic curve key pairs, 256 bits of randomness
+    \item rsa4096 relies on prime number factors, thus not full 4096 bits of
+      randomness
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Mosh}
+  \begin{itemize}
+    \item Mobile shell
+    \item long running ssh sessions
+    \item supports roaming between networks
+    \item intermittent connection does not kill session
+  \end{itemize}
+\end{frame}
 
 \section{Scaling}
 
