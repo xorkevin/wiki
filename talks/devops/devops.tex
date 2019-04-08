@@ -305,7 +305,10 @@ reddit.com.  16  IN  A  151.101.1.140
 
 \section{Tooling}
 \note[itemize]{
+  \item command line is the de facto interface for developers
+  \item cli has a learning curve
   \item important to know what tools exist to make QOL better
+  \item here are a list of tools that make my life easier
 }
 
 \subsection{Command line}
@@ -316,18 +319,56 @@ reddit.com.  16  IN  A  151.101.1.140
     \item remote command line
     \item general cryptographic data transfer
     \item ssh tunnelling
-    \item use ed25519 elliptic curve key pairs, 256 bits of randomness
+    \item use ed25519 elliptic curve key pairs, 256 bits of randomness, with
+      elliptic curve over a Galois field
     \item rsa4096 relies on prime number factors, thus not full 4096 bits of
       randomness
+    \item ssh config
   \end{itemize}
 \end{frame}
+\note[itemize]{
+  \item demo ssh tunnelling into database
+}
 
-\begin{frame}{Mosh}
+\begin{frame}{tmux}
   \begin{itemize}
-    \item Mobile shell
-    \item long running ssh sessions
-    \item supports roaming between networks
-    \item intermittent connection does not kill session
+    \item screen multiplexer
+    \item long running terminal sessions
+    \item split a single terminal into panes, windows
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item demo creating panes and windows, reconnecting
+}
+
+\begin{frame}{watch}
+  \begin{itemize}
+    \item repeat a command after a specified number of seconds
+    \item useful for monitoring status output
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item demo monitoring statistics from database
+}
+
+\begin{frame}{make \& inotify-tools}
+  \begin{itemize}
+    \item make is useful to create short commands for faster testing, and less
+      memorization
+    \item inotify-tools can watch a directory for changes, and execute a
+      command on update
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item demo updating this presentation
+}
+
+\begin{frame}{vim}
+  \begin{itemize}
+    \item vi improved; vi was a visual mode for ex, which was a version of ed
+      with extended functionality
+    \item no shortcuts like other editors; uses text editing language with its
+      own grammar
   \end{itemize}
 \end{frame}
 
@@ -339,6 +380,7 @@ reddit.com.  16  IN  A  151.101.1.140
   \item paradigm remains largely the same across architectures
   \item load balancing
   \item service mesh
+  \item message queue
   \item CDN
   \item edge computing
 }
