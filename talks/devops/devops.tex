@@ -9,7 +9,11 @@
 
 \title[Devops Series]{Devops in a nutshell}
 \author{Kevin Wang}
-\date[DevX 2019]{DevX, 2019}
+\year=2019\relax
+\month=05\relax
+\day=02\relax
+\date{\today}
+\institute{DevX}
 \logo{\includegraphics[height=0.5cm]{assets/devxlogo.png}}
 
 \begin{document}
@@ -19,6 +23,7 @@
 \section{Introduction}
 
 \begin{frame}{What is devops?}
+  \pause
   \begin{center}
     a set of application development and operations practices to release
     software
@@ -37,9 +42,12 @@
 
   Tech evangelist
 
-  Tech Director Emeritus @ LA Hacks | Advisor @ DevX
+  \begin{description}
+    \item[LA Hacks] Tech Director Emeritus
+    \item[DevX] Tech Advisor
+  \end{description}
 
-  \texttt{\scriptsize github: @xorkevin}
+  \texttt{\tiny github: @xorkevin}
 \end{frame}
 \note[itemize]{
   \item I am not an expert
@@ -143,25 +151,47 @@ reddit.com.  16  IN  A  151.101.1.140
   \item whole host of other application layer protocols: SMTP, SSH, etc.
 }
 
-\subsection{OS network stack}
+\subsection{Network stack}
 
 \begin{frame}{Ports}
   \begin{itemize}
     \item OS network endpoint
     \item 16 bit unsigned integer (0-65535)
     \item used by TCP and UDP transport protocols
-    \item common ports \begin{itemize}
+    \pause
+    \item common ports \begin{description}
       \small
-      \item http: 80
-      \item https: 443
-      \item dns: 53
-      \item ssh: 22
-    \end{itemize}
+      \item[HTTP] 80
+      \item[HTTPS] 443
+      \item[DNS] 53
+      \item[SSH] 22
+    \end{description}
   \end{itemize}
 \end{frame}
 \note[itemize]{
   \item os network endpoint
   \item client has ephemeral port allocation for response
+}
+
+\begin{frame}{Private networks}
+  \begin{description}
+    \item[CIDR] classless inter-domain routing private address space:
+      \begin{itemize}
+        \item 192.168.x.x/16
+        \item 172.16.x.x/12
+        \item 10.x.x.x/8
+      \end{itemize}
+    \pause
+    \item[NAT] network address translation, remapping port and ip address by
+      network gateway
+  \end{description}
+\end{frame}
+\note[itemize]{
+  \item CIDR replaced previous classful network addressing schemes
+  \item CIDR used to assign private ip ranges for subnetworks
+  \item private network requires NAT to interact with a public network
+  \item private address must be replaced with a public address
+  \item router normally acts as NAT gateway
 }
 
 \begin{frame}{Virtual network}
@@ -175,9 +205,102 @@ reddit.com.  16  IN  A  151.101.1.140
     through a public network; often by companies to control access
   \item virtual network does not care how its ip packet is delivered; it looks
     the same regardless
+  \item network functionality must be provided by the virtual network: NAT,
+    routing, etc.
 }
 
 \section{Architecture}
+\note[itemize]{
+  \item application architecture is critical for easy and robust testing and
+    deployment
+}
+
+\subsection{Environment}
+
+\begin{frame}{Traditional environment}
+  \pause
+  \begin{itemize}
+    \item NGINX or Apache
+    \item NodeJS or Flask
+    \item PostgreSQL or MySQL database
+    \item systemd service
+    \item serving files from the local file system
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item what do you use to deploy apps, what environment do you use?
+  \item stateful environment
+  \item difficult to add additional dependencies
+  \item what if one wanted redis or memcached for caching
+  \item difficult to scale current dependencies
+  \item what if one wanted another NodeJS or Flask server for additional load,
+    different port allocation, must duplicate any configuration
+  \item environment state is dictating application architecture
+  \item how to test app locally
+  \item "It works on my machine"
+}
+
+\begin{frame}{Modern environment}
+  \begin{description}
+    \item[Containerization] virtualized uniform isolated userland environment
+      for applications
+    \item[Orchestration] services as declarative configuration
+  \end{description}
+\end{frame}
+\note[itemize]{
+  \item both enable applications to have a scalable environment
+}
+
+\begin{frame}{Containerization}
+  \includegraphics[width=\textwidth]{assets/dockerdiagram.png}
+\end{frame}
+\note[itemize]{
+  \item containerization not a VM; a virtual machine runs on a hypervisor which
+    abstracts the kernel: I/O, scheduling, etc.
+  \item containerization exposes the underlying kernel, but virtualizes
+    userspace
+}
+
+\begin{frame}{Orchestration}
+  \includegraphics[width=\textwidth]{assets/kubenetwork.png}
+\end{frame}
+\note[itemize]{
+  \item orchestration provides a declarative configuration of what services
+    must be run, what service, how many instances
+  \item orchestrators observe current state, and make it match configuration
+  \item orchestrators also provide health checks, load balancing, service
+    discovery, virtualized network, across hosts
+}
+
+\begin{frame}{Abridged History}
+  \begin{description}
+    \item[Mesos] 2009, distributed process manager
+    \item[Docker] 2013, first to build an engine around Linux containers
+    \item[Kubernetes] 2014, Google's solution to containerization with lessons
+      learned from their internal Borg platform
+  \end{description}
+\end{frame}
+
+\begin{frame}{Docker in Depth}
+  \begin{itemize}
+    \item containerization and orchestration platform
+    \item build, run, publish containers
+    \item deploy services with health checks
+    \item provides virtualized network for container communication
+    \item persistent state can be stored in volumes
+    \item publicly available library of container images for services:
+      PostgreSQL, Redis, Minio, etc.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \Huge DEMO
+\end{frame}
+\note[itemize]{
+  \item creating an image with a Dockerfile
+  \item running that image on any local port
+  \item show and run docker swarm example
+}
 
 \section{Scaling}
 
