@@ -466,8 +466,8 @@ reddit.com.  16  IN  A  151.101.1.140
   \begin{itemize}
     \item web servers can handle thousands of requests per second, normally not
       the bottleneck
-    \item for more intensive workloads, can put a reverse proxy in front of
-      multiple instances of the application server to distribute the load
+    \item for more intensive workloads, can use a reverse proxy/load balancer to
+      distribute the load
     \item allows for automatic failover, high availability
   \end{itemize}
   \includegraphics[width=\textwidth]{loadbalance_gen.png}
@@ -476,15 +476,24 @@ reddit.com.  16  IN  A  151.101.1.140
   \item good for handling requests that need an immediate response
   \item app server is containerized so easy to scale
   \item popular load balancers are NGINX, HAProxy, Envoy, Traefik
+}
+
+\begin{frame}{Service Mesh}
+  \includegraphics[width=\textwidth]{assets/servicemesh.png}
+\end{frame}
+\note[itemize]{
+  \item smart pipe for data
+  \item load balancing, automatic retry with exponential backoff,
+    circuit breaker, service discovery
   \item how to handle increased load for nonimmediate responses?
 }
+
+\begin{frame}{Message queue}
+\end{frame}
 
 \begin{frame}{Architecture}
 \end{frame}
 \note[itemize]{
-  \item load balancing
-  \item service mesh
-  \item message queue
   \item CDN
   \item edge computing
 }
