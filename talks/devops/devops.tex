@@ -463,7 +463,21 @@ reddit.com.  16  IN  A  151.101.1.140
 \subsection{Architecture}
 
 \begin{frame}{Load Balancing}
+  \begin{itemize}
+    \item web servers can handle thousands of requests per second, normally not
+      the bottleneck
+    \item for more intensive workloads, can put a reverse proxy in front of
+      multiple instances of the application server to distribute the load
+    \item allows for automatic failover, high availability
+  \end{itemize}
+  \includegraphics[width=\textwidth]{loadbalance_gen.png}
 \end{frame}
+\note[itemize]{
+  \item good for handling requests that need an immediate response
+  \item app server is containerized so easy to scale
+  \item popular load balancers are NGINX, HAProxy, Envoy, Traefik
+  \item how to handle increased load for nonimmediate responses?
+}
 
 \begin{frame}{Architecture}
 \end{frame}

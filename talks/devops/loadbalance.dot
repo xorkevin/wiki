@@ -1,0 +1,17 @@
+digraph loadbalance {
+  node[shape="rect"];
+  edge[dir=both];
+  rankdir=LR;
+
+  internet[label="internet", shape="none"];
+  lb[label="load balancer"];
+  internet -> lb;
+
+  server1[label="app server"];
+  server2[label="app server"];
+  server3[label="app server"];
+
+  lb -> server1;
+  lb -> server2;
+  lb -> server3;
+}
