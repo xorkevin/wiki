@@ -380,13 +380,94 @@ reddit.com.  16  IN  A  151.101.1.140
 \section{Scaling}
 \note[itemize]{
   \item paradigm remains largely the same across architectures
-  \item how to route requests and responses from clients to servers
+  \item goal is to route requests and responses from clients to servers
+  \item what is the first scaling strategy?
 }
+
+\subsection{Optimization}
+
+\begin{frame}{Caching}
+  Client side
+  \begin{itemize}
+    \item HTTP Cache-Control headers
+    \item ETag
+    \item Last Modified
+    \item hash filename, max-age 1 year
+    \item service worker
+  \end{itemize}
+  Server side
+  \begin{itemize}
+    \item Redis \& Memcached
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item every bit that is cached client side is a bit that does not need to be
+    transferred over the network
+  \item cache control headers for static assets set by NGINX, or server
+    middleware e.g. express.static
+  \item hashing filename allows unchanged resources to be cached indefinitely
+  \item otherwise using an etag and last modified will allow server to return
+    304 Not Modified
+  \item client caching increasingly necessary for mobile world
+  \item server side cache reduces database load, db is often the source of
+    bottlenecks
+}
+
+\begin{frame}{Numbers every programmer should know}
+  \begin{itemize}
+    \item L1 cache reference 0.5 ns
+    \item Branch mispredict 5 ns
+    \item L2 cache reference 7 ns
+    \item Mutex lock/unlock 100 ns
+    \item Main memory reference 100 ns
+    \item Compress 1K bytes with Zippy 10,000 ns 0.01 ms
+    \item Send 1K bytes over 1 Gbps network 10,000 ns 0.01 ms
+    \item Read 1 MB sequentially from memory 250,000 ns 0.25 ms
+    \item Round trip within same datacenter 500,000 ns 0.5 ms
+    \item Disk seek 10,000,000 ns 10 ms
+    \item Read 1 MB sequentially from network 10,000,000 ns 10 ms
+    \item Read 1 MB sequentially from disk 30,000,000 ns 30 ms
+    \item Send packet CA->Netherlands->CA 150,000,000 ns 150 ms
+  \end{itemize}
+  Jeff Dean
+\end{frame}
+\note[itemize]{
+  \item network is just another leg of fetching information
+  \item Jeff Dean, Numbers every programmer should know, given at Google
+    Engineering All-Hands
+}
+
+\begin{frame}{Asset management}
+  \begin{itemize}
+    \item gzip, deflate all text: markup, scripts, styles, etc.
+    \item often available by middleware e.g. compression for express
+    \item do not compress images or video with the web server, they should
+      already be compressed assets
+    \item optipng -o7 -strip all input.png: losslessly compress png
+    \item jpegtran -optimize -progressive -copy none input.jpg: optimize jpg
+      DCT coefficients
+    \item prefer jpg if no text
+    \item jpg quality 85 recommended
+    \item prefer mp4 over gif, gif has no temporal compression
+    \item cache everything
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item better first load performance
+  \item necessary for websites with large amounts of new data
+  \item newer compression algorithms exist e.g. brotli, not well adopted
+  \item boring is better
+  \item how to handle increased load for dynamic data?
+}
+
+\subsection{Architecture}
+
+\begin{frame}{Load Balancing}
+\end{frame}
 
 \begin{frame}{Architecture}
 \end{frame}
 \note[itemize]{
-  \item caching, client and server side
   \item load balancing
   \item service mesh
   \item message queue
