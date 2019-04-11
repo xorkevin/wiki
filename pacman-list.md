@@ -16,6 +16,7 @@ binutils
 bison
 blender
 bzip2
+calibre
 chromium
 clang
 coreutils
@@ -35,6 +36,7 @@ dos2unix
 e2fsprogs
 efibootmgr
 emacs
+exa
 fakeroot
 fd
 feh
