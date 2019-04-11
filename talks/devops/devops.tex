@@ -475,6 +475,7 @@ reddit.com.  16  IN  A  151.101.1.140
 \note[itemize]{
   \item good for handling requests that need an immediate response
   \item app server is containerized so easy to scale
+  \item horizontal (as opposed to vertical) scaling
   \item popular load balancers are NGINX, HAProxy, Envoy, Traefik
 }
 
@@ -489,13 +490,36 @@ reddit.com.  16  IN  A  151.101.1.140
 }
 
 \begin{frame}{Message queue}
-\end{frame}
-
-\begin{frame}{Architecture}
+  \includegraphics[width=\textwidth]{msgqueue_gen.png}
 \end{frame}
 \note[itemize]{
-  \item CDN
-  \item edge computing
+  \item message queue is a low cost way to scale up jobs that do not need an
+    immediate response
+  \item e.g. email, online orders
+  \item good for handling bursty traffic
+  \item long jobs can be held durably in the queue in the event of a crash
+  \item NATS, Kafka, SQS, RabbitMQ are popular options
+  \item event driven architecture
+  \item more powerful messaging systems can handle one to many, at most one, or
+    at least one guarantees
+  \item suppose latency is the issue?
+}
+
+\begin{frame}{CDN}
+  \includegraphics[width=\textwidth]{assets/cdn.png}
+\end{frame}
+\note[itemize]{
+  \item companies have datacenters worldwide, sell CDN space to allow others to
+    leverage that network
+  \item pushing commonly used static assets to the network worldwide, at
+    internet exchange points
+  \item CDN's allow Netflix to push 25 Tbps conservatively; 15\% of global
+    downstream internet traffic in 2018; Youtube at 11.3\% of downstream
+  \item DDoS protection, Akamai helped Github survive a Memcached amplified
+    DDoS attack by filtering 1.3 Tbps
+  \item Akamai, Cloudflare, Fastly, Amazon, Google, Azure
+  \item edge compute to bring more computation to the edge, such as via web
+    assembly
 }
 
 \end{document}
