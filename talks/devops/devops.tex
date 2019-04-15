@@ -377,6 +377,28 @@ reddit.com.  16  IN  A  151.101.1.140
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Backups}
+  \begin{itemize}
+    \item 3 2 1 rule: 3 copies, 2 on-site, 1 offsite
+    \item different storage mediums: protection against solar flares and EMPs
+    \item an untested backup is not a backup
+    \item backup codebase: Git hash identifies bit rot and malicious
+      changes
+    \item airgap backups in the event of a worm e.g. NotPetya
+    \item no "unicorn" infrastructure, containerize everything
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item backups are the most important takeaway
+  \item automate the process
+  \item natural disasters often have locality, offsite backup is important
+  \item codebase is just as important as user data
+  \item git fire
+  \item should be easy to rebuild entire cluster in the event of a catastrophic
+    failure
+  \item no vendor lock in, cannot rely solely on Amazon, e.g. S3 crash
+}
+
 \section{Scaling}
 \note[itemize]{
   \item paradigm remains largely the same across architectures
