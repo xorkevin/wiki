@@ -118,6 +118,21 @@ Connection: close
   \item does not solely carry html data, can be images, json, etc.
 }
 
+\begin{frame}{HTTPS}
+  \begin{itemize}
+    \item HTTP protocol through TLS connection
+    \item TLS certificate signed by certificate authority
+    \item Let's Encrypt signs certificates for free, through HTTP challenge and
+      response
+    \item always use HTTPS for main website
+    \item prevent cross site scripting from middleman attacks
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item TLS uses (EC) Diffie-Hellman to establish a shared key
+  \item shared key used to encrypt data e.g. AES GCM, ChaCha20/Poly1305
+}
+
 \begin{frame}[fragile]{DNS}
   It's always DNS. - /r/sysadmin
   \scriptsize
@@ -385,7 +400,7 @@ reddit.com.  16  IN  A  151.101.1.140
     \item backup codebase: Git hash identifies bit rot and malicious
       changes
     \item airgap backups in the event of a worm e.g. NotPetya
-    \item no "unicorn" infrastructure, containerize everything
+    \item no "pet" infrastructure, nothing is special, containerize everything
   \end{itemize}
 \end{frame}
 \note[itemize]{
@@ -480,6 +495,17 @@ reddit.com.  16  IN  A  151.101.1.140
   \item newer compression algorithms exist e.g. brotli, not well adopted
   \item boring is better
   \item how to handle increased load for dynamic data?
+}
+
+\begin{frame}{Firewall}
+  \begin{itemize}
+    \item Only allow traffic on port 80, 443, 22
+    \item Prevent DOS attacks
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item typical attack is a repeated port scan with common passwords
+  \item disable password login
 }
 
 \subsection{Architecture}
