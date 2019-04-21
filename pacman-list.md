@@ -133,9 +133,6 @@ otf-fira-sans
 p7zip
 pacman
 pacman-contrib
-pandoc
-pandoc-citeproc
-pandoc-crossref
 paprefs
 patch
 pavucontrol
