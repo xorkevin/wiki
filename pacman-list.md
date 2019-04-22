@@ -103,7 +103,6 @@ python2
 python-neovim
 python-pip
 racket
-ranger
 reflector
 ripgrep
 rsync
