@@ -143,6 +143,8 @@ clean:
 \usepackage[left=4cm,right=4cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{mathtools}
 \usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{amssymb}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{listings}
@@ -151,6 +153,15 @@ clean:
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage[hypertexnames=false]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\renewcommand\qedsymbol{$\blacksquare$}
 
 \lstdefinestyle{codestyle}{
   backgroundcolor=\color[HTML]{FAFAFA},
