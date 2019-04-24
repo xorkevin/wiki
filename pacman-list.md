@@ -100,6 +100,7 @@ pulseaudio-alsa
 pulseeffects
 python
 python2
+python-language-server
 python-neovim
 python-pip
 racket
