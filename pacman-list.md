@@ -153,7 +153,6 @@ wget
 wine
 wireshark-qt
 words
-xautoclick
 xbindkeys
 xclip
 xorg-xinit
