@@ -61,7 +61,6 @@ lxappearance
 maim
 mediainfo
 megatools
-minio-client
 moreutils
 mosh
 mpd
@@ -148,6 +147,7 @@ urxvt-resize-font-git
 valgrind
 vim
 vlc
+watchexec
 weechat
 wget
 wine
