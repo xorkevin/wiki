@@ -85,6 +85,42 @@
   \item application layer built on transport layer (e.g. HTTP)
 }
 
+\begin{frame}[fragile]{IPoAC}
+  \scriptsize
+  \begin{lstlisting}
+Network Working Group                            D. Waitzman
+Request for Comments: 1149                           BBN STC
+                                                1 April 1990
+
+   A Standard for the Transmission of IP Datagrams on Avian
+   Carriers
+
+Status of this Memo
+
+   This memo describes an experimental method for the
+   encapsulation of IP datagrams in avian carriers.  This
+   specification is primarily useful in Metropolitan Area
+   Networks.  This is an experimental, not recommended
+   standard.  Distribution of this memo is unlimited.
+
+Overview and Rational
+
+   Avian carriers can provide high delay, low throughput,
+   and low altitude service.  The connection topology is
+   limited to a single point-to-point path for each carrier,
+  \end{lstlisting}
+\end{frame}
+\note[itemize]{
+  \item central hub topology
+  \item fortunately not limited to line of sight
+  \item MTU 256 milligrams
+  \item IPoAC has been successfully implemented, but for only nine packets of
+    data, with a packet loss ratio of 55\%, and a response time ranging from
+    3,000 seconds (≈54 minutes) to over 6,000 seconds (≈1.77 hours). Thus, this
+    technology suffers from poor latency.
+  \item higher level protocols only depend interface to lower level protocols
+}
+
 \subsection{Application layer protocols}
 
 \begin{frame}[fragile]{HTTP}
