@@ -51,7 +51,6 @@ inkscape
 inotify-tools
 iperf3
 jdk10-openjdk
-jdownloader2
 jq
 kdenlive
 lib32-nvidia-utils
@@ -147,7 +146,6 @@ urxvt-resize-font-git
 valgrind
 vim
 vlc
-watchexec
 weechat
 wget
 wine
