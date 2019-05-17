@@ -425,6 +425,10 @@ reddit.com.  16  IN  A  151.101.1.140
       with extended functionality
     \item no shortcuts like other editors; uses text editing language with its
       own grammar
+    \item vim, and especially vi, can be found everywhere; you are guaranteed
+      to be able to find it on servers of any OS, and probably internet
+      connected toasters too; this is helpful to edit any configuration or text
+      on any machine
   \end{itemize}
 \end{frame}
 
@@ -462,9 +466,25 @@ reddit.com.  16  IN  A  151.101.1.140
 \begin{frame}{Caching}
   Client side
   \begin{itemize}
-    \item HTTP Cache-Control headers
-    \item ETag
-    \item Last Modified
+    \item HTTP Cache-Control headers:
+      {\scriptsize
+      \href{https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control}{MDN
+      docs}}
+      \begin{itemize}
+        \item e.g. max-age=<seconds>, no-cache, no-store
+      \end{itemize}
+    \item ETag:
+      {\scriptsize
+      \href{https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag}{MDN
+      docs}}
+      \begin{itemize}
+        \item allows your browser to check if file contents differ
+      \end{itemize}
+    \item Last Modified:
+      \begin{itemize}
+        \item allows your browser to check to see if a file has been updated
+          since a specific time
+      \end{itemize}
     \item hash filename, max-age 1 year
     \item service worker
   \end{itemize}
@@ -502,7 +522,7 @@ reddit.com.  16  IN  A  151.101.1.140
     \item Read 1 MB sequentially from disk: 30 ms
     \item Send packet CA->Netherlands->CA: 150 ms
   \end{itemize}
-  Jeff Dean
+  Jeff Dean {\scriptsize Fact 36: Jeff Dean can losslessly compress random data.}
 \end{frame}
 \note[itemize]{
   \item network is just another leg of fetching information
