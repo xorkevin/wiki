@@ -154,7 +154,6 @@ words
 xbindkeys
 xclip
 xorg-xinit
-yapf
 yay
 youtube-dl
 zathura
