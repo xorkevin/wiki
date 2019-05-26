@@ -59,7 +59,7 @@ optipng -o7 -strip all input.png
 optimize jpg:
 
 ```bash
-jpegtran -optimize -progressive -copy none input.jpg
+jpegtran -optimize -progressive -copy none -outfile output.jpg input.jpg
 ```
 
 rsync:
