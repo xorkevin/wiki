@@ -93,6 +93,7 @@ pavucontrol
 perf
 postgresql
 powerline-fonts
+prettier
 pulseaudio
 pulseaudio-alsa
 pulseeffects
@@ -154,6 +155,7 @@ words
 xbindkeys
 xclip
 xorg-xinit
+yapf
 yay
 youtube-dl
 zathura
