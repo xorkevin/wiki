@@ -143,6 +143,7 @@ tree
 ttf-fira-code
 ttf-google-fonts-git
 ttf-hack
+urxvt-perls
 urxvt-resize-font-git
 valgrind
 vim
