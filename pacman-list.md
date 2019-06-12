@@ -103,6 +103,7 @@ python2
 python-language-server
 python-neovim
 python-pip
+qrencode
 racket
 reflector
 ripgrep
