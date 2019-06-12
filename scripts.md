@@ -117,6 +117,10 @@ refresh keys
 # pacman-key --refresh keys
 ```
 
+export gpg subkey
+
+gpg --armor --export-secret-subkey keyid! | gpg --armor --symmetric --output filename.sec.asc
+
 Makefile latex
 
 ```Makefile
