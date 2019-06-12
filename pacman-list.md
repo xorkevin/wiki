@@ -89,6 +89,7 @@ otf-fira-sans
 p7zip
 pacman-contrib
 paprefs
+pass
 pavucontrol
 perf
 postgresql
