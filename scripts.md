@@ -119,7 +119,21 @@ refresh keys
 
 export gpg subkey
 
+```
 gpg --armor --export-secret-subkey keyid! | gpg --armor --symmetric --output filename.sec.asc
+```
+
+Grub boot without monitor
+
+/etc/default/grub:
+
+```
+GRUB_CMDLINE_LINUX="nomodeset"
+```
+
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 Makefile latex
 
