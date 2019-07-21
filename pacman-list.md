@@ -11,6 +11,7 @@ bc
 biber
 blender
 calibre
+cava
 chromium
 clang
 cowsay
