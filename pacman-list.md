@@ -15,6 +15,7 @@ cava
 chromium
 clang
 cowsay
+ctags
 darktable
 dbeaver
 dep
