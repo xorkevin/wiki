@@ -52,6 +52,7 @@ imagemagick
 inkscape
 inotify-tools
 iperf3
+isync
 jdk10-openjdk
 jq
 kdenlive
