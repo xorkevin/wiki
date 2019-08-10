@@ -67,6 +67,7 @@ moreutils
 mosh
 mpd
 mpv
+msmtp
 mtr
 mumble
 musescore
@@ -148,6 +149,7 @@ tree
 ttf-fira-code
 ttf-google-fonts-git
 ttf-hack
+urlscan
 urxvt-perls
 urxvt-resize-font-git
 valgrind
