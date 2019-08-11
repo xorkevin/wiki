@@ -155,6 +155,7 @@ urxvt-resize-font-git
 valgrind
 vim
 vlc
+w3m
 weechat
 wget
 wine
