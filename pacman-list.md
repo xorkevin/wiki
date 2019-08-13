@@ -115,7 +115,6 @@ rsync
 rust-racer
 rustup
 rxvt-unicode
-scrot
 siege
 slop
 speedcrunch
