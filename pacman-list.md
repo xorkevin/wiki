@@ -42,6 +42,7 @@ gprolog
 graphicsmagick
 graphviz
 grub
+gvfs-smb
 handbrake
 htop
 hugo
