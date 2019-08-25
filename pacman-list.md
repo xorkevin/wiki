@@ -110,6 +110,7 @@ python-neovim
 python-pip
 qrencode
 racket
+redis
 reflector
 ripgrep
 rsync
