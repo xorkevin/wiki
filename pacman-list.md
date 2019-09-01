@@ -64,6 +64,7 @@ lxappearance
 maim
 mediainfo
 megatools
+minio-client
 moreutils
 mosh
 mpd
