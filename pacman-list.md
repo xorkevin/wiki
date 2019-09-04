@@ -109,8 +109,8 @@ pulseeffects
 python
 python2
 python-language-server
-python-neovim
 python-pip
+python-pynvim
 qrencode
 racket
 redis
