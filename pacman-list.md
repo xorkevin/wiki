@@ -44,8 +44,10 @@ graphviz
 grub
 gvfs-smb
 handbrake
+hexyl
 htop
 hugo
+hyperfine
 i3lock
 i3status
 i3-wm
@@ -166,6 +168,7 @@ words
 xbindkeys
 xclip
 xorg-xinit
+xsv
 yapf
 yay
 youtube-dl
