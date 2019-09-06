@@ -125,6 +125,7 @@ slop
 speedcrunch
 speedtest-cli
 sshfs
+starship
 steam
 stow
 streamlink
