@@ -89,6 +89,8 @@ nvidia-settings
 ocaml
 octave
 opam
+openjdk-doc
+openjdk-src
 openssh
 optipng
 os-prober
