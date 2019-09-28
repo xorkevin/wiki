@@ -39,6 +39,7 @@ gnu-netcat
 go
 go-tools
 gprolog
+gradle
 graphicsmagick
 graphviz
 grub
@@ -56,7 +57,7 @@ inkscape
 inotify-tools
 iperf3
 isync
-jdk10-openjdk
+jdk-openjdk
 jq
 kdenlive
 lib32-nvidia-utils
