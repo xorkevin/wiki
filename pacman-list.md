@@ -1,4 +1,3 @@
-alsa-plugins
 alsa-utils
 amd-ucode
 antibody-bin
@@ -21,7 +20,6 @@ cowsay
 ctags
 darktable
 dbeaver
-dep
 dhcpcd
 dmenu
 docker
@@ -139,7 +137,6 @@ rust-racer
 rustup
 rxvt-unicode
 siege
-slop
 speedcrunch
 speedtest-cli
 sshfs
