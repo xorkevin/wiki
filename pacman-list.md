@@ -6,6 +6,9 @@ apache-tools
 arandr
 arc-icon-theme
 arc-solid-gtk-theme
+autoconf
+automake
+base
 bat
 bc
 biber
@@ -19,11 +22,13 @@ ctags
 darktable
 dbeaver
 dep
+dhcpcd
 dmenu
 docker
 docker-compose
 dolphin-emu
 dos2unix
+e2fsprogs
 efibootmgr
 emacs
 exa
@@ -33,6 +38,7 @@ figlet
 firefox
 fortune-mod
 fzf
+gcc
 gimp
 git
 gnu-netcat
@@ -53,6 +59,7 @@ i3lock
 i3status
 i3-wm
 imagemagick
+inetutils
 inkscape
 inotify-tools
 iperf3
@@ -62,9 +69,15 @@ jq
 kdenlive
 lib32-nvidia-utils
 libreoffice-fresh
+linux
+linux-firmware
 linux-headers
+lvm2
 lxappearance
 maim
+make
+man-db
+man-pages
 mediainfo
 megatools
 minio-client
@@ -80,6 +93,7 @@ ncmpcpp
 neofetch
 neomutt
 neovim
+netctl
 nextcloud-client
 nmap
 npm
@@ -101,6 +115,7 @@ p7zip
 pacman-contrib
 paprefs
 pass
+patch
 pavucontrol
 perf
 postgresql
@@ -132,6 +147,7 @@ starship
 steam
 stow
 streamlink
+sudo
 syncthing
 task
 texlive-bibtexextra
@@ -161,11 +177,13 @@ urlscan
 urxvt-perls
 urxvt-resize-font-git
 valgrind
+vi
 vim
 vlc
 w3m
 weechat
 wget
+which
 wine
 wireshark-qt
 words
