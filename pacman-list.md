@@ -116,6 +116,7 @@ pass
 patch
 pavucontrol
 perf
+pkgconf
 postgresql
 powerline-fonts
 prettier
