@@ -21,6 +21,7 @@ ctags
 darktable
 dbeaver
 dhcpcd
+diffutils
 dmenu
 docker
 docker-compose
@@ -65,6 +66,7 @@ isync
 jdk-openjdk
 jq
 kdenlive
+less
 lib32-nvidia-utils
 libreoffice-fresh
 linux
@@ -148,6 +150,7 @@ streamlink
 sudo
 syncthing
 task
+texinfo
 texlive-bibtexextra
 texlive-core
 texlive-fontsextra
