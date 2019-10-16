@@ -163,6 +163,7 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+texlive-tikz-uml
 thunar
 time
 tk
