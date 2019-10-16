@@ -159,6 +159,7 @@ clean:
 ```tex
 \documentclass{article}
 \usepackage[left=4cm,right=4cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[T1]{fontenc}
 \usepackage{mathtools}
 \usepackage{enumitem}
 \usepackage{amsthm}
@@ -169,6 +170,8 @@ clean:
 \usepackage{float}
 \usepackage{array}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-uml}
 \usepackage{xcolor}
 \usepackage[hypertexnames=false]{hyperref}
 
