@@ -100,6 +100,7 @@ npm
 ntfs-3g
 nvidia
 nvidia-settings
+obs-studio
 ocaml
 octave
 opam
