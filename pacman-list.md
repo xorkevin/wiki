@@ -147,6 +147,7 @@ sshfs
 starship
 steam
 stow
+strace
 streamlink
 sudo
 syncthing
