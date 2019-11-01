@@ -144,7 +144,7 @@ siege
 speedcrunch
 speedtest-cli
 sshfs
-starship
+starship-bin
 steam
 stow
 strace
