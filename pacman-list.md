@@ -116,6 +116,7 @@ p7zip
 pacman-contrib
 paprefs
 pass
+pass-otp
 patch
 pavucontrol
 perf
@@ -132,6 +133,7 @@ python-language-server
 python-pip
 python-pynvim
 qrencode
+qutebrowser
 racket
 redis
 reflector
