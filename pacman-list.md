@@ -143,6 +143,7 @@ rust-racer
 rustup
 rxvt-unicode
 siege
+silicon
 speedcrunch
 speedtest-cli
 sshfs
