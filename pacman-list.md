@@ -22,6 +22,7 @@ darktable
 dbeaver
 dhcpcd
 diffutils
+discord
 dmenu
 docker
 docker-compose
