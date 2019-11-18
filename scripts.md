@@ -92,6 +92,12 @@ pacman remove orphans:
 pacman -Rns $(pacman -Qtdq)
 ```
 
+clean pacman cache:
+
+```bash
+paccache -r
+```
+
 fix corrupt zsh history:
 
 ```bash
