@@ -1,3 +1,8 @@
+profile program
+```bash
+perf stat
+```
+
 change all files to 644 and all dirs to 755:
 
 ```bash
