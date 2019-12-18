@@ -130,6 +130,7 @@ pulseaudio-alsa
 pulseeffects
 python
 python2
+python-black
 python-language-server
 python-pip
 python-pynvim
