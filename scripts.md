@@ -146,6 +146,13 @@ GRUB_CMDLINE_LINUX="nomodeset"
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+ssh match group
+
+```
+Match Group wheel
+  PasswordAuthentication no
+```
+
 Makefile latex
 
 ```Makefile
