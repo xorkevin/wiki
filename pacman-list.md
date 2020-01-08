@@ -133,6 +133,7 @@ python2
 python-black
 python-language-server
 python-pip
+python-pipenv
 python-pynvim
 qrencode
 qutebrowser
