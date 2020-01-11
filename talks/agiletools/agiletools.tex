@@ -1,0 +1,126 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{pgfpages}
+\usepackage{listings}
+\usepackage{csquotes}
+
+\ifdefined\NOTES
+  \setbeameroption{show only notes}
+\fi
+
+\title{Agile Development}
+\subtitle{Tools for development}
+\author{Kevin Wang \and Aidan Wolk}
+\year=2020\relax
+\month=01\relax
+\day=11\relax
+\date{\today}
+\institute{DevX}
+\logo{\includegraphics[height=0.5cm]{assets/devxlogo.png}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\subsection{Who are we}
+
+\begin{frame}{whoami}
+  \begin{columns}
+    \begin{column}{0.48\textwidth}
+      \textbf{\Large Kevin Wang}
+
+      \begin{description}
+        \item[LA Hacks] Tech Director Emeritus
+        \item[DevX] Tech Advisor
+      \end{description}
+
+      \texttt{\tiny github: @xorkevin}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\Large Aidan Wolk}
+
+      \begin{description}
+        \item[Broomie] Engineering Manager
+        \item[DevX] Tech Advisor
+      \end{description}
+
+      \texttt{\tiny github: @awolk}
+    \end{column}
+  \end{columns}
+\end{frame}
+\note[itemize]{
+  \item We are not experts
+  \item But we are passionate about developer experience
+  \item And want to share our perspectives from our experiences building,
+    deploying, and maintaining applications
+  \item As your tech advisors, come to us with questions, we are happy to help
+}
+
+\subsection{Motivation for this talk}
+
+\begin{frame}{Why is the dev process important?}
+  \begin{displayquote}[Anonymous][.]
+    A good craftsman never blames his tools
+  \end{displayquote}
+
+  A corollary:
+
+  \begin{displayquote}[][.]
+    A good craftsman should know his tools
+  \end{displayquote}
+\end{frame}
+\note[itemize]{
+  \item an old adage states that a good craftsman should never blame his tools
+  \item therefore, a good craftsman should know his tools
+  \item working on a tech project is more than just knowing a technology or a
+    framework
+  \item it involves knowing how to integrate your work with the ecosystem
+    around it
+  \item thus, you need to know your tools, their capabilities, and their
+    limitations
+}
+
+\begin{frame}{Brief Overview}
+  \begin{itemize}
+    \item Version Control
+      \begin{itemize}
+        \item Git
+        \item best practices
+      \end{itemize}
+    \item Containerization
+      \begin{itemize}
+        \item Docker
+        \item How to begin using it
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item you have probably heard of these tools before
+  \item if not, do not worry, that is what this talk is for
+  \item we want to focus on best practices for using these tools and how you
+    can incorporate them into your project
+}
+
+\section{Version Control}
+
+\subsection{What is it}
+
+\begin{frame}{Version Control}
+  \begin{itemize}
+    \item history for files
+    \item no more saving multiple copies manually
+    \item changes can be committed and tracked by the VCS
+    \item modern VCS's can easily merge changesets (like you will need for your
+      projects)
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item every project should be using version control
+  \item aside from making collaboration easier, it allows you to view the
+    history of your own changes
+  \item helpful for identifying which changes introduced bugs
+}
+
+\end{document}
