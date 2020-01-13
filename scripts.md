@@ -291,3 +291,48 @@ clean-images:
 
 \end{document}
 ```
+
+```tex
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen}
+
+\title{Title}
+\subtitle{Subtitle}
+\author{Kevin Wang}
+\year=2020\relax
+\month=01\relax
+\day=02\relax
+\date{\today}
+\institute{Org}
+\logo{\includegraphics[height=0.5cm]{assets/logo.png}}
+
+% fix text color issue for second screen notes
+\makeatletter
+\def\beamer@framenotesbegin{
+  % at beginning of slide
+  \usebeamercolor[fg]{normal text}
+  \gdef\beamer@noteitems{}
+  \gdef\beamer@notes{}
+}
+\makeatother
+
+\begin{document}
+
+\maketitle
+
+\section{Section Title}
+
+\subsection{Subsection}
+
+\begin{frame}{Frame title}{subtitle}
+  Frame text
+  \note{notes text}
+\end{frame}
+\note[itemize]{
+  \item notes text
+}
+
+\end{document}
+```
