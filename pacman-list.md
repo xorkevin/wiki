@@ -135,6 +135,7 @@ python-black
 python-language-server
 python-pip
 python-pipenv
+python-pympress
 python-pynvim
 qrencode
 qutebrowser
