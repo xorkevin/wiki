@@ -120,7 +120,6 @@ pass
 pass-otp
 patch
 pavucontrol
-pdfpc
 perf
 pkgconf
 postgresql
