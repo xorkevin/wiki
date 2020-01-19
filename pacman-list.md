@@ -141,6 +141,7 @@ qutebrowser
 racket
 redis
 reflector
+riot-desktop
 ripgrep
 rsync
 rust-racer
