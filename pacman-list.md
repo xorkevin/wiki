@@ -51,6 +51,7 @@ graphviz
 grub
 gvfs-smb
 handbrake
+hddtemp
 hexyl
 htop
 hugo
@@ -149,6 +150,7 @@ rustup
 rxvt-unicode
 siege
 silicon
+smartmontools
 speedcrunch
 speedtest-cli
 sshfs
