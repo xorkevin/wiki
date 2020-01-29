@@ -99,11 +99,33 @@
 
 - uses a segment of the chain to bootstrap randomness for the next epoch
 - each time slot in an epoch has a leader elected by follow the satoshi where a random coin is chosen
-- time slot leader has full control of the chain for that segment of execution
+- time slot leader has full control of the chain for that segment of execution, and may only mine at most one block
   - if leader is adversarial, amount of transactions needed to close margin of next highest tine is too high
-  - guard against nothing at stake
+  - guards against nothing at stake
   - if < 50% of stake is held by adversarial nodes, then network is driven towards consensus
 
 #### Scalability
-  - block leaders can run multiple blockchains
-  - multiple epochs can run on multiple chains concurrently and communicate via sidechains
+
+- block leaders can run multiple blockchains
+- multiple epochs can run on multiple chains concurrently and communicate via sidechains
+
+### EOS
+
+#### Delegated proof of stake
+
+- token holders vote for producers
+- producers may mine at most one block per slot
+
+## Stablecoin
+
+### DAI
+
+- smart contract system on the Ethereum chain
+- collateral is deposited to the Maker contract to form a Collateralized Debt Position
+- DAI may be withdrawn up to the amount collateralized
+- DAI may be paid back to free the collateral, plus accumulated interest
+- When the value of the collateral falls below the withdrawn debt, the collateral may be liquidated
+- target rate feedback mechanism
+  - rate set by maker dao votes
+  - if the target price falls below/above $1 peg, TRFM engages and DAI savings rate (i.e. interest rate) is pushed up/down
+  - increased/decreased demand by DAI holders, supply shrinks/grows, price of DAI increases/decreases
