@@ -1,5 +1,6 @@
 alsa-utils
 amd-ucode
+angband
 antibody-bin
 apache-tools
 arandr
@@ -28,6 +29,7 @@ docker
 docker-compose
 dolphin-emu
 dos2unix
+dwarffortress
 e2fsprogs
 efibootmgr
 emacs
@@ -83,6 +85,7 @@ man-pages
 mediainfo
 megatools
 minio-client
+mkvtoolnix-gui
 moreutils
 mosh
 mpd
@@ -96,6 +99,7 @@ neofetch
 neomutt
 neovim
 netctl
+nethack
 nextcloud-client
 nmap
 npm
@@ -144,6 +148,7 @@ redis
 reflector
 riot-desktop
 ripgrep
+rogue
 rsync
 rust-racer
 rustup
