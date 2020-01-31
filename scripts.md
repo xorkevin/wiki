@@ -187,6 +187,7 @@ clean:
 \usepackage{listings}
 \usepackage{float}
 \usepackage{array}
+\usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{tikz-uml}
