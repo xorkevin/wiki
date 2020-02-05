@@ -41,6 +41,7 @@ firefox
 fortune-mod
 fzf
 gcc
+gdb
 gimp
 git
 gnu-netcat
