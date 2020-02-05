@@ -122,7 +122,7 @@ dd if=/dev/urandom of=file.txt bs=1048576 count=100
 
 refresh keys
 
-```
+```bash
 # pacman-key --init
 # pacman-key --populate archlinux
 # pacman-key --refresh keys
@@ -130,8 +130,14 @@ refresh keys
 
 export gpg subkey
 
-```
+```bash
 gpg --armor --export-secret-subkey keyid! | gpg --armor --symmetric --output filename.sec.asc
+```
+
+git line stats:
+
+```bash
+git log --author="Kevin Wang" --pretty=tformat: --numstat | awk '{add+=$1; subs+=$2} END {printf "added: %s, removed: %s\n", add, subs}'
 ```
 
 Grub boot without monitor
@@ -142,7 +148,7 @@ Grub boot without monitor
 GRUB_CMDLINE_LINUX="nomodeset"
 ```
 
-```
+```bash
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
