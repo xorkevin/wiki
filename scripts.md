@@ -152,6 +152,12 @@ GRUB_CMDLINE_LINUX="nomodeset"
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+change backlight
+
+```bash
+tee /sys/class/backlight/intel_backlight/brightness <<< 384
+```
+
 ssh match group
 
 ```
