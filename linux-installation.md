@@ -44,3 +44,8 @@ Color
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
+
+`/etc/sysctl.d/99-swappiness.conf`:
+```conf
+vm.swappiness=8
+```
