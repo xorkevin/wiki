@@ -121,6 +121,7 @@ otf-fira-mono
 otf-fira-sans
 p7zip
 pacman-contrib
+pacutils
 paprefs
 pass
 pass-otp
