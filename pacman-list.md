@@ -66,6 +66,7 @@ imagemagick
 inetutils
 inkscape
 inotify-tools
+inter-font
 iperf3
 isync
 jdk-openjdk
@@ -194,6 +195,7 @@ tree
 ttf-fira-code
 ttf-google-fonts-git
 ttf-hack
+ttf-linux-libertine
 urlscan
 urxvt-perls
 urxvt-resize-font-git
