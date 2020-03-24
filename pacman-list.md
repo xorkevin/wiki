@@ -39,6 +39,7 @@ feh
 figlet
 firefox
 fortune-mod
+freepats-general-midi
 fzf
 gcc
 gdb
@@ -130,6 +131,7 @@ patch
 pavucontrol
 perf
 pkgconf
+podman
 postgresql
 powerline-fonts
 prettier
@@ -159,6 +161,7 @@ rxvt-unicode
 siege
 silicon
 smartmontools
+soundfont-fluid
 speedcrunch
 speedtest-cli
 sshfs
@@ -186,6 +189,7 @@ texlive-science
 texlive-tikz-uml
 thunar
 time
+timidity++
 tk
 tmux
 tokei
