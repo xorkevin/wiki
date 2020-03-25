@@ -73,6 +73,7 @@ isync
 jdk-openjdk
 jq
 kdenlive
+kubectl
 less
 lib32-nvidia-utils
 libreoffice-fresh
@@ -87,6 +88,7 @@ man-db
 man-pages
 mediainfo
 megatools
+minikube
 minio-client
 mkvtoolnix-gui
 moreutils
@@ -204,6 +206,7 @@ urlscan
 urxvt-perls
 urxvt-resize-font-git
 valgrind
+vault
 vi
 vim
 vlc
