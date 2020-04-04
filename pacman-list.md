@@ -31,6 +31,7 @@ dolphin-emu
 dos2unix
 dwarffortress
 e2fsprogs
+ebtables
 efibootmgr
 emacs
 exa
@@ -45,7 +46,6 @@ gcc
 gdb
 gimp
 git
-gnu-netcat
 go
 go-tools
 gprolog
@@ -78,6 +78,7 @@ kubernetes-helm-bin
 less
 lib32-nvidia-utils
 libreoffice-fresh
+libvirt
 linux
 linux-firmware
 linux-headers
@@ -116,6 +117,7 @@ obs-studio
 ocaml
 octave
 opam
+openbsd-netcat
 openjdk-doc
 openjdk-src
 openssh
