@@ -20,7 +20,6 @@ clang
 cowsay
 ctags
 darktable
-dbeaver
 dhcpcd
 diffutils
 discord
@@ -50,7 +49,6 @@ git
 go
 go-tools
 gprolog
-gradle
 graphicsmagick
 graphviz
 grub
@@ -155,7 +153,6 @@ python-pynvim
 qemu
 qrencode
 qutebrowser
-racket
 redis
 reflector
 riot-desktop
@@ -215,7 +212,6 @@ vault
 vi
 vim
 vlc
-w3m
 weechat
 wget
 which
