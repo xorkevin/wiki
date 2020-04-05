@@ -83,6 +83,7 @@ linux-firmware
 linux-headers
 lvm2
 lxappearance
+lxqt-policykit
 maim
 make
 man-db
@@ -211,6 +212,7 @@ valgrind
 vault
 vi
 vim
+virt-manager
 vlc
 weechat
 wget
