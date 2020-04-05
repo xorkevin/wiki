@@ -25,6 +25,7 @@ dhcpcd
 diffutils
 discord
 dmenu
+dnsmasq
 docker
 docker-compose
 dolphin-emu
