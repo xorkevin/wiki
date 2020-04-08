@@ -55,6 +55,7 @@ grub
 gvfs-smb
 handbrake
 hddtemp
+helm
 hexyl
 htop
 hugo
@@ -73,7 +74,6 @@ jdk-openjdk
 jq
 kdenlive
 kubectl
-kubernetes-helm-bin
 less
 lib32-nvidia-utils
 libreoffice-fresh
