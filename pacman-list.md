@@ -13,7 +13,6 @@ bat
 bc
 biber
 blender
-calibre
 cava
 chromium
 clang
@@ -65,7 +64,6 @@ i3status
 i3-wm
 imagemagick
 inetutils
-inkscape
 inotify-tools
 inter-font
 iperf3
@@ -144,7 +142,6 @@ pulseaudio
 pulseaudio-alsa
 pulseeffects
 python
-python2
 python-black
 python-language-server
 python-pip
