@@ -145,7 +145,6 @@ python-black
 python-language-server
 python-pip
 python-pipenv
-python-pympress
 python-pynvim
 qemu
 qrencode
