@@ -14,11 +14,13 @@ bc
 biber
 blender
 cava
+checkbashisms
 chromium
 clang
 cowsay
 ctags
 darktable
+dash
 dhcpcd
 diffutils
 discord
@@ -159,7 +161,6 @@ rust-racer
 rustup
 rxvt-unicode
 siege
-silicon
 smartmontools
 soundfont-fluid
 speedcrunch
