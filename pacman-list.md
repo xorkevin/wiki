@@ -66,6 +66,7 @@ i3status
 i3-wm
 imagemagick
 inetutils
+inkscape
 inotify-tools
 inter-font
 iperf3
