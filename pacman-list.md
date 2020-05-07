@@ -158,6 +158,7 @@ riot-desktop
 ripgrep
 rogue
 rsync
+rust-analyzer
 rust-racer
 rustup
 rxvt-unicode
