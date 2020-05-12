@@ -70,6 +70,7 @@ inkscape
 inotify-tools
 inter-font
 iperf3
+istio-bin
 isync
 jdk-openjdk
 jq
