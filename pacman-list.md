@@ -148,7 +148,7 @@ python
 python-black
 python-language-server
 python-pip
-python-pipenv
+python-poetry
 python-pynvim
 qemu
 qrencode
