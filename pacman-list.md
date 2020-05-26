@@ -164,6 +164,7 @@ rust-racer
 rustup
 rxvt-unicode
 siege
+skaffold-bin
 smartmontools
 soundfont-fluid
 speedcrunch
