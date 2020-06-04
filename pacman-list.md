@@ -76,6 +76,7 @@ jdk-openjdk
 jq
 kdenlive
 kubectl
+kustomize
 less
 lib32-nvidia-utils
 libreoffice-fresh
