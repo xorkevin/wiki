@@ -35,6 +35,7 @@ e2fsprogs
 ebtables
 efibootmgr
 emacs
+evince
 exa
 fd
 feh
