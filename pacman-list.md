@@ -34,6 +34,7 @@ dwarffortress
 e2fsprogs
 ebtables
 efibootmgr
+element-desktop
 emacs
 evince
 exa
@@ -127,7 +128,6 @@ openjdk-src
 openssh
 optipng
 os-prober
-otf-fira-code
 otf-fira-mono
 otf-fira-sans
 p7zip
@@ -157,7 +157,6 @@ qrencode
 qutebrowser
 redis
 reflector
-riot-desktop
 ripgrep
 rogue
 rsync
@@ -193,7 +192,6 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
-texlive-tikz-uml
 thunar
 time
 timidity++
@@ -221,6 +219,8 @@ wget
 which
 wine
 wireshark-qt
+woff2-fira-code
+woff-fira-code
 words
 xbindkeys
 xclip
