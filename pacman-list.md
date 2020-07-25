@@ -180,6 +180,7 @@ sudo
 syncthing
 task
 texinfo
+texlab
 texlive-bibtexextra
 texlive-core
 texlive-fontsextra
