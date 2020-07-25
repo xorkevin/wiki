@@ -83,6 +83,7 @@ less
 lib32-nvidia-utils
 libreoffice-fresh
 libvirt
+linkerd
 linux
 linux-firmware
 linux-headers
