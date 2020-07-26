@@ -43,7 +43,6 @@ feh
 figlet
 firefox
 fortune-mod
-freepats-general-midi
 fzf
 gcc
 gdb
@@ -168,7 +167,6 @@ rxvt-unicode
 siege
 skaffold-bin
 smartmontools
-soundfont-fluid
 speedcrunch
 speedtest-cli
 sshfs
@@ -196,7 +194,6 @@ texlive-publishers
 texlive-science
 thunar
 time
-timidity++
 tk
 tmux
 tokei
@@ -234,4 +231,5 @@ youtube-dl
 zathura
 zathura-pdf-mupdf
 zip
+zoom
 zsh
