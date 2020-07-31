@@ -146,6 +146,7 @@ powerline-fonts
 prettier
 pulseaudio
 pulseaudio-alsa
+pv
 python
 python-black
 python-language-server
