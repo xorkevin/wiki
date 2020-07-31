@@ -165,6 +165,7 @@ rust-analyzer
 rust-racer
 rustup
 rxvt-unicode
+sd
 siege
 skaffold-bin
 smartmontools
