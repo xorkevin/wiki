@@ -75,6 +75,7 @@ istio-bin
 isync
 jdk-openjdk
 jq
+k3s-bin
 kdenlive
 kubectl
 kustomize
