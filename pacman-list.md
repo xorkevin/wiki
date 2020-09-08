@@ -70,6 +70,7 @@ inetutils
 inkscape
 inotify-tools
 inter-font
+iotop
 iperf3
 istio-bin
 isync
