@@ -133,6 +133,7 @@ os-prober
 otf-fira-mono
 otf-fira-sans
 p7zip
+pacback
 pacman-contrib
 pacutils
 paprefs
