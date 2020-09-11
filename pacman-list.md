@@ -13,7 +13,6 @@ bat
 bc
 biber
 blender
-cava
 checkbashisms
 chromium
 clang
