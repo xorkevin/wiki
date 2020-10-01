@@ -76,7 +76,10 @@ isync
 jdk-openjdk
 jq
 k3s-bin
+kbfs
 kdenlive
+keybase
+keybase-gui
 kubectl
 kustomize
 less
