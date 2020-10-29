@@ -117,6 +117,7 @@ neovim
 netctl
 nethack
 nextcloud-client
+nkit
 nmap
 npm
 ntfs-3g
@@ -139,6 +140,7 @@ pacback
 pacman-contrib
 pacutils
 paprefs
+paru-bin
 pass
 pass-otp
 patch
