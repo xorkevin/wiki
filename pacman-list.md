@@ -174,7 +174,7 @@ rustup
 rxvt-unicode
 sd
 siege
-skaffold-bin
+skaffold
 smartmontools
 speedcrunch
 speedtest-cli
