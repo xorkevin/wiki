@@ -101,6 +101,7 @@ mediainfo
 megatools
 minikube
 minio-client
+mkcert
 mkvtoolnix-gui
 moreutils
 mosh
@@ -143,6 +144,7 @@ paprefs
 paru-bin
 pass
 pass-otp
+pastel
 patch
 pavucontrol
 perf
