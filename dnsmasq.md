@@ -12,6 +12,6 @@ dnsmasq_resolv=/etc/dnsmasq-resolv.conf
 ```
 conf-file=/etc/dnsmasq-conf.conf
 resolv-file=/etc/dnsmasq-resolv.conf
-local=/dev.home/
-address=/dev.home/127.0.0.1
+local=/dev.localhost/
+address=/dev.localhost/127.0.0.1
 ```
