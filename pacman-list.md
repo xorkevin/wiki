@@ -34,6 +34,8 @@ e2fsprogs
 ebtables
 efibootmgr
 element-desktop
+elixir
+elixir-ls
 emacs
 evince
 exa
@@ -237,6 +239,7 @@ xclip
 xorg-xinit
 xsv
 yapf
+yarn
 yay
 youtube-dl
 zathura
