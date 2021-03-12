@@ -24,6 +24,7 @@ dhcpcd
 diffutils
 discord
 dmenu
+dmidecode
 dnsmasq
 docker
 docker-compose
@@ -49,6 +50,7 @@ gcc
 gdb
 gimp
 git
+git-delta-bin
 go
 go-tools
 gprolog
