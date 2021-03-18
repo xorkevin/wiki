@@ -17,6 +17,7 @@ checkbashisms
 chromium
 clang
 cowsay
+cronie
 ctags
 darktable
 dash
@@ -52,6 +53,7 @@ gimp
 git
 git-delta-bin
 go
+go-ipfs
 go-tools
 gprolog
 graphicsmagick
