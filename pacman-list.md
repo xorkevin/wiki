@@ -90,6 +90,7 @@ kubectl
 kustomize
 less
 lib32-nvidia-utils
+libertinus-font
 libreoffice-fresh
 libvirt
 linkerd
@@ -220,7 +221,6 @@ tree
 ttf-fira-code
 ttf-google-fonts-git
 ttf-hack
-ttf-linux-libertine
 urlscan
 urxvt-perls
 urxvt-resize-font-git
