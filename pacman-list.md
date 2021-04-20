@@ -33,7 +33,6 @@ dolphin-emu
 dos2unix
 dwarffortress
 e2fsprogs
-ebtables
 efibootmgr
 element-desktop
 elixir
@@ -77,6 +76,7 @@ inotify-tools
 inter-font
 iotop
 iperf3
+iptables-nft
 istio-bin
 isync
 jdk-openjdk
