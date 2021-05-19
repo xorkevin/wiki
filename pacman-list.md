@@ -8,6 +8,7 @@ arc-icon-theme
 arc-solid-gtk-theme
 autoconf
 automake
+awesome-terminal-fonts
 base
 bat
 bc
@@ -141,8 +142,10 @@ openjdk-src
 openssh
 optipng
 os-prober
+otf-cormorant
 otf-fira-mono
 otf-fira-sans
+otf-overpass
 p7zip
 pacback
 pacman-contrib
@@ -219,7 +222,7 @@ traceroute
 transmission-qt
 tree
 ttf-anonymous-pro
-ttf-caladea
+ttf-cormorant
 ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans
@@ -229,6 +232,7 @@ ttf-jetbrains-mono
 ttf-lato
 ttf-merriweather
 ttf-merriweather-sans
+ttf-nerd-fonts-symbols
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
