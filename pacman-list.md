@@ -128,6 +128,8 @@ nethack
 nextcloud-client
 nkit
 nmap
+noto-fonts-cjk
+noto-fonts-emoji
 npm
 ntfs-3g
 nvidia
@@ -243,6 +245,7 @@ urxvt-resize-font-git
 valgrind
 vault
 vi
+via-bin
 vim
 virt-manager
 vlc
