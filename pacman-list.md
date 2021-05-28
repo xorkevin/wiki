@@ -93,6 +93,8 @@ less
 lib32-nvidia-utils
 libertinus-font
 libreoffice-fresh
+libva-utils
+libva-vdpau-driver
 libvirt
 linkerd
 linux
@@ -244,6 +246,7 @@ urxvt-perls
 urxvt-resize-font-git
 valgrind
 vault
+vdpauinfo
 vi
 via-bin
 vim
