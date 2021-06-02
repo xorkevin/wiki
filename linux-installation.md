@@ -41,6 +41,7 @@ COMPRESSXZ=(xz -c -z - --threads=0) # multithreaded compression
 
 ```conf
 Color
+ParallelDownloads = 8
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
