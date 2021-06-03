@@ -263,6 +263,7 @@ words
 xbindkeys
 xclip
 xorg-xinit
+xplr
 xsv
 yapf
 yarn
