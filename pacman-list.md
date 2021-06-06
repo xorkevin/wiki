@@ -267,7 +267,7 @@ xplr
 xsv
 yapf
 yarn
-yay
+yay-bin
 youtube-dl
 zathura
 zathura-pdf-mupdf
