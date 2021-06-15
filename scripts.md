@@ -148,6 +148,14 @@ Grub boot without monitor
 GRUB_CMDLINE_LINUX="nomodeset"
 ```
 
+Grub generate config with os prober
+
+/etc/default/grub:
+
+```
+GRUB_DISABLE_OS_PROBER=false
+```
+
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
