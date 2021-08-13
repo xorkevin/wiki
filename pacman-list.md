@@ -14,6 +14,7 @@ bat
 bc
 biber
 blender
+brightnessctl
 checkbashisms
 chromium
 clang
