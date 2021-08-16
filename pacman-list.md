@@ -47,6 +47,7 @@ feh
 figlet
 firefox
 fortune-mod
+freepats-general-midi
 fzf
 gcc
 gdb
@@ -60,6 +61,7 @@ gprolog
 graphicsmagick
 graphviz
 grub
+gucharmap
 gvfs-smb
 handbrake
 hddtemp
@@ -220,6 +222,7 @@ texlive-publishers
 texlive-science
 thunar
 time
+timidity++
 tk
 tmux
 tokei
