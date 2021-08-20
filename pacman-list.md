@@ -170,6 +170,7 @@ podman
 postgresql
 powerline-fonts
 prettier
+pueue
 pulseaudio
 pulseaudio-alsa
 pv
