@@ -53,7 +53,7 @@ gcc
 gdb
 gimp
 git
-git-delta-bin
+git-delta
 go
 go-ipfs
 go-tools
@@ -199,7 +199,7 @@ smartmontools
 speedcrunch
 speedtest-cli
 sshfs
-starship-bin
+starship
 steam
 stow
 strace
