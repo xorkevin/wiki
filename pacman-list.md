@@ -42,6 +42,7 @@ elixir-ls
 emacs
 evince
 exa
+ext4magic
 fd
 feh
 figlet
@@ -167,6 +168,7 @@ pavucontrol
 perf
 pkgconf
 podman
+podman-compose
 postgresql
 powerline-fonts
 prettier
