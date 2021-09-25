@@ -6,6 +6,7 @@ apache-tools
 arandr
 arc-icon-theme
 arc-solid-gtk-theme
+audacity
 autoconf
 automake
 awesome-terminal-fonts
@@ -259,6 +260,7 @@ via-bin
 vim
 virt-manager
 vlc
+w3m
 weechat
 wget
 which
