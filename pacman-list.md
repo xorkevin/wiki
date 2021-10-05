@@ -158,7 +158,6 @@ otf-overpass
 p7zip
 pacback
 pacman-contrib
-pacoloco
 pacutils
 paprefs
 paru-bin
