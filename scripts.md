@@ -1,3 +1,10 @@
+gpg export only single subkey
+
+```bash
+gpg --list-keys --keyid-format long KEYID
+gpg --armor --export-secret-subkeys SUBKEYID!
+```
+
 profile program
 ```bash
 perf stat
