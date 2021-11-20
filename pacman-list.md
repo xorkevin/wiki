@@ -126,6 +126,7 @@ msmtp
 mtr
 mumble
 musescore
+nano
 ncmpcpp
 neofetch
 neomutt
@@ -265,6 +266,7 @@ weechat
 wget
 which
 wine
+wireguard-tools
 wireshark-qt
 woff2-fira-code
 woff-fira-code
