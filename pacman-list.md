@@ -210,6 +210,7 @@ strace
 streamlink
 sudo
 syncthing
+tailscale
 task
 texinfo
 texlab
