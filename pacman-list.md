@@ -67,6 +67,7 @@ gucharmap
 gvfs-smb
 handbrake
 hddtemp
+headscale
 helm
 hexyl
 htop
@@ -128,6 +129,7 @@ mumble
 musescore
 nano
 ncmpcpp
+nebula
 neofetch
 neomutt
 neovim
