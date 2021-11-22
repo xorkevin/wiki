@@ -50,3 +50,8 @@ Include = /etc/pacman.d/mirrorlist
 ```conf
 vm.swappiness=8
 ```
+
+SSD wear-leveling
+```
+systemctl enable fstrim.timer
+```
