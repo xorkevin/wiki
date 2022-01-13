@@ -27,6 +27,7 @@ dash
 dhcpcd
 diffutils
 discord
+djv
 dmenu
 dmidecode
 dnsmasq
