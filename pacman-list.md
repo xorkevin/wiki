@@ -183,11 +183,11 @@ pulseaudio-alsa
 pv
 python
 python-black
-python-language-server
+python-lsp-server
 python-pip
 python-poetry
 python-pynvim
-qemu
+qemu-desktop
 qrencode
 qutebrowser
 redis
@@ -201,6 +201,7 @@ rustup
 rxvt-unicode
 sd
 siege
+signal-desktop
 skaffold
 smartmontools
 speedcrunch
@@ -284,6 +285,7 @@ yapf
 yarn
 yay-bin
 youtube-dl
+yt-dlp
 zathura
 zathura-pdf-mupdf
 zip
