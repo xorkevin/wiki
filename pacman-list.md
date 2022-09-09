@@ -58,7 +58,6 @@ gimp
 git
 git-delta
 go
-go-ipfs
 go-tools
 gprolog
 graphicsmagick
@@ -95,6 +94,7 @@ kdenlive
 keybase
 keybase-gui
 kubectl
+kubo
 kustomize
 less
 lib32-nvidia-utils
@@ -196,7 +196,6 @@ ripgrep
 rogue
 rsync
 rust-analyzer
-rust-racer
 rustup
 rxvt-unicode
 sd
@@ -250,7 +249,7 @@ ttf-jetbrains-mono
 ttf-lato
 ttf-merriweather
 ttf-merriweather-sans
-ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-2048-em
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
