@@ -103,7 +103,7 @@ libreoffice-fresh
 libva-utils
 libva-vdpau-driver
 libvirt
-linkerd
+linkerd-bin
 linux
 linux-firmware
 linux-headers
