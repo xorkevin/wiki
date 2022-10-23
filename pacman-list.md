@@ -84,7 +84,7 @@ inter-font
 iotop
 iperf3
 iptables-nft
-istio-bin
+istio
 isync
 jdk-openjdk
 jq
