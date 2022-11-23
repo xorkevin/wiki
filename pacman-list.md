@@ -128,6 +128,7 @@ msmtp
 mtr
 mumble
 musescore
+mycrypto-bin
 nano
 ncmpcpp
 nebula
