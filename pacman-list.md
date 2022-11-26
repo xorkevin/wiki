@@ -173,6 +173,7 @@ pavucontrol
 perf
 pipewire
 pipewire-alsa
+pipewire-docs
 pipewire-pulse
 pkgconf
 podman
@@ -189,6 +190,7 @@ python-pip
 python-poetry
 python-pynvim
 qemu-desktop
+qpwgraph
 qrencode
 qutebrowser
 redis
