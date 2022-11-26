@@ -164,7 +164,6 @@ p7zip
 pacback
 pacman-contrib
 pacutils
-paprefs
 paru-bin
 pass
 pass-otp
