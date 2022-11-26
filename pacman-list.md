@@ -172,6 +172,9 @@ pastel
 patch
 pavucontrol
 perf
+pipewire
+pipewire-alsa
+pipewire-pulse
 pkgconf
 podman
 podman-compose
@@ -179,8 +182,6 @@ postgresql
 powerline-fonts
 prettier
 pueue
-pulseaudio
-pulseaudio-alsa
 pv
 python
 python-black
@@ -272,6 +273,7 @@ wget
 which
 wine
 wireguard-tools
+wireplumber
 wireshark-qt
 woff2-fira-code
 woff-fira-code
