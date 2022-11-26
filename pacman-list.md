@@ -275,6 +275,7 @@ which
 wine
 wireguard-tools
 wireplumber
+wireplumber-docs
 wireshark-qt
 woff2-fira-code
 woff-fira-code
