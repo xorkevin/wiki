@@ -38,6 +38,7 @@ dos2unix
 dwarffortress
 e2fsprogs
 efibootmgr
+electrum
 element-desktop
 elixir
 elixir-ls
