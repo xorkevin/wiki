@@ -1,5 +1,6 @@
 alsa-utils
 amd-ucode
+android-file-transfer
 angband
 antibody-bin
 apache-tools
