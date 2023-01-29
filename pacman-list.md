@@ -1,3 +1,4 @@
+alacritty
 alsa-utils
 amd-ucode
 android-file-transfer
@@ -172,7 +173,9 @@ pass-otp
 pastel
 patch
 pavucontrol
+pdfarranger
 perf
+piper
 pipewire
 pipewire-alsa
 pipewire-docs
