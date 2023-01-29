@@ -211,6 +211,7 @@ siege
 signal-desktop
 skaffold
 smartmontools
+solaar
 speedcrunch
 speedtest-cli
 sshfs
