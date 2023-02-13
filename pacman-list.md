@@ -9,10 +9,9 @@ arandr
 arc-icon-theme
 arc-solid-gtk-theme
 audacity
-autoconf
-automake
 awesome-terminal-fonts
 base
+base-devel
 bat
 bc
 biber
@@ -55,7 +54,6 @@ firefox
 fortune-mod
 freepats-general-midi
 fzf
-gcc
 gdb
 gimp
 git
@@ -114,7 +112,6 @@ lvm2
 lxappearance
 lxqt-policykit
 maim
-make
 man-db
 man-pages
 mediainfo
@@ -171,7 +168,6 @@ paru-bin
 pass
 pass-otp
 pastel
-patch
 pavucontrol
 pdfarranger
 perf
@@ -180,7 +176,6 @@ pipewire
 pipewire-alsa
 pipewire-docs
 pipewire-pulse
-pkgconf
 podman
 podman-compose
 postgresql
@@ -277,12 +272,12 @@ vlc
 w3m
 weechat
 wget
-which
 wine
 wireguard-tools
 wireplumber
 wireplumber-docs
 wireshark-qt
+woeusb-ng
 woff2-fira-code
 woff-fira-code
 words
