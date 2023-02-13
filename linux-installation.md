@@ -61,19 +61,19 @@
     * root partition
 
         ```sh
-        mkfs.ext4 /dev/nvmexn1px
+        mkfs.ext4 -L arch_os /dev/nvmexn1px
         ```
 
     * swap partition
 
         ```sh
-        mkswap /dev/nvmexn1px
+        mkswap -L swp /dev/nvmexn1px
         ```
 
     * EFI system partition
 
         ```sh
-        mkfs.fat -F 32 /dev/nvmexn1px
+        mkfs.fat -F 32 -n ESP /dev/nvmexn1px
         ```
 
 * Mount file systems
@@ -223,6 +223,126 @@
 ### Notes
 
 * If failing to boot, the GPU might be too new. Try using the iGPU instead.
+* If forgetting to label the root fs, use `e2label /dev/device my-label`
+* If forgetting to label the esp, use `fatlabel /dev/device MY_LABEL`
+* If forgetting to label the swap partition, use `swaplabel -L my-label /dev/device`
+
+## Archlinux post install
+
+### Network
+
+* Enable `systemd-networkd.service`
+
+    ```sh
+    `systemctl enable --now systemd-networkd.service`
+    ping 8.8.8.8
+    ```
+
+* Add wired interface
+
+    ```
+    /etc/systemd/network/20-wired.network
+
+    [Match]
+    Name=enp1s0
+
+    [Network]
+    DHCP=yes
+    ```
+
+    * Use `ip link` to list network interfaces
+    * `systemctl restart systemd-networkd.service` to refresh configuration
+    * `ip addr` to show dhcp assigned ip address
+* Enable `systemd-resolved.service`
+
+    ```sh
+    systemctl enable --now systemd-resolved.service
+    resolvectl query xorkevin.com
+    ```
+
+* Stub `/etc/resolv.conf` with `systemd-resolved` for programs that read from
+  `systemd-resolved` directly such as GPG
+
+    ```sh
+    ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+    ```
+
+* For configuring custom DNS and fallback DNS servers if not using DHCP
+  provided DNS
+
+    ```
+    /etc/systemd/resolved.conf.d/dns_servers.conf
+
+    [Resolve]
+    DNS=127.0.0.1 ::1
+    Domains=~.
+    ```
+
+    ```
+    /etc/systemd/resolved.conf.d/fallback_dns.conf
+
+    [Resolve]
+    FallbackDNS=127.0.0.1 ::1
+    ```
+
+### Time
+
+* Enable `systemd-timesyncd` for NTP
+
+    ```sh
+    systemctl enable --now systemd-timesyncd.service
+    ```
+
+    ```sh
+    timedatectl status
+    ```
+
+    ```
+    /etc/systemd/timesyncd.conf
+
+    NTP=time1.google.com time2.google.com time3.google.com time4.google.com
+    ```
+
+### Drives
+
+* SSD wear-leveling
+
+    ```
+    systemctl enable fstrim.timer
+    ```
+
+* Favor using RAM instead of swap
+
+    ```sh
+    sysctl -w vm.swappiness=8
+    ```
+
+    ```
+    /etc/sysctl.d/99-swappiness.conf
+
+    vm.swappiness=8
+    ```
+
+### Pacman
+
+```
+/etc/makepkg.conf
+
+MAKEFLAGS="-j$(nproc)" # parallel jobs
+COMPRESSXZ=(xz -c -z --threads=0 -) # use all threads for compression
+COMPRESSZST=(zstd -c -z -q --threads=0 -) # use all threads for compression
+```
+
+```
+/etc/pacman.conf
+
+Color
+ParallelDownloads = 8
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
+# Deprecated
 
 # first install
 
@@ -253,34 +373,6 @@
 - rxvt-unicode
 - lxappearance
 - cronie
-
-## tweaks
-
-`/etc/makepkg.conf`:
-
-```conf
-MAKEFLAGS="-j$(nproc)" # parallel jobs
-COMPRESSXZ=(xz -c -z - --threads=0) # multithreaded compression
-```
-
-`/etc/pacman.conf`:
-
-```conf
-Color
-ParallelDownloads = 8
-[multilib]
-Include = /etc/pacman.d/mirrorlist
-```
-
-`/etc/sysctl.d/99-swappiness.conf`:
-```conf
-vm.swappiness=8
-```
-
-SSD wear-leveling
-```
-systemctl enable fstrim.timer
-```
 
 disable mouse acceleration
 
