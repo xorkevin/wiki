@@ -246,6 +246,9 @@
     [Match]
     Name=enp1s0
 
+    [Link]
+    RequiredForOnline=no
+
     [Network]
     DHCP=yes
     ```
@@ -253,6 +256,16 @@
     * Use `ip link` to list network interfaces
     * `systemctl restart systemd-networkd.service` to refresh configuration
     * `ip addr` to show dhcp assigned ip address
+    * Change systemd-networkd startup behavior to only wait for one interface
+
+        ```
+        /etc/systemd/system/systemd-networkd-wait-online.service.d/wait-for-only-one-interface.conf
+
+        [Service]
+        ExecStart=
+        ExecStart=/usr/lib/systemd/systemd-networkd-wait-online --any
+        ```
+
 * Enable `systemd-resolved.service`
 
     ```sh
@@ -341,6 +354,35 @@ ParallelDownloads = 8
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
+
+## Add a user
+
+* Add wheel group to sudoers
+
+    ```
+    /etc/sudoers
+
+    %wheel ALL=(ALL:ALL) ALL
+    ```
+
+* Install `zsh`
+* Add a root user
+
+    ```sh
+    useradd -m -G users,wheel -s /bin/zsh myusername
+    passwd myusername
+    ```
+
+    * List groups with `getent group`
+
+## Xorg
+
+* Install `nvidia`
+    * If there is an issue with `nouveau`:
+        * remove `kms` from `HOOKS` in `/etc/mkinitcpio.conf` and run
+          `mkinitcpio -P`
+        * add `nomodeset nouveau.modeset=0 nvidia_drm.modeset=1` kernel
+          parameters to options in bootloader entry
 
 # Deprecated
 
