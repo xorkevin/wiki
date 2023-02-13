@@ -375,6 +375,15 @@ Include = /etc/pacman.d/mirrorlist
 
     * List groups with `getent group`
 
+## Base packages
+
+* Install packages
+    * `man-db`
+    * `man-pages`
+    * `openssh`
+    * `git`
+    * `polkit`
+
 ## Xorg
 
 * Install `nvidia`
@@ -383,6 +392,7 @@ Include = /etc/pacman.d/mirrorlist
           `mkinitcpio -P`
         * add `nomodeset nouveau.modeset=0 nvidia_drm.modeset=1` kernel
           parameters to options in bootloader entry
+* Install `xorg`
 
 # Deprecated
 
