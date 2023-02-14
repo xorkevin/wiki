@@ -378,6 +378,7 @@ Include = /etc/pacman.d/mirrorlist
 ## Base packages
 
 * Install packages
+    * `pacman-contrib`
     * `man-db`
     * `man-pages`
     * `openssh`
@@ -392,7 +393,84 @@ Include = /etc/pacman.d/mirrorlist
           `mkinitcpio -P`
         * add `nomodeset nouveau.modeset=0 nvidia_drm.modeset=1` kernel
           parameters to options in bootloader entry
-* Install `xorg`
+* Install packages
+    * `xorg`
+    * `xorg-xinit`
+    * `arandr`
+    * `i3`
+    * `dmenu`
+    * `feh`
+    * `lxqt-policykit`
+    * `rxvt-unicode`
+    * `urxvt-perls`
+    * `stow`
+    * `starship`
+    * `tmux`
+    * `xclip`
+    * `neovim`
+    * `python-pynvim`
+    * `fzf`
+    * `ttf-nerd-fonts-symbols-2048-em`
+    * `ttf-hack`
+    * `ttf-roboto`
+    * `inter-font`
+    * `noto-fonts`
+    * `maim`
+    * `lxappearance`
+    * `arc-solid-gtk-theme`
+    * `arc-icon-theme`
+    * `pipewire`
+    * `pipewire-alsa`
+    * `pipewire-pulse`
+    * `pipewire-jack`
+    * `pipewire-docs`
+    * `wireplumber`
+    * `pavucontrol`
+    * `pass`
+    * `pass-otp`
+    * `qrencode`
+    * `firefox`
+    * `mpv`
+    * `mpd`
+    * `ncmpcpp`
+    * `rustup`
+    * `bat`
+    * `ripgrep`
+    * `fd`
+* Install aur helper
+
+    ```sh
+    rustup default stable
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
+    makepkg -si
+    ```
+
+* Install packages
+    * `paru-bin`
+    * `yay-bin`
+    * `antibody-bin`
+
+* Generate ssh keys
+
+    ```sh
+    systemctl --user enable --now ssh-agent.service
+    ssh-keygen -f filename -t ed25519
+    ```
+
+    ```
+    ~/.ssh/config.d/hosts
+
+    Host hades
+      HostName hades1
+      User kevin
+      IdentityFile ~/.ssh/id_ed25519
+    Host github.com
+      IdentityFile ~/.ssh/id_ed25519_github
+    ```
+
+* Add key to github
+* Clone gpgkeys
 
 # Deprecated
 
