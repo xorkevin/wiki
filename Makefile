@@ -7,4 +7,4 @@ paclist:
 	./paclist.sh > $(pacman-list)
 
 reflector:
-	reflector --verbose --country 'United States' --age 3 --sort rate --save /etc/pacman.d/mirrorlist
+	reflector --verbose --country 'United States' --latest 32 --protocol https,http --sort rate --save /etc/pacman.d/mirrorlist
