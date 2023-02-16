@@ -472,48 +472,23 @@ Include = /etc/pacman.d/mirrorlist
 * Add key to github
 * Clone gpgkeys
 
-# Deprecated
+* Disable mouse acceleration
+    * list props
 
-# first install
+        ```sh
+        xinput --list
+        xinput --list-props <id>
+        xinput --set-prop <id> 'libinput Accel Profile Enabled' 0, 1
+        ```
 
-- xorg, xorg-xinit
-- i3: window manager
-- yay
-- stow
-- LUKS
-- ntpd: time and date
-- htop: process monitor
-- moreutils
-- lm_sensors: temp monitor
-- tmux
-- zprezto: zsh config
-- base16-shell
-- powerline-fonts
-- ttf-google-fonts-git: fonts
-- alsa-utils, alsa-plugins: sound
-- pulseaudio, paprefs, pavucontrol
-- xbindkeys
-- maim, slop: screenshots
-- to reset keyboard: setxkbmap -layout us
-- xclip
-- ufw
-- imagemagick
-- graphicsmagick
-- feh
-- rxvt-unicode
-- lxappearance
-- cronie
+    ```
+    /etc/X11/xorg.conf.d/50-mouse-acceleration.conf
 
-disable mouse acceleration
-
-`/etc/X11/xorg.conf.d/50-mouse-acceleration.conf`:
-
-```conf
-Section "InputClass"
-	Identifier "My Mouse"
-	Driver "libinput"
-	MatchIsPointer "yes"
-	Option "AccelProfile" "flat"
-	Option "AccelSpeed" "0"
-EndSection
-```
+    Section "InputClass"
+      Identifier "My Mouse"
+      Driver "libinput"
+      MatchIsPointer "yes"
+      Option "AccelProfile" "flat"
+      Option "AccelSpeed" "0"
+    EndSection
+    ```
