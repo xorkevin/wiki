@@ -43,6 +43,7 @@ gimp
 git
 git-delta
 go
+gopls
 go-tools
 gprolog
 graphviz
@@ -87,7 +88,7 @@ libvirt
 linkerd-bin
 linux
 linux-firmware
-lxappearance
+lxappearance-gtk3
 lxqt-policykit
 maim
 man-db
@@ -204,6 +205,7 @@ ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans
 ttf-hack
+ttf-hack-nerd
 ttf-lato
 ttf-nerd-fonts-symbols-2048-em
 ttf-opensans
