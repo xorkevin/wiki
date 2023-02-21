@@ -8,6 +8,7 @@ arc-solid-gtk-theme
 audacity
 base
 base-devel
+bash-language-server
 bat
 bc
 biber
@@ -88,6 +89,7 @@ libvirt
 linkerd-bin
 linux
 linux-firmware
+lua-language-server
 lxappearance-gtk3
 lxqt-policykit
 maim
@@ -160,6 +162,7 @@ pueue
 pv
 python
 python-black
+python-lsp-black
 python-lsp-server
 python-pip
 python-poetry
@@ -211,6 +214,7 @@ ttf-nerd-fonts-symbols-2048-em
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
+typescript-language-server
 urlscan
 urxvt-perls
 urxvt-resize-font-git
@@ -222,6 +226,9 @@ via-bin
 vim
 virt-manager
 vlc
+vscode-css-languageserver
+vscode-html-languageserver
+vscode-json-languageserver
 w3m
 weechat
 wget
@@ -238,6 +245,7 @@ xclip
 xdg-user-dirs
 xorg-xinit
 xsv
+yaml-language-server
 yarn
 yay-bin
 yt-dlp
