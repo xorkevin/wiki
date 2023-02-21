@@ -217,6 +217,7 @@ urxvt-resize-font-git
 valgrind
 vault
 vdpauinfo
+vhs
 via-bin
 vim
 virt-manager
