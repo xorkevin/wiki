@@ -252,5 +252,6 @@ yt-dlp
 zathura
 zathura-pdf-mupdf
 zip
+zk
 zoom
 zsh
