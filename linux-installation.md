@@ -324,6 +324,12 @@
     systemctl enable fstrim.timer
     ```
 
+* Enable SMART error reporting
+
+    ```
+    systemctl enable smartd.service
+    ```
+
 * Favor using RAM instead of swap
 
     ```sh
