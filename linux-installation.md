@@ -259,7 +259,7 @@
 - Enable `systemd-networkd.service`
 
   ```sh
-  `systemctl enable --now systemd-networkd.service`
+  systemctl enable --now systemd-networkd.service
   ping 8.8.8.8
   ```
 
