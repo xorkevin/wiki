@@ -30,6 +30,7 @@ element-desktop
 elixir
 elixir-ls
 emacs
+eslint
 exa
 ext4magic
 fd
@@ -43,6 +44,7 @@ gdb
 gimp
 git
 git-delta
+glow
 go
 gopls
 go-tools

@@ -1,4 +1,4 @@
-pacman-list=pacman-list.md
+pacman-list=pacman-list.txt
 
 .PHONY: paclist
 
