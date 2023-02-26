@@ -210,28 +210,31 @@
     ```
     esp/loader/entries/arch.conf
 
-    title   Arch Linux
-    linux   /vmlinuz-linux
-    initrd  /amd-ucode.img
-    initrd  /initramfs-linux.img
-    options root="LABEL=arch_os" rw
+    title    Arch Linux
+    sort-key arch
+    linux    /vmlinuz-linux
+    initrd   /amd-ucode.img
+    initrd   /initramfs-linux.img
+    options  root="LABEL=arch_os" rw
     ```
 
     ```
     esp/loader/entries/arch-fallback.conf
 
-    title   Arch Linux (fallback initramfs)
-    linux   /vmlinuz-linux
-    initrd  /amd-ucode.img
-    initrd  /initramfs-linux-fallback.img
-    options root="LABEL=arch_os" rw
+    title    Arch Linux (fallback initramfs)
+    sort-key arch-fallback
+    linux    /vmlinuz-linux
+    initrd   /amd-ucode.img
+    initrd   /initramfs-linux-fallback.img
+    options  root="LABEL=arch_os" rw
     ```
 
     ```
     esp/loader/entries/windows.conf
 
-    title Windows
-    efi   /EFI/Microsoft/Boot/bootmgfw.efi
+    title    Windows
+    sort-key windows
+    efi      /EFI/Microsoft/Boot/bootmgfw.efi
     ```
 
 - Reboot
