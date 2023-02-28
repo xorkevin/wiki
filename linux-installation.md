@@ -49,8 +49,8 @@
     fdisk -l
     ```
 
-  - Create a 1 GiB EFI system partition, 4 GiB swap space, and a root
-    directory partition with the remainder of the space
+  - Create a 1 GiB EFI system partition, 4 GiB swap space, and a root directory
+    partition with the remainder of the space
 
     ```sh
     cfdisk /dev/nvmexn1
@@ -420,10 +420,8 @@ Include = /etc/pacman.d/mirrorlist
 
 - Install `nvidia`
   - If there is an issue with `nouveau`:
-    - remove `kms` from `HOOKS` in `/etc/mkinitcpio.conf` and run
-      `mkinitcpio -P`
-    - add `nomodeset nouveau.modeset=0 nvidia_drm.modeset=1` kernel
-      parameters to options in bootloader entry
+    - add `nomodeset nvidia-drm.modeset=1` kernel parameters to options in
+      bootloader entry
 - Install packages
   - `xorg`
   - `xorg-xinit`
