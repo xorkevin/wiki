@@ -22,6 +22,8 @@ darktable
 discord
 dmenu
 docker
+docker-buildx
+docker-compose
 dolphin-emu
 dos2unix
 dosfstools
@@ -162,6 +164,7 @@ postgresql
 prettier
 pueue
 pv
+pyload-ng
 python
 python-black
 python-lsp-black
