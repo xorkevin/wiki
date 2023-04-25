@@ -204,6 +204,7 @@ texlab
 thunar
 time
 timidity++
+tla-toolbox-nightly
 tmux
 tokei
 transmission-qt
