@@ -217,6 +217,7 @@ thunar
 time
 timidity++
 tla-toolbox-nightly
+tla-tools
 tmux
 tokei
 transmission-qt
