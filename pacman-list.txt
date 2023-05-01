@@ -17,6 +17,7 @@ brightnessctl
 checkbashisms
 chromium
 clang
+code
 cowsay
 darktable
 discord
@@ -181,7 +182,6 @@ redis
 reflector
 ripgrep
 rsync
-rust-analyzer
 rustup
 rxvt-unicode
 sd
@@ -201,6 +201,18 @@ syncthing
 tailscale
 tectonic
 texlab
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
 thunar
 time
 timidity++
@@ -216,7 +228,7 @@ ttf-fira-sans
 ttf-hack
 ttf-hack-nerd
 ttf-lato
-ttf-nerd-fonts-symbols-2048-em
+ttf-nerd-fonts-symbols
 ttf-opensans
 ttf-roboto
 ttf-roboto-mono
