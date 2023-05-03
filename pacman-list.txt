@@ -185,7 +185,6 @@ rsync
 rustup
 rxvt-unicode
 sd
-siege
 signal-desktop
 skaffold
 smartmontools
