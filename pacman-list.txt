@@ -22,6 +22,7 @@ cowsay
 darktable
 discord
 dmenu
+dmidecode
 docker
 docker-buildx
 docker-compose
@@ -200,18 +201,18 @@ syncthing
 tailscale
 tectonic
 texlab
+texlive-basic
 texlive-bibtexextra
-texlive-core
 texlive-fontsextra
 texlive-formatsextra
 texlive-games
 texlive-humanities
 texlive-latexextra
+texlive-mathscience
 texlive-music
 texlive-pictures
 texlive-pstricks
 texlive-publishers
-texlive-science
 thunar
 time
 timidity++
@@ -252,7 +253,6 @@ weechat
 wget
 wine
 wireplumber
-wireplumber-docs
 wireshark-qt
 woeusb-ng
 woff2-fira-code
