@@ -386,6 +386,12 @@ ParallelDownloads = 8
 Include = /etc/pacman.d/mirrorlist
 ```
 
+- Enable package cache pruning
+
+  ```
+  systemctl enable --now paccache.timer
+  ```
+
 ## Add a user
 
 - Add wheel group to sudoers
