@@ -166,7 +166,6 @@ postgresql
 prettier
 pueue
 pv
-pyload-ng
 python
 python-black
 python-lsp-black
@@ -206,7 +205,6 @@ texlive-meta
 thunar
 time
 timidity++
-tla-toolbox-nightly
 tla-tools
 tmux
 tokei
@@ -261,5 +259,4 @@ zathura
 zathura-pdf-mupdf
 zip
 zk
-zoom
 zsh
