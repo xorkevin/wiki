@@ -61,6 +61,7 @@ helm
 hexyl
 htop
 hugo
+hwinfo
 hyperfine
 i3blocks
 i3lock
