@@ -1,7 +1,6 @@
 alacritty
 amd-ucode
 android-file-transfer
-antibody-bin
 arandr
 arc-icon-theme
 arc-solid-gtk-theme
@@ -15,6 +14,7 @@ biber
 blender
 brightnessctl
 checkbashisms
+check-jsonschema
 chromium
 clang
 code
@@ -34,8 +34,8 @@ elixir
 elixir-ls
 emacs
 eslint
-exa
 ext4magic
+eza
 fd
 feh
 figlet
