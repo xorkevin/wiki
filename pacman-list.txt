@@ -11,6 +11,7 @@ bash-language-server
 bat
 bc
 biber
+binaryen
 blender
 brightnessctl
 checkbashisms
@@ -237,6 +238,7 @@ vscode-css-languageserver
 vscode-html-languageserver
 vscode-json-languageserver
 w3m
+wabt
 weechat
 wget
 wine
