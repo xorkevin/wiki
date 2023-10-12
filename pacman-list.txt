@@ -211,6 +211,7 @@ tmux
 tokei
 transmission-qt
 tree
+tree-sitter-cli
 ttf-cormorant
 ttf-fira-code
 ttf-fira-mono
