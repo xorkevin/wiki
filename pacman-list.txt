@@ -29,6 +29,7 @@ docker-compose
 dolphin-emu
 dos2unix
 dosfstools
+dust
 electrum
 element-desktop
 elixir
