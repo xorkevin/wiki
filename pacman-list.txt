@@ -4,6 +4,7 @@ android-file-transfer
 arandr
 arc-icon-theme
 arc-solid-gtk-theme
+arena-chess-gui
 audacity
 base
 base-devel
@@ -21,6 +22,7 @@ clang
 code
 cowsay
 darktable
+dive
 dmenu
 dmidecode
 docker
@@ -172,9 +174,11 @@ python
 python-black
 python-lsp-black
 python-lsp-server
+python-networkx
 python-pip
 python-poetry
 python-pynvim
+python-z3-solver
 qemu-desktop
 qpwgraph
 qrencode
@@ -196,6 +200,7 @@ speedtest-cli
 sshfs
 starship
 steam
+stockfish
 stow
 strace
 syncthing
