@@ -168,6 +168,7 @@ pipewire-pulse
 polkit
 postgresql
 prettier
+protobuf
 pueue
 pv
 python
