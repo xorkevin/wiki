@@ -370,14 +370,6 @@
 ### Pacman
 
 ```
-/etc/makepkg.conf
-
-MAKEFLAGS="-j$(nproc)" # parallel jobs
-COMPRESSXZ=(xz -c -z --threads=0 -) # use all threads for compression
-COMPRESSZST=(zstd -c -z -q --threads=0 -) # use all threads for compression
-```
-
-```
 /etc/pacman.conf
 
 Color
