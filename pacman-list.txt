@@ -262,7 +262,6 @@ xdg-user-dirs
 xorg-xinit
 xsv
 yaml-language-server
-yarn
 yay-bin
 yt-dlp
 zathura
