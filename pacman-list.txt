@@ -40,6 +40,7 @@ emacs
 eslint
 ext4magic
 eza
+fastfetch
 fd
 feh
 figlet
@@ -121,7 +122,6 @@ musescore
 mycrypto-bin
 ncmpcpp
 nebula
-neofetch
 neomutt
 neovim
 nextcloud-client
