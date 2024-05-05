@@ -13,6 +13,7 @@ bat
 bc
 biber
 binaryen
+bind
 blender
 brightnessctl
 checkbashisms
@@ -89,6 +90,7 @@ kdenlive
 keybase-bin
 kubectl
 kustomize
+ldns
 lib32-nvidia-utils
 libreoffice-fresh
 libva-mesa-driver
