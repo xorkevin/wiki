@@ -1,6 +1,7 @@
 alacritty
 amd-ucode
 android-file-transfer
+android-studio
 arandr
 arc-icon-theme
 arc-solid-gtk-theme
@@ -36,7 +37,6 @@ dust
 electrum
 element-desktop
 elixir
-elixir-ls
 emacs
 eslint
 ext4magic
@@ -190,7 +190,7 @@ reflector
 ripgrep
 rsync
 rustup
-rxvt-unicode
+rxvt-unicode-truecolor-wide-glyphs
 sd
 signal-desktop
 skaffold
@@ -232,8 +232,6 @@ ttf-roboto
 ttf-roboto-mono
 typescript-language-server
 urlscan
-urxvt-perls
-urxvt-resize-font-git
 valgrind
 vault
 vdpauinfo
