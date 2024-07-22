@@ -85,7 +85,6 @@ istio
 isync
 jdk-openjdk
 jq
-k3s-bin
 kdenlive
 keybase-bin
 kubectl
@@ -97,7 +96,6 @@ libva-mesa-driver
 libva-nvidia-driver
 libva-utils
 libvirt
-linkerd-bin
 linux
 linux-firmware
 lua-language-server
