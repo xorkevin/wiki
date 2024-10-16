@@ -189,10 +189,12 @@ ripgrep
 rsync
 rustup
 rxvt-unicode-truecolor-wide-glyphs
+samba
 sd
 signal-desktop
 skaffold
 smartmontools
+smbclient
 solaar
 speedcrunch
 speedtest-cli
