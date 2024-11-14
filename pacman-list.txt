@@ -92,7 +92,6 @@ kustomize
 ldns
 lib32-nvidia-utils
 libreoffice-fresh
-libva-mesa-driver
 libva-nvidia-driver
 libva-utils
 libvirt
@@ -106,7 +105,6 @@ man-db
 man-pages
 mediainfo
 megatools
-mesa-vdpau
 minikube
 minio-client
 mkcert
