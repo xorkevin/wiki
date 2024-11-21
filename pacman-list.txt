@@ -39,6 +39,7 @@ element-desktop
 elixir
 emacs
 eslint
+ethtool
 ext4magic
 eza
 fastfetch
