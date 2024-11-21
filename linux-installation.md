@@ -284,6 +284,7 @@
   - Change systemd-networkd startup behavior to only wait for one interface
 
     ```
+    systemctl edit systemd-networkd-wait-online.service
     /etc/systemd/system/systemd-networkd-wait-online.service.d/wait-for-only-one-interface.conf
 
     [Service]
@@ -520,4 +521,41 @@ Include = /etc/pacman.d/mirrorlist
     Option "AccelProfile" "flat"
     Option "AccelSpeed" "0"
   EndSection
+  ```
+
+## Server
+
+- Tailscale exit node optimizations
+
+  ```
+  /etc/systemd/system/udpgroforward.service
+
+  [Unit]
+  Description= UDPGroForwarding
+  Wants=network-online.target
+  After=network-online.target
+
+  [Service]
+  Type=oneshot
+  ExecStart=/usr/bin/ethtool -K enp37s0 rx-udp-gro-forwarding on rx-gro-list off
+
+  [Install]
+  WantedBy=multi-user.target
+  ```
+
+- Tailscale enable ip forwarding
+
+  ```
+  /etc/systemd/network/20-wired.network
+
+  [Match]
+  Name=enp37s0
+
+  [Link]
+  RequiredForOnline=no
+
+  [Network]
+  DHCP=yes
+  IPv4Forwarding=yes
+  IPv6Forwarding=yes
   ```
