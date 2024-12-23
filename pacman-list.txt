@@ -1,3 +1,4 @@
+7zip
 alacritty
 amd-ucode
 android-file-transfer
@@ -143,7 +144,6 @@ optipng
 otf-cormorant
 otf-fira-mono
 otf-fira-sans
-p7zip
 pacback
 pacman-contrib
 pacutils
