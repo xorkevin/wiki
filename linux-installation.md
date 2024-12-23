@@ -469,6 +469,7 @@ Include = /etc/pacman.d/mirrorlist
   - `fzf`
   - `ttf-nerd-fonts-symbols`
   - `ttf-hack`
+  - `ttf-hack-nerd`
   - `ttf-roboto`
   - `inter-font`
   - `noto-fonts`
