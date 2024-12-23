@@ -98,7 +98,7 @@ libvirt
 linux
 linux-firmware
 lua-language-server
-lxappearance-gtk3
+lxappearance
 lxqt-policykit
 maim
 man-db
