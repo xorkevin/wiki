@@ -75,6 +75,7 @@ i3lock
 i3status
 i3-wm
 imagemagick
+impala
 inetutils
 inkscape
 inotify-tools
@@ -84,6 +85,7 @@ iperf3
 iptables-nft
 istio
 isync
+iwd
 jdk-openjdk
 jq
 kdenlive
