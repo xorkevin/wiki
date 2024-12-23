@@ -58,7 +58,6 @@ glow
 go
 gopls
 go-tools
-gprolog
 graphviz
 gucharmap
 handbrake
@@ -203,6 +202,7 @@ steam
 stockfish
 stow
 strace
+swi-prolog
 syncthing
 tailscale
 tectonic

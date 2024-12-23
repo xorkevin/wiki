@@ -13,13 +13,13 @@
 
 ## Archlinux installation
 
-- Confirm system is in uefi boot mode
+- Verify boot mode is 64-bit UEFI
 
   ```sh
-  ls /sys/firmware/efi/efivars
+  cat /sys/firmware/efi/fw_platform_size
   ```
 
-  The directory should exist with contents
+  The output should be `64`.
 
 - Check network connection
 
@@ -30,6 +30,16 @@
   ```
 
   - If using wifi, use `iwctl`
+
+    ```
+    [iwd]# device list
+    [iwd]# device NAME set-property Powered on
+    [iwd]# adapter ADAPTER set-property Powered on
+    [iwd]# station NAME scan
+    [iwd]# station NAME get-networks
+    [iwd]# station NAME connect SSID
+    ```
+
   - `systemd-networkd` and `systemd-resolved` should work out of the box for
     ethernet
 
@@ -112,8 +122,10 @@
 - Gen fstab
 
   ```sh
-  genfstab -U /mnt >> /mnt/etc/fstab
+  genfstab -L /mnt >> /mnt/etc/fstab
   ```
+
+  or `-U` for uuid instead of labels
 
 - Chroot
 
@@ -124,6 +136,7 @@
 - Install packages
   - vim
   - amd-ucode
+  - iwd if wifi
 - Configure install
 
   - Timezone
@@ -277,6 +290,22 @@
   [Network]
   DHCP=yes
   ```
+
+  - For wifi
+
+    ```
+    /etc/systemd/network/25-wireless.network
+
+    [Match]
+    Name=wlan0
+
+    [Link]
+    RequiredForOnline=no
+
+    [Network]
+    DHCP=yes
+    IgnoreCarrierLoss=3s
+    ```
 
   - Use `ip link` to list network interfaces
   - `systemctl restart systemd-networkd.service` to refresh configuration
@@ -438,7 +467,7 @@ Include = /etc/pacman.d/mirrorlist
   - `neovim`
   - `python-pynvim`
   - `fzf`
-  - `ttf-nerd-fonts-symbols-2048-em`
+  - `ttf-nerd-fonts-symbols`
   - `ttf-hack`
   - `ttf-roboto`
   - `inter-font`
@@ -461,24 +490,20 @@ Include = /etc/pacman.d/mirrorlist
   - `mpv`
   - `mpd`
   - `ncmpcpp`
-  - `rustup`
   - `bat`
   - `ripgrep`
   - `fd`
 - Install aur helper
 
   ```sh
-  rustup default stable
-  git clone https://aur.archlinux.org/paru.git
-  cd paru
+  git clone https://aur.archlinux.org/paru-bin.git
+  cd paru-bin
   makepkg -si
   ```
 
 - Install packages
 
-  - `paru-bin`
   - `yay-bin`
-  - `antibody-bin`
 
 - Generate ssh keys
 
