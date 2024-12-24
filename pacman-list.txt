@@ -90,6 +90,7 @@ jdk-openjdk
 jq
 kdenlive
 keybase-bin
+keyd
 kubectl
 kustomize
 ldns
