@@ -88,7 +88,6 @@ isync
 iwd
 jdk-openjdk
 jq
-kdenlive
 keybase-bin
 keyd
 kubectl
@@ -189,7 +188,8 @@ reflector
 ripgrep
 rsync
 rustup
-rxvt-unicode-truecolor-wide-glyphs
+rxvt-unicode
+rxvt-unicode-terminfo
 samba
 sd
 signal-desktop
@@ -234,6 +234,8 @@ ttf-roboto
 ttf-roboto-mono
 typescript-language-server
 urlscan
+urxvt-perls
+urxvt-resize-font-git
 valgrind
 vault
 vdpauinfo
