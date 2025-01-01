@@ -35,6 +35,7 @@ dolphin-emu
 dos2unix
 dosfstools
 dust
+efitools
 electrum
 element-desktop
 elixir
@@ -191,6 +192,7 @@ rustup
 rxvt-unicode
 rxvt-unicode-terminfo
 samba
+sbctl
 sd
 signal-desktop
 skaffold
