@@ -17,6 +17,9 @@ biber
 binaryen
 bind
 blender
+bluetui
+bluez
+bluez-utils
 brightnessctl
 checkbashisms
 check-jsonschema
