@@ -1,0 +1,110 @@
+{
+	// Declare static groups of users. Use autogroups for all users or users with a specific role.
+	"groups": {
+		"group:admins": ["email@example.com"],
+		"group:users": ["email@example.com"],
+	},
+
+	// Define the tags which can be applied to devices and by which users.
+	"tagOwners": {
+		"tag:server": ["group:admins"],
+	},
+
+	"hosts": {
+		"lan-net": "100.95.0.0/16",
+	},
+
+	// Define access control lists for users, groups, autogroups, tags,
+	// Tailscale IP addresses, and subnet ranges.
+	"acls": [
+		{
+			"action": "accept",
+			"src":    ["autogroup:member"],
+			"dst":    ["autogroup:self:*"],
+		},
+		{
+			"action": "accept",
+			"src":    ["group:admins"],
+			"dst":    ["autogroup:tagged:*"],
+		},
+		{
+			"action": "accept",
+			"src":    ["group:users"],
+			"dst":    ["tag:server:445"],
+		},
+		{
+			"action": "accept",
+			"src":    ["lan-net"],
+			"dst":    ["lan-net:*"],
+		},
+		{
+			"action": "accept",
+			"src":    ["group:admins"],
+			"dst":    ["autogroup:internet:*"],
+		},
+	],
+
+	// Define users and devices that can use Tailscale SSH.
+	"ssh": [
+		// Allow all users to SSH into their own devices in check mode.
+		{
+			"action": "check",
+			"src":    ["autogroup:member"],
+			"dst":    ["autogroup:self"],
+			"users":  ["autogroup:nonroot"],
+		},
+		{
+			"action": "check",
+			"src":    ["email@example.com"],
+			"dst":    ["autogroup:tagged"],
+			"users":  ["kevin"],
+		},
+	],
+
+	"nodeAttrs": [
+		{
+			"target": ["*"],
+			"ipPool": ["100.96.0.0/11"],
+		},
+	],
+
+	// Test access rules every time they're saved.
+	"tests": [
+		{
+			"src":    "email@example.com",
+			"accept": ["tag:server:22", "email@example.com:22"],
+		},
+		{
+			"src":    "group:admins",
+			"accept": ["tag:server:22"],
+			"deny":   ["email@example.com:22"],
+		},
+		{
+			"src":  "group:users",
+			"deny": ["tag:server:22", "email@example.com:22"],
+		},
+		{
+			"src":    "100.95.0.2",
+			"accept": ["100.95.0.3:22"],
+			"deny":   ["tag:server:22"],
+		},
+	],
+	"sshTests": [
+		{
+			"src":   "email@example.com",
+			"dst":   ["tag:server", "email@example.com"],
+			"check": ["kevin"],
+			"deny":  ["root"],
+		},
+		{
+			"src":  "group:admins",
+			"dst":  ["tag:server"],
+			"deny": ["kevin", "nonroot", "root"],
+		},
+		{
+			"src":  "group:users",
+			"dst":  ["tag:server"],
+			"deny": ["kevin", "nonroot", "root"],
+		},
+	],
+}
