@@ -262,6 +262,7 @@ wireshark-qt
 woeusb-ng
 woff2-fira-code
 woff-fira-code
+wol
 words
 xbindkeys
 xclip
