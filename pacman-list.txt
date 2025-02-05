@@ -43,7 +43,6 @@ electrum
 element-desktop
 elixir
 emacs
-eslint
 ethtool
 ext4magic
 eza
@@ -132,6 +131,7 @@ neovim
 nextcloud-client
 nkit
 nmap
+nodejs
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -169,7 +169,6 @@ pipewire-jack
 pipewire-pulse
 polkit
 postgresql
-prettier
 protobuf
 pueue
 pv
