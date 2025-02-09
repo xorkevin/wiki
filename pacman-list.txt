@@ -123,7 +123,6 @@ msmtp
 mtr
 mumble
 musescore
-mycrypto-bin
 ncmpcpp
 nebula
 neomutt
