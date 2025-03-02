@@ -1,5 +1,4 @@
 7zip
-alacritty
 amd-ucode
 android-file-transfer
 android-studio
@@ -208,6 +207,7 @@ steam
 stockfish
 stow
 strace
+streamlink
 swi-prolog
 syncthing
 tailscale
@@ -267,7 +267,6 @@ xclip
 xdg-user-dirs
 xorg-xinit
 xsv
-yaml-language-server
 yay-bin
 yt-dlp
 zathura
