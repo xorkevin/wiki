@@ -213,8 +213,6 @@ syncthing
 tailscale
 tectonic
 texlab
-texlive-doc
-texlive-meta
 thunar
 time
 timidity++
@@ -242,6 +240,7 @@ urxvt-resize-font-git
 valgrind
 vault
 vdpauinfo
+ventoy-bin
 vhs
 via-bin
 vim
