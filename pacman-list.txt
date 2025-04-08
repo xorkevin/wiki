@@ -10,7 +10,6 @@ base
 base-devel
 bash-language-server
 bat
-bc
 biber
 binaryen
 bind
@@ -165,6 +164,7 @@ pipewire-docs
 pipewire-jack
 pipewire-pulse
 polkit
+posix
 postgresql
 protobuf
 pueue
@@ -212,7 +212,6 @@ tailscale
 tectonic
 texlab
 thunar
-time
 timidity++
 tla-tools
 tmux
