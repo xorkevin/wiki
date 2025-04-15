@@ -5,7 +5,7 @@
 * Sign the fwupd efi
 
   ```sh
-  sbctl sign -s /usr/lib/fwupd/efi/fwupdx64.efi
+  sbctl sign -s -o /usr/lib/fwupd/efi/fwupdx64.efi.signed /usr/lib/fwupd/efi/fwupdx64.efi
   ```
 
   This should produce `/usr/lib/fwupd/efi/fwupdx64.efi.signed` and also save
