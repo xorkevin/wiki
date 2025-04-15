@@ -233,6 +233,7 @@ ttf-opensans
 ttf-roboto
 ttf-roboto-mono
 typescript-language-server
+udisks2
 urlscan
 urxvt-perls
 urxvt-resize-font-git
