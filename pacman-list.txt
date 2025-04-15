@@ -50,6 +50,8 @@ figlet
 firefox
 fortune-mod
 freepats-general-midi
+fwupd
+fwupd-docs
 fzf
 gdb
 gimp
