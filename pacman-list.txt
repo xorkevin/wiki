@@ -185,7 +185,6 @@ qpwgraph
 qrencode
 qutebrowser
 radeontop
-redis
 reflector
 ripgrep
 rsync
@@ -238,6 +237,7 @@ urlscan
 urxvt-perls
 urxvt-resize-font-git
 valgrind
+valkey
 vault
 vdpauinfo
 ventoy-bin
