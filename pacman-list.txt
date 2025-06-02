@@ -252,6 +252,7 @@ vscode-json-languageserver
 w3m
 wabt
 weechat
+wezterm
 wget
 wine
 wireplumber
