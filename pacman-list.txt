@@ -269,6 +269,7 @@ xorg-xinit
 xsv
 yay-bin
 yt-dlp
+yt-dlp-ejs
 zathura
 zathura-pdf-mupdf
 zbar
