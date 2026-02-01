@@ -152,7 +152,7 @@ otf-fira-sans
 pacback
 pacman-contrib
 pacutils
-paru-bin
+paru
 pass
 pass-otp
 pastel
@@ -262,12 +262,13 @@ woff2-fira-code
 woff-fira-code
 wol
 words
+xan
 xbindkeys
 xclip
 xdg-user-dirs
 xorg-xinit
 xsv
-yay-bin
+yay
 yt-dlp
 yt-dlp-ejs
 zathura
