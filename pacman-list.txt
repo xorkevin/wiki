@@ -257,7 +257,6 @@ wget
 wine
 wireplumber
 wireshark-qt
-woeusb-ng
 woff2-fira-code
 woff-fira-code
 wol
