@@ -85,7 +85,7 @@ inotify-tools
 inter-font
 iotop
 iperf3
-iptables-nft
+iptables
 istio
 isync
 iwd
