@@ -127,7 +127,6 @@ ncmpcpp
 nebula
 neomutt
 neovim
-nextcloud-client
 nkit
 nmap
 nodejs
