@@ -68,6 +68,7 @@ handbrake
 hddtemp
 headscale
 helm
+hexedit
 hexyl
 htop
 hugo
